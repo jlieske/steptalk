@@ -1,0 +1,8 @@
+26/06/05: v1.2
+	- added inspector & connection inspector to StepTalkClass
+15/06/05: v1.1
+	- added creation of outlets on the fly
+	- custom connection inspector (only show the script's outlets)
+	- dialog to add/remove outlets from the inspector
+	- the palette contains both StepTalkView and StepTalkObject
+14/06/05: initial release

@@ -3,7 +3,7 @@
   @author: Mateu Batle mateu.batle@tragnarion.com
   @brief Very simple unit testing framework done in StepTalk
   for testing Objective C applications
-  @brief $Id$
+  @brief $Id: StepUnit.st,v 1.1 2004/06/20 11:40:54 stefanu Exp $
   
   StepUnit is released under the terms of the LGPL license.
   (check http://www.gnu.org/licenses/gpl.txt)  

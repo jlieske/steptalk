@@ -1,0 +1,46 @@
+
+This palette use the StepTalkView library to present a StepTalkView and StepTalkObject.
+
+How to use it ? 
+===============
+
+First step is to have libStepTalkView installed. Then you can compile this palette.
+
+Launch Gorm, and go to Infos->Preferences->Palettes and click on the "add" button, 
+then locate StepTalk.palette and load it. 
+
+1) StepTalkView 
+
+Now you can access to the palette and drag'n drop a StepTalkView on a window. 
+To modify the script, just open the inspector and write in the textview. You can also 
+assign a name to the script, but it doesn't have any impact on the script itself -- 
+it's just useful to categorize your scripts in Gorm.
+
+Now that you have a StepTalkView somewhere, you can connect objects to it -- but
+for that you need outlets, and by default you don't have any. So open the inspector
+and click the "outlets" button. Add outlets (you can rename them simply by double-clicking
+in the tableview).
+
+By default the target object for a StepTalkView is itself, which means that if you
+click on a StepTalkView the script it contains will execute.
+
+2) StepTalkObject
+
+Instead of using a StepTalkView you can use a StepTalkObject, which is basically the same,
+but which is a non-graphical object. To instanciate one, just drag'n drop it on your 
+objects palette. Then as for the StepTalkView you need to create outlets if needed. 
+To execute the script, connect a button (for example) to the StepTalkObject's execute:
+methode.
+
+3) StepTalkClass
+
+It's a non-graphical object, so in order to instanciate it, just drop it on your object
+palette (like for StepTalkObject). The difference between StepTalkObject (that I 
+really should renamed "StepTalkScript" ..) is that a StepTalkClass can holds more 
+than one script, the scripts are methods that can receive parameters, and a 
+StepTalkClass can also contains ivars. So basically you can use a StepTalkClass as 
+replacement for an Objective-C class, more or less -- which let you write entire
+programs in Gorm... check the demonstration on http://www.xdev.org/gnustep/demo.html 
+-- you can use the Calculator.gorm packaged in this archive to redo the demo.
+
+

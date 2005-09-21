@@ -1,6 +1,7 @@
 #import "STLanguageManager.h"
 
 #import "STExterns.h"
+#import "STCompat.h"
 
 #import <Foundation/NSDebug.h>
 #import <Foundation/NSArray.h>
@@ -50,7 +51,7 @@ static STLanguageManager *defaultManager = nil;
     RELEASE(languageInfos);
     RELEASE(languageBundles);
     RELEASE(fileTypes);
-    [self dealloc];
+    [super dealloc];
 }
 - (void) _registerKnownLanguages
 {

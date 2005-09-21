@@ -11,6 +11,7 @@
 #import "STStack.h"
 
 #import <StepTalk/STExterns.h>
+#import <StepTalk/STCompat.h>
 
 #import <Foundation/NSException.h>
 #import <Foundation/NSDebug.h>
@@ -18,7 +19,7 @@
 @implementation STStack
 + stackWithSize:(unsigned)newSize
 {
-    return AUTORELEASE([[self alloc] initWithSize:newSize]);
+    return AUTORELEASE([(STStack*)[self alloc] initWithSize:newSize]);
 }
 
 - initWithSize:(unsigned)newSize

@@ -36,6 +36,7 @@
 #import <StepTalk/STExterns.h>
 #import <StepTalk/STScriptObject.h>
 #import <StepTalk/STSelector.h>
+#import <StepTalk/STCompat.h>
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSAutoreleasePool.h>
@@ -116,7 +117,9 @@ extern int STCparse(void *context);
 - (unsigned)currentBytecode;
 @end
 
+#ifndef MAX
 #define MAX(a,b) (((a)>(b))?(a):(b))
+#endif
 
 @implementation STCompiler
 + compilerWithEnvironment:(STEnvironment *)env

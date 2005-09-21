@@ -4,7 +4,7 @@
  
     Copyright (c) 2002 Free Software Foundation
    
-    Written by: Stefan Urbanek <urbanek@host.sk>
+    Written by: Stefan Urbanek 
     Date: 2000
    
     This file is part of the StepTalk project.
@@ -39,8 +39,8 @@
 #import "STScripting.h"
 #import "STSelector.h"
 #import "STStructure.h"
-
-#import <objc/objc-api.h>
+#import "STCompat.h"
+#import "ObjcRuntimeSupport.h"
 
 #if 0
 static Class NSNumber_class = nil;
@@ -175,7 +175,11 @@ void STGetValueOfTypeFromObject(void *value, const char *type, id anObject)
     case _C_BFLD:
     case _C_VOID:
     case _C_UNDEF:
+#ifdef _C_ATOM
+// stefankst: sorry for this ifdef but _C_ATOM doesn't seem to be
+// a "standard" Objective-C type.
     case _C_ATOM:
+#endif
     case _C_ARY_B:
     case _C_ARY_E:
     case _C_UNION_B:
@@ -216,7 +220,7 @@ void STGetValueOfTypeFromObject(void *value, const char *type, id anObject)
         // NSLog(@"REGISTERING SELECTOR");
         const char *name = [selectorName cString];
         
-        sel = sel_register_name(name);
+        sel = ObjcRegisterSel(name, NULL);
 
         if(!sel)
         {
@@ -235,7 +239,7 @@ void STGetValueOfTypeFromObject(void *value, const char *type, id anObject)
     if(requiresRegistration)
     {
         // NSLog(@"REGISTERING SELECTOR TYPES");
-        sel = sel_register_typed_name([selectorName cString], [signature methodReturnType]);
+        sel = ObjcRegisterSel([selectorName cString], [signature methodReturnType]);
         // NSLog(@"REGISTERED %@", NSStringFromSelector(sel));
         
     }
@@ -288,7 +292,7 @@ void STGetValueOfTypeFromObject(void *value, const char *type, id anObject)
     void *value;
     
     type = [[self methodSignature] getArgumentTypeAtIndex:anIndex];
-    value = NSZoneMalloc(STMallocZone,objc_sizeof_type(type));
+    value = NSZoneMalloc(STMallocZone, ObjcSizeOfType(type));
 
     STGetValueOfTypeFromObject(value, type, anObject);
 
@@ -305,7 +309,7 @@ void STGetValueOfTypeFromObject(void *value, const char *type, id anObject)
     
     type = [[self methodSignature] getArgumentTypeAtIndex:anIndex];
 
-    value = NSZoneMalloc(STMallocZone,objc_sizeof_type(type));
+    value = NSZoneMalloc(STMallocZone, ObjcSizeOfType(type));
     [self getArgument:value atIndex:anIndex];
 
     object = STObjectFromValueOfType(value,type);
@@ -321,10 +325,12 @@ void STGetValueOfTypeFromObject(void *value, const char *type, id anObject)
     void *value;
     id    returnObject = nil;
     
-    NSMethodSignature *signature = [self methodSignature];
+    // stefankst: singature is the name of an NSMethodSignature
+    // instance var
+    NSMethodSignature *methodSignature = [self methodSignature];
 
-    type = [signature methodReturnType];
-    returnLength = [signature methodReturnLength];
+    type = [methodSignature methodReturnType];
+    returnLength = [methodSignature methodReturnLength];
 
     NSDebugLLog(@"STSending",
                @"  return type '%s', buffer length %i",type,returnLength);

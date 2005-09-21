@@ -1,0 +1,4 @@
+#!/bin/csh
+#
+
+scp *.[hm] steptalk@creon.host.sk:Download

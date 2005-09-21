@@ -24,6 +24,7 @@
 
 #import "STLiterals.h"
 
+#import <StepTalk/STCompat.h>
 #import <Foundation/NSString.h>
 
 @implementation STLiteral

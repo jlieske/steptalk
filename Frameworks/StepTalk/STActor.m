@@ -4,7 +4,7 @@
   
     Copyright (c) 2002 Free Software Foundation
   
-    Written by: Stefan Urbanek <urbanek@host.sk>
+    Written by: Stefan Urbanek 
     Date: 2005 June 30
     License: LGPL
      
@@ -18,6 +18,7 @@
 #import "STEnvironment.h"
 #import "STExterns.h"
 #import "STObjCRuntime.h"
+#import "STCompat.h"
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSCoder.h>

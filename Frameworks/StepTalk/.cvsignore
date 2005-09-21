@@ -7,3 +7,4 @@ shared_*obj
 *.stlanguage
 *.framework
 derived_src
+.DS_Store

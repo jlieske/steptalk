@@ -29,6 +29,7 @@
 #import "STMethodContext.h"
 
 #import <StepTalk/STExterns.h>
+#import <StepTalk/STCompat.h>
 
 #import <Foundation/NSDebug.h>
 #import <Foundation/NSException.h>

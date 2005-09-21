@@ -1,0 +1,6 @@
+{
+  NibFile = "StepTalkPalette";
+  Class = "StepTalkPalette";
+  Icon = "StepTalkPalette";
+  ExportClasses = ("StepTalkView","StepTalkObject","StepTalkClass");
+}

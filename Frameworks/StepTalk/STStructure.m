@@ -4,7 +4,7 @@
  
     Copyright (c) 2002 Free Software Foundation
  
-    Written by: Stefan Urbanek <urbanek@host.sk>
+    Written by: Stefan Urbanek 
     Date: 2000
    
     This file is part of StepTalk.
@@ -27,6 +27,7 @@
 #import "STStructure.h"
 
 #import "STExterns.h"
+#import "STCompat.h"
 #import <Foundation/NSArray.h>
 #import <Foundation/NSException.h>
 #import <Foundation/NSString.h>
@@ -34,7 +35,7 @@
 #import <Foundation/NSDebug.h>
 #import "NSInvocation+additions.h"
 
-#import <objc/objc-api.h>
+#import "ObjcRuntimeSupport.h"
 
 @implementation STStructure
 + structureWithValue:(void *)value type:(const char*)type
@@ -97,15 +98,15 @@
     {
         [fields addObject:STObjectFromValueOfType(((char *)value)+offset,type)];
 
-        offset += objc_sizeof_type(type);                                 
-        type = objc_skip_typespec(type);
+        offset += ObjcSizeOfType(type);                                 
+        type = ObjcSkipTypeSpec(type);
 
         if(*type == _C_STRUCT_E)
         {
             break;
         }
             
-        align = objc_alignof_type(type);
+        align = ObjcAlignOfType(type);
         rem = offset % align;
         if(rem != 0)
         {
@@ -140,14 +141,14 @@
                                    type,
                                    [fields objectAtIndex:i++]);
 
-        offset += objc_sizeof_type(type);                                 
-        type = objc_skip_typespec(type);
+        offset += ObjcSizeOfType(type);                                 
+        type = ObjcSkipTypeSpec(type);
 
         if(*type == _C_STRUCT_E)
         {
             break;
         }
-        align = objc_alignof_type(type);
+        align = ObjcAlignOfType(type);
         rem = offset % align;
         if(rem != 0)
         {
@@ -170,7 +171,7 @@
     
     for(type += 1; *type != _C_STRUCT_E && index>0; index--)
     {
-        type = objc_skip_argspec(type);
+        type = ObjcSkipArgSpec(type);
     }
 
     if(*type == _C_STRUCT_E)

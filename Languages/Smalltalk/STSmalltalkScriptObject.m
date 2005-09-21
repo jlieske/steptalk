@@ -37,6 +37,7 @@
 #import <StepTalk/STEnvironment.h>
 #import <StepTalk/STObjCRuntime.h>
 #import <StepTalk/STExterns.h>
+#import <StepTalk/STCompat.h>
 
 @implementation STSmalltalkScriptObject
 - initWithEnvironment:(STEnvironment *)env

@@ -1,0 +1,5 @@
+
+Things remember to be tested for StepTalk/Cocoa:
+
+NSObject notImplemented
+NSObject subckassResponsiblity

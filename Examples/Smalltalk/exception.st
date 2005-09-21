@@ -1,6 +1,6 @@
 | fileName flag |
 
-fileName := '/tmp/TestFile.text'.
+fileName := '/foo/TestFile.text'.
 
 flag := NO.
 

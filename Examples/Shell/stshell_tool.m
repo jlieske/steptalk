@@ -26,6 +26,7 @@
  */
 
 #import <StepTalk/StepTalk.h>
+#import <StepTalk/STCompat.h>
 
 #import "STShell.h"
 

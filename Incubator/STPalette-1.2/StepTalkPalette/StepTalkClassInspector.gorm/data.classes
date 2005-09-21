@@ -1,0 +1,28 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "addAction:",
+	    "addOutlet:",
+	    "removeAction:",
+	    "removeOutlet:"
+	);
+	Super = NSObject;
+    };
+    StepTalkClassInspector = {
+	Actions = (
+	    "addAction:",
+	    "addOutlet:",
+	    "removeAction:",
+	    "removeOutlet:"
+	);
+	Outlets = (
+	    methodSignature,
+	    textviewCode,
+	    outlets,
+	    actions,
+	    returnType
+	);
+	Super = IBInspector;
+    };
+}

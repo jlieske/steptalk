@@ -40,6 +40,7 @@
 #import <StepTalk/STFunctions.h>
 #import <StepTalk/NSInvocation+additions.h>
 #import <StepTalk/STScripting.h>
+#import <StepTalk/STCompat.h>
 #import <Foundation/NSAutoreleasePool.h>
 
 #import <Foundation/NSArray.h>
@@ -49,8 +50,6 @@
 #import <Foundation/NSException.h>
 #import <Foundation/NSInvocation.h>
 #import <Foundation/NSValue.h>
-
-#import  <objc/encoding.h>
 
 @interface STBytecodeInterpreter(STPrivateMethods)
 - (short)fetchBytecode;

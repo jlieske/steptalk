@@ -25,6 +25,7 @@
 
 #import "STMessage.h"
 
+#import <StepTalk/STCompat.h>
 #import <Foundation/NSArray.h>
 #import <Foundation/NSDictionary.h>
 #import <Foundation/NSException.h>

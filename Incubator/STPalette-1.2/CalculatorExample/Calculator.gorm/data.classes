@@ -1,0 +1,19 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "addNumber:",
+	    awakeFromNib,
+	    "clear:"
+	);
+	Super = NSObject;
+    };
+    StepTalkClass = {
+	Actions = (
+	    "addNumber:",
+	    awakeFromNib,
+	    "clear:"
+	);
+	Super = NSObject;
+    };
+}

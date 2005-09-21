@@ -1,0 +1,34 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    ConversationController = {
+	Actions = (
+	    "say:",
+	    "updateLanguage:",
+	    "reconnect:"
+	);
+	Outlets = (
+	    inputText,
+	    dialogText,
+	    languageList,
+	    window
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "reconnect:",
+	    "orderFrontFontPanel:",
+	    "orderFrontSharedMemoryPanel:",
+	    "say:",
+	    "updateLanguage:"
+	);
+	Super = NSObject;
+    };
+    InputText = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSTextView;
+    };
+}

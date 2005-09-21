@@ -26,6 +26,8 @@
 #import "STCompiledCode.h"
 #import "STBytecodes.h"
 
+#import <StepTalk/STCompat.h>
+
 #import <Foundation/NSObject.h>
 #import <Foundation/NSData.h>
 #import <Foundation/NSArray.h>

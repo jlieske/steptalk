@@ -29,6 +29,7 @@
 
 #import <StepTalk/StepTalk.h>
 #import <StepTalk/STFileScript.h>
+#import <StepTalk/STCompat.h>
 
 #import <Foundation/NSString.h>
 #import <Foundation/NSArray.h>

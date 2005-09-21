@@ -12,6 +12,7 @@
 #import "STMethodContext.h"
 #import "STStack.h"
 
+#import <StepTalk/STCompat.h>
 #import <Foundation/NSDebug.h>
 #import <Foundation/NSObject.h>
 #import <Foundation/NSString.h>
@@ -27,7 +28,7 @@ static unsigned nextId = 1;
 {
     [super init];
 
-    stack = [[STStack alloc] initWithSize:stackSize];
+    stack = [(STStack*)[STStack alloc] initWithSize:stackSize];
     contextId = nextId ++;
 
     return self;

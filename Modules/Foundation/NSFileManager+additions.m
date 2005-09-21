@@ -59,6 +59,6 @@
 }
 + (NSArray *)standardLibraryPaths
 {
-    return NSStandardLibraryPaths();
+    return NSSearchPathForDirectoriesInDomains(NSAllLibrariesDirectory, NSAllDomainsMask, YES);
 }
 @end

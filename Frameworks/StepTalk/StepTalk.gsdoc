@@ -6,13 +6,13 @@
     <title>StepTalk Documentation</title>
 
     <author name="Stefan Urbanek">
-        <email address="urbanek@host.sk"/>
-        <url url="http://urbanek.host.sk"/>
+        <email address="stefan@agentfarms.net"/>
+        <url url="http://stefan.agentfarms.net"/>
     </author>
 
-    <version>0.7.1</version>
+    <version>0.10.0</version>
 
-    <date>2003 Apr 22</date>
+    <date>2005 Sep 5</date>
 </head>
 
 <body>

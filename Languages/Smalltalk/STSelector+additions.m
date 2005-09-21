@@ -24,6 +24,7 @@
 
 #import "STSelector+additions.h"
 
+#import <StepTalk/STCompat.h>
 #import <StepTalk/STObjCRuntime.h>
 
 @implementation STSelector(SmalltalkCompiler)

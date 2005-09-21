@@ -1,0 +1,3145 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F858735508E09A59001F3F26 /* readline */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F858735808E09A78001F3F26 /* Build configuration list for PBXAggregateTarget "readline" */;
+			buildPhases = (
+				F858735408E09A59001F3F26 /* ShellScript */,
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = readline;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = readline;
+			productName = readline;
+		};
+		F858738508E0A085001F3F26 /* Distribution */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F85873B408E0A0B9001F3F26 /* Build configuration list for PBXAggregateTarget "Distribution" */;
+			buildPhases = (
+				F858738408E0A085001F3F26 /* Copy Framework */,
+				F85873BA08E0A10C001F3F26 /* Copy Modules */,
+				F85873E608E0A15C001F3F26 /* Copy Languages */,
+				F85873F408E0A1DD001F3F26 /* Copy Tools */,
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Distribution;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+				F858745508E0A32B001F3F26 /* PBXTargetDependency */,
+			);
+			name = Distribution;
+			productName = Distribution;
+		};
+		F858743908E0A308001F3F26 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F858744E08E0A31D001F3F26 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = All;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+				F858743D08E0A317001F3F26 /* PBXTargetDependency */,
+				F858743F08E0A317001F3F26 /* PBXTargetDependency */,
+				F858744108E0A317001F3F26 /* PBXTargetDependency */,
+				F858744308E0A317001F3F26 /* PBXTargetDependency */,
+				F858744508E0A317001F3F26 /* PBXTargetDependency */,
+				F858744708E0A317001F3F26 /* PBXTargetDependency */,
+				F858744908E0A317001F3F26 /* PBXTargetDependency */,
+				F858744B08E0A317001F3F26 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		F858736F08E09E13001F3F26 /* libreadline-5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F858736E08E09E0C001F3F26 /* libreadline-5.0.a */; };
+		F858739408E0A0AC001F3F26 /* StepTalk.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* StepTalk.framework */; };
+		F85873BC08E0A127001F3F26 /* AppKit.bundle in Copy Modules */ = {isa = PBXBuildFile; fileRef = F8E4322B08DB7A5F007D66D7 /* AppKit.bundle */; };
+		F85873CB08E0A136001F3F26 /* Foundation.bundle in Copy Modules */ = {isa = PBXBuildFile; fileRef = F8E7706108DB6C700063E046 /* Foundation.bundle */; };
+		F85873D408E0A13C001F3F26 /* ObjectiveC.bundle in Copy Modules */ = {isa = PBXBuildFile; fileRef = F8E76FFC08DB67A40063E046 /* ObjectiveC.bundle */; };
+		F85873DD08E0A143001F3F26 /* SimpleTranscript.bundle in Copy Modules */ = {isa = PBXBuildFile; fileRef = F8E7709208DB6D7A0063E046 /* SimpleTranscript.bundle */; };
+		F85873EB08E0A177001F3F26 /* Smalltalk.stlanguage in Copy Languages */ = {isa = PBXBuildFile; fileRef = F8E770EB08DB6EA30063E046 /* Smalltalk.stlanguage */; };
+		F858740608E0A207001F3F26 /* stshell in Copy Tools */ = {isa = PBXBuildFile; fileRef = F8E431DF08DB762A007D66D7 /* stshell */; };
+		F858740708E0A209001F3F26 /* stexec in Copy Tools */ = {isa = PBXBuildFile; fileRef = F8E76EB908DB56E70063E046 /* stexec */; };
+		F85DDE5B08CE09B50071957B /* STCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = F85DDE5908CE09B50071957B /* STCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F85DDE5C08CE09B50071957B /* STCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = F85DDE5A08CE09B50071957B /* STCocoa.m */; };
+		F85DDE6A08CE0A4A0071957B /* STCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = F85DDE6908CE0A4A0071957B /* STCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F85DDF9708CE14130071957B /* AllTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F85DDF6B08CE134A0071957B /* AllTests.m */; };
+		F85DDF9908CE14150071957B /* NSObjectAdditionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F85DDF8008CE13C00071957B /* NSObjectAdditionsTest.m */; };
+		F85DDF9A08CE14150071957B /* STCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = F85DDE5A08CE09B50071957B /* STCocoa.m */; };
+		F85DDF9B08CE14260071957B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		F85DDF9C08CE14270071957B /* ObjcUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85DDF8D08CE13E00071957B /* ObjcUnit.framework */; };
+		F894DCAE08D7320700B340DB /* NSObject+CocoaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F894DCAD08D7320700B340DB /* NSObject+CocoaAdditions.m */; };
+		F894DCAF08D7320700B340DB /* NSObject+CocoaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F894DCAC08D7320700B340DB /* NSObject+CocoaAdditions.h */; };
+		F894DCB008D7320700B340DB /* NSObject+CocoaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F894DCAD08D7320700B340DB /* NSObject+CocoaAdditions.m */; };
+		F894DCC508D7325800B340DB /* NSUserDefaults+CocoaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F894DCC408D7325800B340DB /* NSUserDefaults+CocoaAdditions.m */; };
+		F894DCC608D7325800B340DB /* NSUserDefaults+CocoaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F894DCC308D7325800B340DB /* NSUserDefaults+CocoaAdditions.h */; };
+		F894DCC708D7325800B340DB /* NSUserDefaults+CocoaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F894DCC408D7325800B340DB /* NSUserDefaults+CocoaAdditions.m */; };
+		F894DDAE08D74F2600B340DB /* OSXObjcRuntimeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F894DDAD08D74F2600B340DB /* OSXObjcRuntimeSupport.m */; };
+		F894DDB008D74F2600B340DB /* OSXObjcRuntimeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F894DDAD08D74F2600B340DB /* OSXObjcRuntimeSupport.m */; };
+		F894DE0408D752AD00B340DB /* OSXObjcRuntimeSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F894DE0308D752AD00B340DB /* OSXObjcRuntimeSupportTest.m */; };
+		F894DEB008D7594F00B340DB /* NSUserDefaultsAdditionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F894DEAC08D7594800B340DB /* NSUserDefaultsAdditionsTest.m */; };
+		F894DEB708D759B900B340DB /* ObjcRuntimeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = F894DEB508D759B900B340DB /* ObjcRuntimeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F894DFE308D7691800B340DB /* MocKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F894DFE208D7691800B340DB /* MocKit.framework */; };
+		F8D40DA808D8C01C00C52974 /* OSXObjcRuntime+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8D40DA708D8C01C00C52974 /* OSXObjcRuntime+Additions.h */; };
+		F8DD10BD08CE07F400B3AFDC /* NSNumber+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD107E08CE07F300B3AFDC /* NSNumber+additions.h */; };
+		F8DD10BE08CE07F400B3AFDC /* NSNumber+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD107F08CE07F300B3AFDC /* NSNumber+additions.m */; };
+		F8DD10BF08CE07F400B3AFDC /* NSObject+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD108008CE07F300B3AFDC /* NSObject+additions.h */; };
+		F8DD10C008CE07F400B3AFDC /* NSObject+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD108108CE07F300B3AFDC /* NSObject+additions.m */; };
+		F8DD10C108CE07F400B3AFDC /* STActor.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD108208CE07F300B3AFDC /* STActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10C208CE07F400B3AFDC /* STActor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD108308CE07F300B3AFDC /* STActor.m */; };
+		F8DD10C308CE07F400B3AFDC /* STBehaviourInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD108408CE07F300B3AFDC /* STBehaviourInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10C408CE07F400B3AFDC /* STBehaviourInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD108508CE07F300B3AFDC /* STBehaviourInfo.m */; };
+		F8DD10C508CE07F400B3AFDC /* STBundleInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD108608CE07F300B3AFDC /* STBundleInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10C608CE07F400B3AFDC /* STBundleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD108708CE07F300B3AFDC /* STBundleInfo.m */; };
+		F8DD10C708CE07F400B3AFDC /* STClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD108808CE07F300B3AFDC /* STClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10C808CE07F400B3AFDC /* STClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD108908CE07F300B3AFDC /* STClassInfo.m */; };
+		F8DD10C908CE07F400B3AFDC /* STContext.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD108A08CE07F300B3AFDC /* STContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10CA08CE07F400B3AFDC /* STContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD108B08CE07F300B3AFDC /* STContext.m */; };
+		F8DD10CB08CE07F400B3AFDC /* STConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD108C08CE07F300B3AFDC /* STConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10CC08CE07F400B3AFDC /* STConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD108D08CE07F300B3AFDC /* STConversation.m */; };
+		F8DD10D108CE07F400B3AFDC /* STEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD109208CE07F400B3AFDC /* STEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10D208CE07F400B3AFDC /* STEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD109308CE07F400B3AFDC /* STEngine.m */; };
+		F8DD10D308CE07F400B3AFDC /* STEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD109408CE07F400B3AFDC /* STEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10D408CE07F400B3AFDC /* STEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD109508CE07F400B3AFDC /* STEnvironment.m */; };
+		F8DD10D508CE07F400B3AFDC /* STEnvironmentDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD109608CE07F400B3AFDC /* STEnvironmentDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10D608CE07F400B3AFDC /* STEnvironmentDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD109708CE07F400B3AFDC /* STEnvironmentDescription.m */; };
+		F8DD10D708CE07F400B3AFDC /* StepTalk.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD109808CE07F400B3AFDC /* StepTalk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10D808CE07F400B3AFDC /* StepTalkScriptingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD109908CE07F400B3AFDC /* StepTalkScriptingInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10D908CE07F400B3AFDC /* StepTalkScriptingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD109A08CE07F400B3AFDC /* StepTalkScriptingInfo.m */; };
+		F8DD10DA08CE07F400B3AFDC /* STExterns.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD109B08CE07F400B3AFDC /* STExterns.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10DB08CE07F400B3AFDC /* STExterns.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD109C08CE07F400B3AFDC /* STExterns.m */; };
+		F8DD10DC08CE07F400B3AFDC /* STFileScript.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD109D08CE07F400B3AFDC /* STFileScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10DD08CE07F400B3AFDC /* STFileScript.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD109E08CE07F400B3AFDC /* STFileScript.m */; };
+		F8DD10DE08CE07F400B3AFDC /* STFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD109F08CE07F400B3AFDC /* STFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10DF08CE07F400B3AFDC /* STFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10A008CE07F400B3AFDC /* STFunctions.m */; };
+		F8DD10E008CE07F400B3AFDC /* STLanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10A108CE07F400B3AFDC /* STLanguageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10E108CE07F400B3AFDC /* STLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10A208CE07F400B3AFDC /* STLanguageManager.m */; };
+		F8DD10E208CE07F400B3AFDC /* STMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10A308CE07F400B3AFDC /* STMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10E308CE07F400B3AFDC /* STMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10A408CE07F400B3AFDC /* STMethod.m */; };
+		F8DD10E408CE07F400B3AFDC /* STObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10A508CE07F400B3AFDC /* STObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10E508CE07F400B3AFDC /* STObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10A608CE07F400B3AFDC /* STObjCRuntime.m */; };
+		F8DD10E608CE07F400B3AFDC /* STObjectReference.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10A708CE07F400B3AFDC /* STObjectReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10E708CE07F400B3AFDC /* STObjectReference.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10A808CE07F400B3AFDC /* STObjectReference.m */; };
+		F8DD10EA08CE07F400B3AFDC /* STScript.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10AB08CE07F400B3AFDC /* STScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10EB08CE07F400B3AFDC /* STScript.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10AC08CE07F400B3AFDC /* STScript.m */; };
+		F8DD10EC08CE07F400B3AFDC /* STScripting.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10AD08CE07F400B3AFDC /* STScripting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10ED08CE07F400B3AFDC /* STScripting.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10AE08CE07F400B3AFDC /* STScripting.m */; };
+		F8DD10F008CE07F400B3AFDC /* STScriptObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10B108CE07F400B3AFDC /* STScriptObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10F108CE07F400B3AFDC /* STScriptObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10B208CE07F400B3AFDC /* STScriptObject.m */; };
+		F8DD10F208CE07F400B3AFDC /* STScriptsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10B308CE07F400B3AFDC /* STScriptsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10F308CE07F400B3AFDC /* STScriptsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10B408CE07F400B3AFDC /* STScriptsManager.m */; };
+		F8DD10F408CE07F400B3AFDC /* STSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10B508CE07F400B3AFDC /* STSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10F508CE07F400B3AFDC /* STSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10B608CE07F400B3AFDC /* STSelector.m */; };
+		F8DD10F608CE07F400B3AFDC /* STStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10B708CE07F400B3AFDC /* STStructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10F708CE07F400B3AFDC /* STStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10B808CE07F400B3AFDC /* STStructure.m */; };
+		F8DD10F808CE07F400B3AFDC /* STUndefinedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10B908CE07F400B3AFDC /* STUndefinedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD10F908CE07F400B3AFDC /* STUndefinedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10BA08CE07F400B3AFDC /* STUndefinedObject.m */; };
+		F8E431E908DB764A007D66D7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		F8E431F408DB764D007D66D7 /* StepTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* StepTalk.framework */; };
+		F8E431F508DB7650007D66D7 /* STShell+output.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E771C908DB75830063E046 /* STShell+output.m */; };
+		F8E431F608DB7651007D66D7 /* STShell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E771C808DB75830063E046 /* STShell.m */; };
+		F8E431F708DB7651007D66D7 /* stshell_tool.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E771C608DB75830063E046 /* stshell_tool.m */; };
+		F8E4324208DB7A9C007D66D7 /* AppKitConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4321408DB7A45007D66D7 /* AppKitConstants.m */; };
+		F8E4324308DB7A9E007D66D7 /* AppKitEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4321608DB7A45007D66D7 /* AppKitEvents.m */; };
+		F8E4324A08DB7AE7007D66D7 /* AppKitExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4321808DB7A45007D66D7 /* AppKitExceptions.m */; };
+		F8E4324B08DB7AE8007D66D7 /* AppKitNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4321A08DB7A45007D66D7 /* AppKitNotifications.m */; };
+		F8E4324D08DB7AEE007D66D7 /* NSApplication+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4322108DB7A45007D66D7 /* NSApplication+additions.m */; };
+		F8E4324E08DB7AF0007D66D7 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E4322208DB7A45007D66D7 /* ScriptingInfo.plist */; };
+		F8E4324F08DB7AF0007D66D7 /* STAppKitModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4322408DB7A45007D66D7 /* STAppKitModule.m */; };
+		F8E5E7F808D8A14800120628 /* NSInvocation+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD107C08CE07F300B3AFDC /* NSInvocation+additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E5E7F908D8A14A00120628 /* NSInvocation+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD107D08CE07F300B3AFDC /* NSInvocation+additions.m */; };
+		F8E76EBB08DB57150063E046 /* stexec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76EB308DB56D10063E046 /* stexec.m */; };
+		F8E76EBC08DB57160063E046 /* STExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76EB508DB56D10063E046 /* STExecutor.m */; };
+		F8E76EC408DB57760063E046 /* StepTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* StepTalk.framework */; };
+		F8E76EC908DB58620063E046 /* STRemoteConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DD10A908CE07F400B3AFDC /* STRemoteConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E76ECB08DB58640063E046 /* STRemoteConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DD10AA08CE07F400B3AFDC /* STRemoteConversation.m */; };
+		F8E76EEC08DB5BD70063E046 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E76EEB08DB5BD70063E046 /* ScriptingInfo.plist */; };
+		F8E76F0A08DB5CDF0063E046 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2EF5A0486A6940098B216 /* Info.plist */; };
+		F8E76F2F08DB5E9F0063E046 /* AppKit.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F0F08DB5D280063E046 /* AppKit.stenv */; };
+		F8E76F3008DB5E9F0063E046 /* Common.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F1008DB5D280063E046 /* Common.stenv */; };
+		F8E76F3108DB5E9F0063E046 /* Distributed.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F1108DB5D280063E046 /* Distributed.stenv */; };
+		F8E76F3208DB5E9F0063E046 /* Foundation-operators.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F1208DB5D280063E046 /* Foundation-operators.stenv */; };
+		F8E76F3308DB5E9F0063E046 /* Foundation.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F1308DB5D280063E046 /* Foundation.stenv */; };
+		F8E76F3408DB5E9F0063E046 /* Safe.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F1408DB5D280063E046 /* Safe.stenv */; };
+		F8E76F3508DB5E9F0063E046 /* Standard.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F1508DB5D280063E046 /* Standard.stenv */; };
+		F8E76F3608DB5E9F0063E046 /* StepTalk.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F1608DB5D280063E046 /* StepTalk.stenv */; };
+		F8E76F3708DB5E9F0063E046 /* SymbolicSelectors.stenv in Copy Environments */ = {isa = PBXBuildFile; fileRef = F8E76F1708DB5D280063E046 /* SymbolicSelectors.stenv */; };
+		F8E7700408DB67B20063E046 /* NSObject+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76FD008DB670A0063E046 /* NSObject+additions.m */; };
+		F8E7700508DB67B20063E046 /* ObjectiveCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76FD208DB670A0063E046 /* ObjectiveCModule.m */; };
+		F8E7700608DB67B30063E046 /* ObjectiveCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76FD408DB670A0063E046 /* ObjectiveCRuntime.m */; };
+		F8E7700708DB67B40063E046 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E76FD508DB670A0063E046 /* ScriptingInfo.plist */; };
+		F8E7705508DB6BA60063E046 /* StepTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* StepTalk.framework */; };
+		F8E7706908DB6C860063E046 /* FoundationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76F6F08DB61B50063E046 /* FoundationConstants.m */; };
+		F8E7706A08DB6C890063E046 /* NSFileManager+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76F7408DB61B50063E046 /* NSFileManager+additions.m */; };
+		F8E7706B08DB6C8A0063E046 /* NSString+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76F7508DB61B50063E046 /* NSString+additions.m */; };
+		F8E7706C08DB6C8B0063E046 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E76F7608DB61B50063E046 /* ScriptingInfo.plist */; };
+		F8E7706D08DB6C8B0063E046 /* STFoundationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E76F7808DB61B50063E046 /* STFoundationModule.m */; };
+		F8E7709A08DB6D8F0063E046 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E7707B08DB6D5F0063E046 /* ScriptingInfo.plist */; };
+		F8E7709B08DB6D8F0063E046 /* SimpleTranscript.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E7707D08DB6D5F0063E046 /* SimpleTranscript.m */; };
+		F8E7709C08DB6D900063E046 /* SimpleTranscriptModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E7707F08DB6D5F0063E046 /* SimpleTranscriptModule.m */; };
+		F8E7710D08DB6F100063E046 /* Externs.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770B108DB6E930063E046 /* Externs.m */; };
+		F8E7710E08DB6F110063E046 /* NSArray+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770B308DB6E930063E046 /* NSArray+additions.m */; };
+		F8E7710F08DB6F120063E046 /* NSNumber+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770B508DB6E930063E046 /* NSNumber+additions.m */; };
+		F8E7711008DB6F120063E046 /* NSObject+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770B708DB6E930063E046 /* NSObject+additions.m */; };
+		F8E7711108DB6F130063E046 /* NSString+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770B908DB6E930063E046 /* NSString+additions.m */; };
+		F8E7711208DB6F130063E046 /* SmalltalkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770BB08DB6E930063E046 /* SmalltalkEngine.m */; };
+		F8E7711308DB6F140063E046 /* SmalltalkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E770BC08DB6E930063E046 /* SmalltalkInfo.plist */; };
+		F8E7711408DB6F140063E046 /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770BE08DB6E930063E046 /* STBlock.m */; };
+		F8E7711508DB6F150063E046 /* STBlockContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770C008DB6E930063E046 /* STBlockContext.m */; };
+		F8E7711608DB6F170063E046 /* STBytecodeInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770C208DB6E930063E046 /* STBytecodeInterpreter.m */; };
+		F8E7711708DB6F180063E046 /* STBytecodes.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770C408DB6E930063E046 /* STBytecodes.m */; };
+		F8E7711808DB6F180063E046 /* STCompiledCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770C608DB6E930063E046 /* STCompiledCode.m */; };
+		F8E7711908DB6F190063E046 /* STCompiledMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770C808DB6E930063E046 /* STCompiledMethod.m */; };
+		F8E7711A08DB6F190063E046 /* STCompiledScript.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770CA08DB6E930063E046 /* STCompiledScript.m */; };
+		F8E7711B08DB6F1A0063E046 /* STCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770CC08DB6E930063E046 /* STCompiler.m */; };
+		F8E7711C08DB6F1D0063E046 /* STCompilerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770CE08DB6E940063E046 /* STCompilerUtils.m */; };
+		F8E7711D08DB6F1E0063E046 /* STExecutionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770D008DB6E940063E046 /* STExecutionContext.m */; };
+		F8E7711E08DB6F1F0063E046 /* STGrammar.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770D108DB6E940063E046 /* STGrammar.m */; };
+		F8E7712008DB6F200063E046 /* STLiterals.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770D508DB6E940063E046 /* STLiterals.m */; };
+		F8E7712108DB6F210063E046 /* STMethodContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770D908DB6E940063E046 /* STMethodContext.m */; };
+		F8E7712208DB6F220063E046 /* STMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770D708DB6E940063E046 /* STMessage.m */; };
+		F8E7712308DB6F230063E046 /* STSelector+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770DB08DB6E940063E046 /* STSelector+additions.m */; };
+		F8E7712408DB6F240063E046 /* STSmalltalkScriptObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770DD08DB6E940063E046 /* STSmalltalkScriptObject.m */; };
+		F8E7712508DB6F250063E046 /* STSourceReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770DF08DB6E940063E046 /* STSourceReader.m */; };
+		F8E7712608DB6F250063E046 /* STStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770E108DB6E940063E046 /* STStack.m */; };
+		F8E7712708DB6F260063E046 /* STUndefinedObject+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E770E408DB6E940063E046 /* STUndefinedObject+additions.m */; };
+		F8E7713208DB6F3E0063E046 /* StepTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* StepTalk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		014CEA440018CDF011CA2923 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		014CEA450018CDF011CA2923 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		F858737B08E09F75001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F858735508E09A59001F3F26 /* readline */;
+			remoteInfo = readline;
+		};
+		F858743C08E0A317001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* StepTalk */;
+			remoteInfo = StepTalk;
+		};
+		F858743E08E0A317001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E7706008DB6C700063E046 /* Foundation */;
+			remoteInfo = Foundation;
+		};
+		F858744008E0A317001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E4322A08DB7A5F007D66D7 /* AppKit */;
+			remoteInfo = AppKit;
+		};
+		F858744208E0A317001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E76FFB08DB67A40063E046 /* ObjectiveC */;
+			remoteInfo = ObjectiveC;
+		};
+		F858744408E0A317001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E7709108DB6D7A0063E046 /* SimpleTranscript */;
+			remoteInfo = SimpleTranscript;
+		};
+		F858744608E0A317001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E770EA08DB6EA30063E046 /* Smalltalk */;
+			remoteInfo = Smalltalk;
+		};
+		F858744808E0A317001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E431DE08DB762A007D66D7 /* stshell */;
+			remoteInfo = stshell;
+		};
+		F858744A08E0A317001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E76EB808DB56E70063E046 /* stexec */;
+			remoteInfo = stexec;
+		};
+		F858745408E0A32B001F3F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F858743908E0A308001F3F26 /* All */;
+			remoteInfo = All;
+		};
+		F8E76EE508DB5A130063E046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = StepTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F858738408E0A085001F3F26 /* Copy Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = dist;
+			dstSubfolderSpec = 16;
+			files = (
+				F858739408E0A0AC001F3F26 /* StepTalk.framework in Copy Framework */,
+			);
+			name = "Copy Framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85873BA08E0A10C001F3F26 /* Copy Modules */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = dist/Modules;
+			dstSubfolderSpec = 16;
+			files = (
+				F85873CB08E0A136001F3F26 /* Foundation.bundle in Copy Modules */,
+				F85873BC08E0A127001F3F26 /* AppKit.bundle in Copy Modules */,
+				F85873D408E0A13C001F3F26 /* ObjectiveC.bundle in Copy Modules */,
+				F85873DD08E0A143001F3F26 /* SimpleTranscript.bundle in Copy Modules */,
+			);
+			name = "Copy Modules";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85873E608E0A15C001F3F26 /* Copy Languages */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = dist/Languages;
+			dstSubfolderSpec = 16;
+			files = (
+				F85873EB08E0A177001F3F26 /* Smalltalk.stlanguage in Copy Languages */,
+			);
+			name = "Copy Languages";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85873F408E0A1DD001F3F26 /* Copy Tools */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = dist/Tools;
+			dstSubfolderSpec = 16;
+			files = (
+				F858740608E0A207001F3F26 /* stshell in Copy Tools */,
+				F858740708E0A209001F3F26 /* stexec in Copy Tools */,
+			);
+			name = "Copy Tools";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E76F2508DB5DD90063E046 /* Copy Environments */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Environments;
+			dstSubfolderSpec = 7;
+			files = (
+				F8E76F2F08DB5E9F0063E046 /* AppKit.stenv in Copy Environments */,
+				F8E76F3008DB5E9F0063E046 /* Common.stenv in Copy Environments */,
+				F8E76F3108DB5E9F0063E046 /* Distributed.stenv in Copy Environments */,
+				F8E76F3208DB5E9F0063E046 /* Foundation-operators.stenv in Copy Environments */,
+				F8E76F3308DB5E9F0063E046 /* Foundation.stenv in Copy Environments */,
+				F8E76F3408DB5E9F0063E046 /* Safe.stenv in Copy Environments */,
+				F8E76F3508DB5E9F0063E046 /* Standard.stenv in Copy Environments */,
+				F8E76F3608DB5E9F0063E046 /* StepTalk.stenv in Copy Environments */,
+				F8E76F3708DB5E9F0063E046 /* SymbolicSelectors.stenv in Copy Environments */,
+			);
+			name = "Copy Environments";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* StepTalk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepTalk_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* StepTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		F85872FE08E06E9C001F3F26 /* AppKitConstants.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = AppKitConstants.list; path = Modules/AppKit/AppKitConstants.list; sourceTree = "<group>"; };
+		F85872FF08E06E9C001F3F26 /* CocoaAppKitConstants.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CocoaAppKitConstants.list; path = Modules/AppKit/CocoaAppKitConstants.list; sourceTree = "<group>"; };
+		F858730B08E07022001F3F26 /* CocoaAppKitEvents.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CocoaAppKitEvents.list; path = Modules/AppKit/CocoaAppKitEvents.list; sourceTree = "<group>"; };
+		F858730C08E07022001F3F26 /* CocoaAppKitExceptions.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CocoaAppKitExceptions.list; path = Modules/AppKit/CocoaAppKitExceptions.list; sourceTree = "<group>"; };
+		F858730D08E07022001F3F26 /* CocoaAppKitNotifications.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CocoaAppKitNotifications.list; path = Modules/AppKit/CocoaAppKitNotifications.list; sourceTree = "<group>"; };
+		F858731108E07089001F3F26 /* CocoaFoundationConstants.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CocoaFoundationConstants.list; path = Modules/Foundation/CocoaFoundationConstants.list; sourceTree = "<group>"; };
+		F858736D08E09E0C001F3F26 /* libhistory-5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libhistory-5.0.a"; path = "ExternalLibs/readline/lib/libhistory-5.0.a"; sourceTree = "<group>"; };
+		F858736E08E09E0C001F3F26 /* libreadline-5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libreadline-5.0.a"; path = "ExternalLibs/readline/lib/libreadline-5.0.a"; sourceTree = "<group>"; };
+		F85DDE5908CE09B50071957B /* STCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STCocoa.h; path = Frameworks/StepTalk/STCocoa.h; sourceTree = "<group>"; };
+		F85DDE5A08CE09B50071957B /* STCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STCocoa.m; path = Frameworks/StepTalk/STCocoa.m; sourceTree = "<group>"; };
+		F85DDE6908CE0A4A0071957B /* STCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STCompat.h; path = Frameworks/StepTalk/STCompat.h; sourceTree = "<group>"; };
+		F85DDF6A08CE134A0071957B /* AllTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AllTests.h; path = Frameworks/StepTalk/Tests/Cocoa/AllTests.h; sourceTree = "<group>"; };
+		F85DDF6B08CE134A0071957B /* AllTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AllTests.m; path = Frameworks/StepTalk/Tests/Cocoa/AllTests.m; sourceTree = "<group>"; };
+		F85DDF7F08CE13C00071957B /* NSObjectAdditionsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObjectAdditionsTest.h; path = Frameworks/StepTalk/Tests/Cocoa/NSObjectAdditionsTest.h; sourceTree = "<group>"; };
+		F85DDF8008CE13C00071957B /* NSObjectAdditionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectAdditionsTest.m; path = Frameworks/StepTalk/Tests/Cocoa/NSObjectAdditionsTest.m; sourceTree = "<group>"; };
+		F85DDF8D08CE13E00071957B /* ObjcUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcUnit.framework; path = /Library/Frameworks/ObjcUnit.framework; sourceTree = "<absolute>"; };
+		F85DDF9508CE13FF0071957B /* CocoaUnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CocoaUnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85DDFDE08CE15A60071957B /* ObjcUnitAddons.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ObjcUnitAddons.h; path = Frameworks/StepTalk/Tests/Cocoa/ObjcUnitAddons.h; sourceTree = "<group>"; };
+		F894DCAC08D7320700B340DB /* NSObject+CocoaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSObject+CocoaAdditions.h"; path = "Frameworks/StepTalk/NSObject+CocoaAdditions.h"; sourceTree = "<group>"; };
+		F894DCAD08D7320700B340DB /* NSObject+CocoaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CocoaAdditions.m"; path = "Frameworks/StepTalk/NSObject+CocoaAdditions.m"; sourceTree = "<group>"; };
+		F894DCC308D7325800B340DB /* NSUserDefaults+CocoaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+CocoaAdditions.h"; path = "Frameworks/StepTalk/NSUserDefaults+CocoaAdditions.h"; sourceTree = "<group>"; };
+		F894DCC408D7325800B340DB /* NSUserDefaults+CocoaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+CocoaAdditions.m"; path = "Frameworks/StepTalk/NSUserDefaults+CocoaAdditions.m"; sourceTree = "<group>"; };
+		F894DDAD08D74F2600B340DB /* OSXObjcRuntimeSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSXObjcRuntimeSupport.m; path = Frameworks/StepTalk/OSXObjcRuntimeSupport.m; sourceTree = "<group>"; };
+		F894DE0208D752AD00B340DB /* OSXObjcRuntimeSupportTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSXObjcRuntimeSupportTest.h; path = Frameworks/StepTalk/Tests/Cocoa/OSXObjcRuntimeSupportTest.h; sourceTree = "<group>"; };
+		F894DE0308D752AD00B340DB /* OSXObjcRuntimeSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSXObjcRuntimeSupportTest.m; path = Frameworks/StepTalk/Tests/Cocoa/OSXObjcRuntimeSupportTest.m; sourceTree = "<group>"; };
+		F894DEAA08D7594800B340DB /* Cocoa-Tests.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = "Cocoa-Tests.txt"; path = "Frameworks/StepTalk/Tests/Cocoa/Cocoa-Tests.txt"; sourceTree = "<group>"; };
+		F894DEAB08D7594800B340DB /* NSUserDefaultsAdditionsTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NSUserDefaultsAdditionsTest.h; path = Frameworks/StepTalk/Tests/Cocoa/NSUserDefaultsAdditionsTest.h; sourceTree = "<group>"; };
+		F894DEAC08D7594800B340DB /* NSUserDefaultsAdditionsTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = NSUserDefaultsAdditionsTest.m; path = Frameworks/StepTalk/Tests/Cocoa/NSUserDefaultsAdditionsTest.m; sourceTree = "<group>"; };
+		F894DEB508D759B900B340DB /* ObjcRuntimeSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjcRuntimeSupport.h; path = Frameworks/StepTalk/ObjcRuntimeSupport.h; sourceTree = "<group>"; };
+		F894DEE708D75A6A00B340DB /* GSObjcRuntimeSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSObjcRuntimeSupport.m; path = Frameworks/StepTalk/GSObjcRuntimeSupport.m; sourceTree = "<group>"; };
+		F894DFE208D7691800B340DB /* MocKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MocKit.framework; path = /Library/Frameworks/MocKit.framework; sourceTree = "<absolute>"; };
+		F8D40DA708D8C01C00C52974 /* OSXObjcRuntime+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OSXObjcRuntime+Additions.h"; path = "Frameworks/StepTalk/OSXObjcRuntime+Additions.h"; sourceTree = "<group>"; };
+		F8D41D7508DB837000812506 /* AppKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "AppKit-Info.plist"; path = "Modules/AppKit/AppKit-Info.plist"; sourceTree = "<group>"; };
+		F8D41D7608DB838400812506 /* Foundation-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "Foundation-Info.plist"; path = "Modules/Foundation/Foundation-Info.plist"; sourceTree = "<group>"; };
+		F8D41D7708DB839700812506 /* ObjectiveC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "ObjectiveC-Info.plist"; path = "Modules/ObjectiveC/ObjectiveC-Info.plist"; sourceTree = "<group>"; };
+		F8D41D7808DB83B100812506 /* SimpleTranscript-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "SimpleTranscript-Info.plist"; path = "Modules/SimpleTranscript/SimpleTranscript-Info.plist"; sourceTree = "<group>"; };
+		F8DD107C08CE07F300B3AFDC /* NSInvocation+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+additions.h"; path = "Frameworks/StepTalk/NSInvocation+additions.h"; sourceTree = "<group>"; };
+		F8DD107D08CE07F300B3AFDC /* NSInvocation+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+additions.m"; path = "Frameworks/StepTalk/NSInvocation+additions.m"; sourceTree = "<group>"; };
+		F8DD107E08CE07F300B3AFDC /* NSNumber+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSNumber+additions.h"; path = "Frameworks/StepTalk/NSNumber+additions.h"; sourceTree = "<group>"; };
+		F8DD107F08CE07F300B3AFDC /* NSNumber+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+additions.m"; path = "Frameworks/StepTalk/NSNumber+additions.m"; sourceTree = "<group>"; };
+		F8DD108008CE07F300B3AFDC /* NSObject+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSObject+additions.h"; path = "Frameworks/StepTalk/NSObject+additions.h"; sourceTree = "<group>"; };
+		F8DD108108CE07F300B3AFDC /* NSObject+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSObject+additions.m"; path = "Frameworks/StepTalk/NSObject+additions.m"; sourceTree = "<group>"; };
+		F8DD108208CE07F300B3AFDC /* STActor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STActor.h; path = Frameworks/StepTalk/STActor.h; sourceTree = "<group>"; };
+		F8DD108308CE07F300B3AFDC /* STActor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STActor.m; path = Frameworks/StepTalk/STActor.m; sourceTree = "<group>"; };
+		F8DD108408CE07F300B3AFDC /* STBehaviourInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBehaviourInfo.h; path = Frameworks/StepTalk/STBehaviourInfo.h; sourceTree = "<group>"; };
+		F8DD108508CE07F300B3AFDC /* STBehaviourInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBehaviourInfo.m; path = Frameworks/StepTalk/STBehaviourInfo.m; sourceTree = "<group>"; };
+		F8DD108608CE07F300B3AFDC /* STBundleInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBundleInfo.h; path = Frameworks/StepTalk/STBundleInfo.h; sourceTree = "<group>"; };
+		F8DD108708CE07F300B3AFDC /* STBundleInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBundleInfo.m; path = Frameworks/StepTalk/STBundleInfo.m; sourceTree = "<group>"; };
+		F8DD108808CE07F300B3AFDC /* STClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STClassInfo.h; path = Frameworks/StepTalk/STClassInfo.h; sourceTree = "<group>"; };
+		F8DD108908CE07F300B3AFDC /* STClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STClassInfo.m; path = Frameworks/StepTalk/STClassInfo.m; sourceTree = "<group>"; };
+		F8DD108A08CE07F300B3AFDC /* STContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STContext.h; path = Frameworks/StepTalk/STContext.h; sourceTree = "<group>"; };
+		F8DD108B08CE07F300B3AFDC /* STContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STContext.m; path = Frameworks/StepTalk/STContext.m; sourceTree = "<group>"; };
+		F8DD108C08CE07F300B3AFDC /* STConversation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STConversation.h; path = Frameworks/StepTalk/STConversation.h; sourceTree = "<group>"; };
+		F8DD108D08CE07F300B3AFDC /* STConversation.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STConversation.m; path = Frameworks/StepTalk/STConversation.m; sourceTree = "<group>"; };
+		F8DD108E08CE07F300B3AFDC /* STDistantConversation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STDistantConversation.h; path = Frameworks/StepTalk/STDistantConversation.h; sourceTree = "<group>"; };
+		F8DD108F08CE07F300B3AFDC /* STDistantConversation.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STDistantConversation.m; path = Frameworks/StepTalk/STDistantConversation.m; sourceTree = "<group>"; };
+		F8DD109008CE07F400B3AFDC /* STDistantEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STDistantEnvironment.h; path = Frameworks/StepTalk/STDistantEnvironment.h; sourceTree = "<group>"; };
+		F8DD109108CE07F400B3AFDC /* STDistantEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STDistantEnvironment.m; path = Frameworks/StepTalk/STDistantEnvironment.m; sourceTree = "<group>"; };
+		F8DD109208CE07F400B3AFDC /* STEngine.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STEngine.h; path = Frameworks/StepTalk/STEngine.h; sourceTree = "<group>"; };
+		F8DD109308CE07F400B3AFDC /* STEngine.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STEngine.m; path = Frameworks/StepTalk/STEngine.m; sourceTree = "<group>"; };
+		F8DD109408CE07F400B3AFDC /* STEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STEnvironment.h; path = Frameworks/StepTalk/STEnvironment.h; sourceTree = "<group>"; };
+		F8DD109508CE07F400B3AFDC /* STEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STEnvironment.m; path = Frameworks/StepTalk/STEnvironment.m; sourceTree = "<group>"; };
+		F8DD109608CE07F400B3AFDC /* STEnvironmentDescription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STEnvironmentDescription.h; path = Frameworks/StepTalk/STEnvironmentDescription.h; sourceTree = "<group>"; };
+		F8DD109708CE07F400B3AFDC /* STEnvironmentDescription.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STEnvironmentDescription.m; path = Frameworks/StepTalk/STEnvironmentDescription.m; sourceTree = "<group>"; };
+		F8DD109808CE07F400B3AFDC /* StepTalk.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = StepTalk.h; path = Frameworks/StepTalk/StepTalk.h; sourceTree = "<group>"; };
+		F8DD109908CE07F400B3AFDC /* StepTalkScriptingInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = StepTalkScriptingInfo.h; path = Frameworks/StepTalk/StepTalkScriptingInfo.h; sourceTree = "<group>"; };
+		F8DD109A08CE07F400B3AFDC /* StepTalkScriptingInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = StepTalkScriptingInfo.m; path = Frameworks/StepTalk/StepTalkScriptingInfo.m; sourceTree = "<group>"; };
+		F8DD109B08CE07F400B3AFDC /* STExterns.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STExterns.h; path = Frameworks/StepTalk/STExterns.h; sourceTree = "<group>"; };
+		F8DD109C08CE07F400B3AFDC /* STExterns.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STExterns.m; path = Frameworks/StepTalk/STExterns.m; sourceTree = "<group>"; };
+		F8DD109D08CE07F400B3AFDC /* STFileScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STFileScript.h; path = Frameworks/StepTalk/STFileScript.h; sourceTree = "<group>"; };
+		F8DD109E08CE07F400B3AFDC /* STFileScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STFileScript.m; path = Frameworks/StepTalk/STFileScript.m; sourceTree = "<group>"; };
+		F8DD109F08CE07F400B3AFDC /* STFunctions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STFunctions.h; path = Frameworks/StepTalk/STFunctions.h; sourceTree = "<group>"; };
+		F8DD10A008CE07F400B3AFDC /* STFunctions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STFunctions.m; path = Frameworks/StepTalk/STFunctions.m; sourceTree = "<group>"; };
+		F8DD10A108CE07F400B3AFDC /* STLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STLanguageManager.h; path = Frameworks/StepTalk/STLanguageManager.h; sourceTree = "<group>"; };
+		F8DD10A208CE07F400B3AFDC /* STLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STLanguageManager.m; path = Frameworks/StepTalk/STLanguageManager.m; sourceTree = "<group>"; };
+		F8DD10A308CE07F400B3AFDC /* STMethod.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STMethod.h; path = Frameworks/StepTalk/STMethod.h; sourceTree = "<group>"; };
+		F8DD10A408CE07F400B3AFDC /* STMethod.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STMethod.m; path = Frameworks/StepTalk/STMethod.m; sourceTree = "<group>"; };
+		F8DD10A508CE07F400B3AFDC /* STObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STObjCRuntime.h; path = Frameworks/StepTalk/STObjCRuntime.h; sourceTree = "<group>"; };
+		F8DD10A608CE07F400B3AFDC /* STObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STObjCRuntime.m; path = Frameworks/StepTalk/STObjCRuntime.m; sourceTree = "<group>"; };
+		F8DD10A708CE07F400B3AFDC /* STObjectReference.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STObjectReference.h; path = Frameworks/StepTalk/STObjectReference.h; sourceTree = "<group>"; };
+		F8DD10A808CE07F400B3AFDC /* STObjectReference.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STObjectReference.m; path = Frameworks/StepTalk/STObjectReference.m; sourceTree = "<group>"; };
+		F8DD10A908CE07F400B3AFDC /* STRemoteConversation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STRemoteConversation.h; path = Frameworks/StepTalk/STRemoteConversation.h; sourceTree = "<group>"; };
+		F8DD10AA08CE07F400B3AFDC /* STRemoteConversation.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STRemoteConversation.m; path = Frameworks/StepTalk/STRemoteConversation.m; sourceTree = "<group>"; };
+		F8DD10AB08CE07F400B3AFDC /* STScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STScript.h; path = Frameworks/StepTalk/STScript.h; sourceTree = "<group>"; };
+		F8DD10AC08CE07F400B3AFDC /* STScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STScript.m; path = Frameworks/StepTalk/STScript.m; sourceTree = "<group>"; };
+		F8DD10AD08CE07F400B3AFDC /* STScripting.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STScripting.h; path = Frameworks/StepTalk/STScripting.h; sourceTree = "<group>"; };
+		F8DD10AE08CE07F400B3AFDC /* STScripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STScripting.m; path = Frameworks/StepTalk/STScripting.m; sourceTree = "<group>"; };
+		F8DD10AF08CE07F400B3AFDC /* STScriptingServer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STScriptingServer.h; path = Frameworks/StepTalk/STScriptingServer.h; sourceTree = "<group>"; };
+		F8DD10B008CE07F400B3AFDC /* STScriptingServer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STScriptingServer.m; path = Frameworks/StepTalk/STScriptingServer.m; sourceTree = "<group>"; };
+		F8DD10B108CE07F400B3AFDC /* STScriptObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STScriptObject.h; path = Frameworks/StepTalk/STScriptObject.h; sourceTree = "<group>"; };
+		F8DD10B208CE07F400B3AFDC /* STScriptObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STScriptObject.m; path = Frameworks/StepTalk/STScriptObject.m; sourceTree = "<group>"; };
+		F8DD10B308CE07F400B3AFDC /* STScriptsManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STScriptsManager.h; path = Frameworks/StepTalk/STScriptsManager.h; sourceTree = "<group>"; };
+		F8DD10B408CE07F400B3AFDC /* STScriptsManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STScriptsManager.m; path = Frameworks/StepTalk/STScriptsManager.m; sourceTree = "<group>"; };
+		F8DD10B508CE07F400B3AFDC /* STSelector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STSelector.h; path = Frameworks/StepTalk/STSelector.h; sourceTree = "<group>"; };
+		F8DD10B608CE07F400B3AFDC /* STSelector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STSelector.m; path = Frameworks/StepTalk/STSelector.m; sourceTree = "<group>"; };
+		F8DD10B708CE07F400B3AFDC /* STStructure.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STStructure.h; path = Frameworks/StepTalk/STStructure.h; sourceTree = "<group>"; };
+		F8DD10B808CE07F400B3AFDC /* STStructure.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STStructure.m; path = Frameworks/StepTalk/STStructure.m; sourceTree = "<group>"; };
+		F8DD10B908CE07F400B3AFDC /* STUndefinedObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STUndefinedObject.h; path = Frameworks/StepTalk/STUndefinedObject.h; sourceTree = "<group>"; };
+		F8DD10BA08CE07F400B3AFDC /* STUndefinedObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STUndefinedObject.m; path = Frameworks/StepTalk/STUndefinedObject.m; sourceTree = "<group>"; };
+		F8E431DF08DB762A007D66D7 /* stshell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stshell; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E4321408DB7A45007D66D7 /* AppKitConstants.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AppKitConstants.m; path = Modules/AppKit/AppKitConstants.m; sourceTree = "<group>"; };
+		F8E4321508DB7A45007D66D7 /* AppKitEvents.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = AppKitEvents.list; path = Modules/AppKit/AppKitEvents.list; sourceTree = "<group>"; };
+		F8E4321608DB7A45007D66D7 /* AppKitEvents.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AppKitEvents.m; path = Modules/AppKit/AppKitEvents.m; sourceTree = "<group>"; };
+		F8E4321708DB7A45007D66D7 /* AppKitExceptions.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = AppKitExceptions.list; path = Modules/AppKit/AppKitExceptions.list; sourceTree = "<group>"; };
+		F8E4321808DB7A45007D66D7 /* AppKitExceptions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AppKitExceptions.m; path = Modules/AppKit/AppKitExceptions.m; sourceTree = "<group>"; };
+		F8E4321908DB7A45007D66D7 /* AppKitNotifications.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = AppKitNotifications.list; path = Modules/AppKit/AppKitNotifications.list; sourceTree = "<group>"; };
+		F8E4321A08DB7A45007D66D7 /* AppKitNotifications.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AppKitNotifications.m; path = Modules/AppKit/AppKitNotifications.m; sourceTree = "<group>"; };
+		F8E4321B08DB7A45007D66D7 /* create_constants.awk */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = create_constants.awk; path = Modules/AppKit/create_constants.awk; sourceTree = "<group>"; };
+		F8E4321C08DB7A45007D66D7 /* footer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = footer.m; path = Modules/AppKit/footer.m; sourceTree = "<group>"; };
+		F8E4321D08DB7A45007D66D7 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Functions.h; path = Modules/AppKit/Functions.h; sourceTree = "<group>"; };
+		F8E4321E08DB7A45007D66D7 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Functions.m; path = Modules/AppKit/Functions.m; sourceTree = "<group>"; };
+		F8E4321F08DB7A45007D66D7 /* header.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = header.m; path = Modules/AppKit/header.m; sourceTree = "<group>"; };
+		F8E4322008DB7A45007D66D7 /* NSApplication+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSApplication+additions.h"; path = "Modules/AppKit/NSApplication+additions.h"; sourceTree = "<group>"; };
+		F8E4322108DB7A45007D66D7 /* NSApplication+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSApplication+additions.m"; path = "Modules/AppKit/NSApplication+additions.m"; sourceTree = "<group>"; };
+		F8E4322208DB7A45007D66D7 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; name = ScriptingInfo.plist; path = Modules/AppKit/ScriptingInfo.plist; sourceTree = "<group>"; };
+		F8E4322308DB7A45007D66D7 /* STAppKitModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STAppKitModule.h; path = Modules/AppKit/STAppKitModule.h; sourceTree = "<group>"; };
+		F8E4322408DB7A45007D66D7 /* STAppKitModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STAppKitModule.m; path = Modules/AppKit/STAppKitModule.m; sourceTree = "<group>"; };
+		F8E4322B08DB7A5F007D66D7 /* AppKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E76EAF08DB56D10063E046 /* stalk.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = stalk.m; path = Tools/stalk.m; sourceTree = "<group>"; };
+		F8E76EB008DB56D10063E046 /* stenvironment.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = stenvironment.m; path = Tools/stenvironment.m; sourceTree = "<group>"; };
+		F8E76EB108DB56D10063E046 /* STEnvironmentProcess.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STEnvironmentProcess.h; path = Tools/STEnvironmentProcess.h; sourceTree = "<group>"; };
+		F8E76EB208DB56D10063E046 /* STEnvironmentProcess.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STEnvironmentProcess.m; path = Tools/STEnvironmentProcess.m; sourceTree = "<group>"; };
+		F8E76EB308DB56D10063E046 /* stexec.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = stexec.m; path = Tools/stexec.m; sourceTree = "<group>"; };
+		F8E76EB408DB56D10063E046 /* STExecutor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STExecutor.h; path = Tools/STExecutor.h; sourceTree = "<group>"; };
+		F8E76EB508DB56D10063E046 /* STExecutor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STExecutor.m; path = Tools/STExecutor.m; sourceTree = "<group>"; };
+		F8E76EB908DB56E70063E046 /* stexec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stexec; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E76EEB08DB5BD70063E046 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; name = ScriptingInfo.plist; path = Frameworks/StepTalk/ScriptingInfo.plist; sourceTree = "<group>"; };
+		F8E76F0F08DB5D280063E046 /* AppKit.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = AppKit.stenv; sourceTree = "<group>"; };
+		F8E76F1008DB5D280063E046 /* Common.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Common.stenv; sourceTree = "<group>"; };
+		F8E76F1108DB5D280063E046 /* Distributed.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Distributed.stenv; sourceTree = "<group>"; };
+		F8E76F1208DB5D280063E046 /* Foundation-operators.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Foundation-operators.stenv"; sourceTree = "<group>"; };
+		F8E76F1308DB5D280063E046 /* Foundation.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Foundation.stenv; sourceTree = "<group>"; };
+		F8E76F1408DB5D280063E046 /* Safe.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Safe.stenv; sourceTree = "<group>"; };
+		F8E76F1508DB5D280063E046 /* Standard.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Standard.stenv; sourceTree = "<group>"; };
+		F8E76F1608DB5D280063E046 /* StepTalk.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = StepTalk.stenv; sourceTree = "<group>"; };
+		F8E76F1708DB5D280063E046 /* SymbolicSelectors.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = SymbolicSelectors.stenv; sourceTree = "<group>"; };
+		F8E76F6C08DB61B50063E046 /* create_constants.awk */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = create_constants.awk; path = Modules/Foundation/create_constants.awk; sourceTree = "<group>"; };
+		F8E76F6D08DB61B50063E046 /* footer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = footer.m; path = Modules/Foundation/footer.m; sourceTree = "<group>"; };
+		F8E76F6E08DB61B50063E046 /* FoundationConstants.list */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = FoundationConstants.list; path = Modules/Foundation/FoundationConstants.list; sourceTree = "<group>"; };
+		F8E76F6F08DB61B50063E046 /* FoundationConstants.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FoundationConstants.m; path = Modules/Foundation/FoundationConstants.m; sourceTree = "<group>"; };
+		F8E76F7008DB61B50063E046 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Functions.h; path = Modules/Foundation/Functions.h; sourceTree = "<group>"; };
+		F8E76F7108DB61B50063E046 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Functions.m; path = Modules/Foundation/Functions.m; sourceTree = "<group>"; };
+		F8E76F7308DB61B50063E046 /* header.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = header.m; path = Modules/Foundation/header.m; sourceTree = "<group>"; };
+		F8E76F7408DB61B50063E046 /* NSFileManager+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+additions.m"; path = "Modules/Foundation/NSFileManager+additions.m"; sourceTree = "<group>"; };
+		F8E76F7508DB61B50063E046 /* NSString+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSString+additions.m"; path = "Modules/Foundation/NSString+additions.m"; sourceTree = "<group>"; };
+		F8E76F7608DB61B50063E046 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; name = ScriptingInfo.plist; path = Modules/Foundation/ScriptingInfo.plist; sourceTree = "<group>"; };
+		F8E76F7708DB61B50063E046 /* STFoundationModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STFoundationModule.h; path = Modules/Foundation/STFoundationModule.h; sourceTree = "<group>"; };
+		F8E76F7808DB61B50063E046 /* STFoundationModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STFoundationModule.m; path = Modules/Foundation/STFoundationModule.m; sourceTree = "<group>"; };
+		F8E76FCF08DB670A0063E046 /* NSObject+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSObject+additions.h"; path = "Modules/ObjectiveC/NSObject+additions.h"; sourceTree = "<group>"; };
+		F8E76FD008DB670A0063E046 /* NSObject+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSObject+additions.m"; path = "Modules/ObjectiveC/NSObject+additions.m"; sourceTree = "<group>"; };
+		F8E76FD108DB670A0063E046 /* ObjectiveCModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ObjectiveCModule.h; path = Modules/ObjectiveC/ObjectiveCModule.h; sourceTree = "<group>"; };
+		F8E76FD208DB670A0063E046 /* ObjectiveCModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ObjectiveCModule.m; path = Modules/ObjectiveC/ObjectiveCModule.m; sourceTree = "<group>"; };
+		F8E76FD308DB670A0063E046 /* ObjectiveCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ObjectiveCRuntime.h; path = Modules/ObjectiveC/ObjectiveCRuntime.h; sourceTree = "<group>"; };
+		F8E76FD408DB670A0063E046 /* ObjectiveCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ObjectiveCRuntime.m; path = Modules/ObjectiveC/ObjectiveCRuntime.m; sourceTree = "<group>"; };
+		F8E76FD508DB670A0063E046 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; name = ScriptingInfo.plist; path = Modules/ObjectiveC/ScriptingInfo.plist; sourceTree = "<group>"; };
+		F8E76FFC08DB67A40063E046 /* ObjectiveC.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveC.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E7706108DB6C700063E046 /* Foundation.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Foundation.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E7707B08DB6D5F0063E046 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; name = ScriptingInfo.plist; path = Modules/SimpleTranscript/ScriptingInfo.plist; sourceTree = "<group>"; };
+		F8E7707C08DB6D5F0063E046 /* SimpleTranscript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SimpleTranscript.h; path = Modules/SimpleTranscript/SimpleTranscript.h; sourceTree = "<group>"; };
+		F8E7707D08DB6D5F0063E046 /* SimpleTranscript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SimpleTranscript.m; path = Modules/SimpleTranscript/SimpleTranscript.m; sourceTree = "<group>"; };
+		F8E7707E08DB6D5F0063E046 /* SimpleTranscriptModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SimpleTranscriptModule.h; path = Modules/SimpleTranscript/SimpleTranscriptModule.h; sourceTree = "<group>"; };
+		F8E7707F08DB6D5F0063E046 /* SimpleTranscriptModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SimpleTranscriptModule.m; path = Modules/SimpleTranscript/SimpleTranscriptModule.m; sourceTree = "<group>"; };
+		F8E7709208DB6D7A0063E046 /* SimpleTranscript.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTranscript.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E770B008DB6E930063E046 /* Externs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Externs.h; path = Languages/Smalltalk/Externs.h; sourceTree = "<group>"; };
+		F8E770B108DB6E930063E046 /* Externs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Externs.m; path = Languages/Smalltalk/Externs.m; sourceTree = "<group>"; };
+		F8E770B208DB6E930063E046 /* NSArray+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSArray+additions.h"; path = "Languages/Smalltalk/NSArray+additions.h"; sourceTree = "<group>"; };
+		F8E770B308DB6E930063E046 /* NSArray+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSArray+additions.m"; path = "Languages/Smalltalk/NSArray+additions.m"; sourceTree = "<group>"; };
+		F8E770B408DB6E930063E046 /* NSNumber+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSNumber+additions.h"; path = "Languages/Smalltalk/NSNumber+additions.h"; sourceTree = "<group>"; };
+		F8E770B508DB6E930063E046 /* NSNumber+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+additions.m"; path = "Languages/Smalltalk/NSNumber+additions.m"; sourceTree = "<group>"; };
+		F8E770B608DB6E930063E046 /* NSObject+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSObject+additions.h"; path = "Languages/Smalltalk/NSObject+additions.h"; sourceTree = "<group>"; };
+		F8E770B708DB6E930063E046 /* NSObject+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSObject+additions.m"; path = "Languages/Smalltalk/NSObject+additions.m"; sourceTree = "<group>"; };
+		F8E770B808DB6E930063E046 /* NSString+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSString+additions.h"; path = "Languages/Smalltalk/NSString+additions.h"; sourceTree = "<group>"; };
+		F8E770B908DB6E930063E046 /* NSString+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSString+additions.m"; path = "Languages/Smalltalk/NSString+additions.m"; sourceTree = "<group>"; };
+		F8E770BA08DB6E930063E046 /* SmalltalkEngine.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SmalltalkEngine.h; path = Languages/Smalltalk/SmalltalkEngine.h; sourceTree = "<group>"; };
+		F8E770BB08DB6E930063E046 /* SmalltalkEngine.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SmalltalkEngine.m; path = Languages/Smalltalk/SmalltalkEngine.m; sourceTree = "<group>"; };
+		F8E770BC08DB6E930063E046 /* SmalltalkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; name = SmalltalkInfo.plist; path = Languages/Smalltalk/SmalltalkInfo.plist; sourceTree = "<group>"; };
+		F8E770BD08DB6E930063E046 /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBlock.h; path = Languages/Smalltalk/STBlock.h; sourceTree = "<group>"; };
+		F8E770BE08DB6E930063E046 /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBlock.m; path = Languages/Smalltalk/STBlock.m; sourceTree = "<group>"; };
+		F8E770BF08DB6E930063E046 /* STBlockContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBlockContext.h; path = Languages/Smalltalk/STBlockContext.h; sourceTree = "<group>"; };
+		F8E770C008DB6E930063E046 /* STBlockContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBlockContext.m; path = Languages/Smalltalk/STBlockContext.m; sourceTree = "<group>"; };
+		F8E770C108DB6E930063E046 /* STBytecodeInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBytecodeInterpreter.h; path = Languages/Smalltalk/STBytecodeInterpreter.h; sourceTree = "<group>"; };
+		F8E770C208DB6E930063E046 /* STBytecodeInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBytecodeInterpreter.m; path = Languages/Smalltalk/STBytecodeInterpreter.m; sourceTree = "<group>"; };
+		F8E770C308DB6E930063E046 /* STBytecodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBytecodes.h; path = Languages/Smalltalk/STBytecodes.h; sourceTree = "<group>"; };
+		F8E770C408DB6E930063E046 /* STBytecodes.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBytecodes.m; path = Languages/Smalltalk/STBytecodes.m; sourceTree = "<group>"; };
+		F8E770C508DB6E930063E046 /* STCompiledCode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompiledCode.h; path = Languages/Smalltalk/STCompiledCode.h; sourceTree = "<group>"; };
+		F8E770C608DB6E930063E046 /* STCompiledCode.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompiledCode.m; path = Languages/Smalltalk/STCompiledCode.m; sourceTree = "<group>"; };
+		F8E770C708DB6E930063E046 /* STCompiledMethod.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompiledMethod.h; path = Languages/Smalltalk/STCompiledMethod.h; sourceTree = "<group>"; };
+		F8E770C808DB6E930063E046 /* STCompiledMethod.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompiledMethod.m; path = Languages/Smalltalk/STCompiledMethod.m; sourceTree = "<group>"; };
+		F8E770C908DB6E930063E046 /* STCompiledScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompiledScript.h; path = Languages/Smalltalk/STCompiledScript.h; sourceTree = "<group>"; };
+		F8E770CA08DB6E930063E046 /* STCompiledScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompiledScript.m; path = Languages/Smalltalk/STCompiledScript.m; sourceTree = "<group>"; };
+		F8E770CB08DB6E930063E046 /* STCompiler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompiler.h; path = Languages/Smalltalk/STCompiler.h; sourceTree = "<group>"; };
+		F8E770CC08DB6E930063E046 /* STCompiler.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompiler.m; path = Languages/Smalltalk/STCompiler.m; sourceTree = "<group>"; };
+		F8E770CD08DB6E930063E046 /* STCompilerUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompilerUtils.h; path = Languages/Smalltalk/STCompilerUtils.h; sourceTree = "<group>"; };
+		F8E770CE08DB6E940063E046 /* STCompilerUtils.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompilerUtils.m; path = Languages/Smalltalk/STCompilerUtils.m; sourceTree = "<group>"; };
+		F8E770CF08DB6E940063E046 /* STExecutionContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STExecutionContext.h; path = Languages/Smalltalk/STExecutionContext.h; sourceTree = "<group>"; };
+		F8E770D008DB6E940063E046 /* STExecutionContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STExecutionContext.m; path = Languages/Smalltalk/STExecutionContext.m; sourceTree = "<group>"; };
+		F8E770D108DB6E940063E046 /* STGrammar.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STGrammar.m; path = Languages/Smalltalk/STGrammar.m; sourceTree = "<group>"; };
+		F8E770D208DB6E940063E046 /* STGrammar.m.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STGrammar.m.h; path = Languages/Smalltalk/STGrammar.m.h; sourceTree = "<group>"; };
+		F8E770D308DB6E940063E046 /* STGrammar.y */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.yacc; name = STGrammar.y; path = Languages/Smalltalk/STGrammar.y; sourceTree = "<group>"; };
+		F8E770D408DB6E940063E046 /* STLiterals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STLiterals.h; path = Languages/Smalltalk/STLiterals.h; sourceTree = "<group>"; };
+		F8E770D508DB6E940063E046 /* STLiterals.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STLiterals.m; path = Languages/Smalltalk/STLiterals.m; sourceTree = "<group>"; };
+		F8E770D608DB6E940063E046 /* STMessage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STMessage.h; path = Languages/Smalltalk/STMessage.h; sourceTree = "<group>"; };
+		F8E770D708DB6E940063E046 /* STMessage.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STMessage.m; path = Languages/Smalltalk/STMessage.m; sourceTree = "<group>"; };
+		F8E770D808DB6E940063E046 /* STMethodContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STMethodContext.h; path = Languages/Smalltalk/STMethodContext.h; sourceTree = "<group>"; };
+		F8E770D908DB6E940063E046 /* STMethodContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STMethodContext.m; path = Languages/Smalltalk/STMethodContext.m; sourceTree = "<group>"; };
+		F8E770DA08DB6E940063E046 /* STSelector+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "STSelector+additions.h"; path = "Languages/Smalltalk/STSelector+additions.h"; sourceTree = "<group>"; };
+		F8E770DB08DB6E940063E046 /* STSelector+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "STSelector+additions.m"; path = "Languages/Smalltalk/STSelector+additions.m"; sourceTree = "<group>"; };
+		F8E770DC08DB6E940063E046 /* STSmalltalkScriptObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STSmalltalkScriptObject.h; path = Languages/Smalltalk/STSmalltalkScriptObject.h; sourceTree = "<group>"; };
+		F8E770DD08DB6E940063E046 /* STSmalltalkScriptObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STSmalltalkScriptObject.m; path = Languages/Smalltalk/STSmalltalkScriptObject.m; sourceTree = "<group>"; };
+		F8E770DE08DB6E940063E046 /* STSourceReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STSourceReader.h; path = Languages/Smalltalk/STSourceReader.h; sourceTree = "<group>"; };
+		F8E770DF08DB6E940063E046 /* STSourceReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STSourceReader.m; path = Languages/Smalltalk/STSourceReader.m; sourceTree = "<group>"; };
+		F8E770E008DB6E940063E046 /* STStack.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STStack.h; path = Languages/Smalltalk/STStack.h; sourceTree = "<group>"; };
+		F8E770E108DB6E940063E046 /* STStack.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STStack.m; path = Languages/Smalltalk/STStack.m; sourceTree = "<group>"; };
+		F8E770E208DB6E940063E046 /* STTokenTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STTokenTypes.h; path = Languages/Smalltalk/STTokenTypes.h; sourceTree = "<group>"; };
+		F8E770E308DB6E940063E046 /* STUndefinedObject+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "STUndefinedObject+additions.h"; path = "Languages/Smalltalk/STUndefinedObject+additions.h"; sourceTree = "<group>"; };
+		F8E770E408DB6E940063E046 /* STUndefinedObject+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "STUndefinedObject+additions.m"; path = "Languages/Smalltalk/STUndefinedObject+additions.m"; sourceTree = "<group>"; };
+		F8E770EB08DB6EA30063E046 /* Smalltalk.stlanguage */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Smalltalk.stlanguage; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E771C608DB75830063E046 /* stshell_tool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = stshell_tool.m; path = Examples/Shell/stshell_tool.m; sourceTree = "<group>"; };
+		F8E771C708DB75830063E046 /* STShell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STShell.h; path = Examples/Shell/STShell.h; sourceTree = "<group>"; };
+		F8E771C808DB75830063E046 /* STShell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STShell.m; path = Examples/Shell/STShell.m; sourceTree = "<group>"; };
+		F8E771C908DB75830063E046 /* STShell+output.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "STShell+output.m"; path = "Examples/Shell/STShell+output.m"; sourceTree = "<group>"; };
+		F8E771CA08DB75830063E046 /* Unix.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = Unix.txt; path = Examples/Shell/Unix.txt; sourceTree = "<group>"; };
+		F8E771CE08DB759E0063E046 /* AppKit.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = AppKit.txt; path = Examples/Shell/AppKit.txt; sourceTree = "<group>"; };
+		F8E771CF08DB759E0063E046 /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = README; path = Examples/Shell/README; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85DDF9308CE13FF0071957B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85DDF9B08CE14260071957B /* Cocoa.framework in Frameworks */,
+				F85DDF9C08CE14270071957B /* ObjcUnit.framework in Frameworks */,
+				F894DFE308D7691800B340DB /* MocKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E431DD08DB762A007D66D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E431E908DB764A007D66D7 /* Cocoa.framework in Frameworks */,
+				F8E431F408DB764D007D66D7 /* StepTalk.framework in Frameworks */,
+				F858736F08E09E13001F3F26 /* libreadline-5.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E4322908DB7A5F007D66D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E76EB708DB56E70063E046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E76EC408DB57760063E046 /* StepTalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E76FFA08DB67A40063E046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7705508DB6BA60063E046 /* StepTalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E7705F08DB6C700063E046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E7709008DB6D7A0063E046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E770E908DB6EA30063E046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7713208DB6F3E0063E046 /* StepTalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* StepTalk.framework */,
+				F85DDF9508CE13FF0071957B /* CocoaUnitTests */,
+				F8E76EB908DB56E70063E046 /* stexec */,
+				F8E76FFC08DB67A40063E046 /* ObjectiveC.bundle */,
+				F8E7706108DB6C700063E046 /* Foundation.bundle */,
+				F8E7709208DB6D7A0063E046 /* SimpleTranscript.bundle */,
+				F8E770EB08DB6EA30063E046 /* Smalltalk.stlanguage */,
+				F8E431DF08DB762A007D66D7 /* stshell */,
+				F8E4322B08DB7A5F007D66D7 /* AppKit.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* StepTalk */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Framework */,
+				F8E76F6808DB61820063E046 /* Modules */,
+				F8E770A608DB6E6C0063E046 /* Languages */,
+				F8E76EAE08DB56720063E046 /* Tools */,
+				F8E771AF08DB75260063E046 /* Examples */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = StepTalk;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+				F858736008E09B37001F3F26 /* External Libs */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8E76F0E08DB5D280063E046 /* Environments */,
+				F8E76EEB08DB5BD70063E046 /* ScriptingInfo.plist */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F8DD107008CE07A100B3AFDC /* Classes */,
+				F85DDE5608CE093C0071957B /* Cocoa */,
+				089C1665FE841158C02AAC07 /* Resources */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F894DFE208D7691800B340DB /* MocKit.framework */,
+				F85DDF8D08CE13E00071957B /* ObjcUnit.framework */,
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* StepTalk_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F858736008E09B37001F3F26 /* External Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F858736D08E09E0C001F3F26 /* libhistory-5.0.a */,
+				F858736E08E09E0C001F3F26 /* libreadline-5.0.a */,
+			);
+			name = "External Libs";
+			sourceTree = "<group>";
+		};
+		F85DDE5608CE093C0071957B /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				F85DDE5908CE09B50071957B /* STCocoa.h */,
+				F85DDE5A08CE09B50071957B /* STCocoa.m */,
+				F894DCAC08D7320700B340DB /* NSObject+CocoaAdditions.h */,
+				F894DCAD08D7320700B340DB /* NSObject+CocoaAdditions.m */,
+				F894DCC308D7325800B340DB /* NSUserDefaults+CocoaAdditions.h */,
+				F894DCC408D7325800B340DB /* NSUserDefaults+CocoaAdditions.m */,
+				F8D40DA708D8C01C00C52974 /* OSXObjcRuntime+Additions.h */,
+				F894DDAD08D74F2600B340DB /* OSXObjcRuntimeSupport.m */,
+				F85DDF6708CE12C30071957B /* Tests */,
+			);
+			name = Cocoa;
+			sourceTree = "<group>";
+		};
+		F85DDF6708CE12C30071957B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F85DDF7F08CE13C00071957B /* NSObjectAdditionsTest.h */,
+				F85DDF8008CE13C00071957B /* NSObjectAdditionsTest.m */,
+				F894DEAB08D7594800B340DB /* NSUserDefaultsAdditionsTest.h */,
+				F894DEAC08D7594800B340DB /* NSUserDefaultsAdditionsTest.m */,
+				F894DE0208D752AD00B340DB /* OSXObjcRuntimeSupportTest.h */,
+				F894DE0308D752AD00B340DB /* OSXObjcRuntimeSupportTest.m */,
+				F85DDF6A08CE134A0071957B /* AllTests.h */,
+				F85DDF6B08CE134A0071957B /* AllTests.m */,
+				F85DDFDE08CE15A60071957B /* ObjcUnitAddons.h */,
+				F894DEAA08D7594800B340DB /* Cocoa-Tests.txt */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		F8DD107008CE07A100B3AFDC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8DD107C08CE07F300B3AFDC /* NSInvocation+additions.h */,
+				F8DD107D08CE07F300B3AFDC /* NSInvocation+additions.m */,
+				F8DD107E08CE07F300B3AFDC /* NSNumber+additions.h */,
+				F8DD108008CE07F300B3AFDC /* NSObject+additions.h */,
+				F8DD108108CE07F300B3AFDC /* NSObject+additions.m */,
+				F8DD107F08CE07F300B3AFDC /* NSNumber+additions.m */,
+				F8DD108208CE07F300B3AFDC /* STActor.h */,
+				F8DD108308CE07F300B3AFDC /* STActor.m */,
+				F8DD108408CE07F300B3AFDC /* STBehaviourInfo.h */,
+				F8DD108508CE07F300B3AFDC /* STBehaviourInfo.m */,
+				F8DD108608CE07F300B3AFDC /* STBundleInfo.h */,
+				F8DD108708CE07F300B3AFDC /* STBundleInfo.m */,
+				F8DD108808CE07F300B3AFDC /* STClassInfo.h */,
+				F8DD108908CE07F300B3AFDC /* STClassInfo.m */,
+				F8DD108A08CE07F300B3AFDC /* STContext.h */,
+				F8DD108B08CE07F300B3AFDC /* STContext.m */,
+				F8DD108C08CE07F300B3AFDC /* STConversation.h */,
+				F8DD108D08CE07F300B3AFDC /* STConversation.m */,
+				F8DD108E08CE07F300B3AFDC /* STDistantConversation.h */,
+				F8DD108F08CE07F300B3AFDC /* STDistantConversation.m */,
+				F8DD109008CE07F400B3AFDC /* STDistantEnvironment.h */,
+				F8DD109108CE07F400B3AFDC /* STDistantEnvironment.m */,
+				F8DD109208CE07F400B3AFDC /* STEngine.h */,
+				F8DD109308CE07F400B3AFDC /* STEngine.m */,
+				F8DD109408CE07F400B3AFDC /* STEnvironment.h */,
+				F8DD109508CE07F400B3AFDC /* STEnvironment.m */,
+				F8DD109608CE07F400B3AFDC /* STEnvironmentDescription.h */,
+				F8DD109708CE07F400B3AFDC /* STEnvironmentDescription.m */,
+				F8DD109808CE07F400B3AFDC /* StepTalk.h */,
+				F8DD109908CE07F400B3AFDC /* StepTalkScriptingInfo.h */,
+				F8DD109A08CE07F400B3AFDC /* StepTalkScriptingInfo.m */,
+				F8DD109B08CE07F400B3AFDC /* STExterns.h */,
+				F8DD109C08CE07F400B3AFDC /* STExterns.m */,
+				F8DD109D08CE07F400B3AFDC /* STFileScript.h */,
+				F8DD109E08CE07F400B3AFDC /* STFileScript.m */,
+				F8DD109F08CE07F400B3AFDC /* STFunctions.h */,
+				F8DD10A008CE07F400B3AFDC /* STFunctions.m */,
+				F8DD10A108CE07F400B3AFDC /* STLanguageManager.h */,
+				F8DD10A208CE07F400B3AFDC /* STLanguageManager.m */,
+				F8DD10A308CE07F400B3AFDC /* STMethod.h */,
+				F8DD10A408CE07F400B3AFDC /* STMethod.m */,
+				F8DD10A508CE07F400B3AFDC /* STObjCRuntime.h */,
+				F8DD10A608CE07F400B3AFDC /* STObjCRuntime.m */,
+				F8DD10A708CE07F400B3AFDC /* STObjectReference.h */,
+				F8DD10A808CE07F400B3AFDC /* STObjectReference.m */,
+				F8DD10A908CE07F400B3AFDC /* STRemoteConversation.h */,
+				F8DD10AA08CE07F400B3AFDC /* STRemoteConversation.m */,
+				F8DD10AB08CE07F400B3AFDC /* STScript.h */,
+				F8DD10AC08CE07F400B3AFDC /* STScript.m */,
+				F8DD10AD08CE07F400B3AFDC /* STScripting.h */,
+				F8DD10AE08CE07F400B3AFDC /* STScripting.m */,
+				F8DD10AF08CE07F400B3AFDC /* STScriptingServer.h */,
+				F8DD10B008CE07F400B3AFDC /* STScriptingServer.m */,
+				F8DD10B108CE07F400B3AFDC /* STScriptObject.h */,
+				F8DD10B208CE07F400B3AFDC /* STScriptObject.m */,
+				F8DD10B308CE07F400B3AFDC /* STScriptsManager.h */,
+				F8DD10B408CE07F400B3AFDC /* STScriptsManager.m */,
+				F8DD10B508CE07F400B3AFDC /* STSelector.h */,
+				F8DD10B608CE07F400B3AFDC /* STSelector.m */,
+				F8DD10B708CE07F400B3AFDC /* STStructure.h */,
+				F8DD10B808CE07F400B3AFDC /* STStructure.m */,
+				F8DD10B908CE07F400B3AFDC /* STUndefinedObject.h */,
+				F8DD10BA08CE07F400B3AFDC /* STUndefinedObject.m */,
+				F85DDE6908CE0A4A0071957B /* STCompat.h */,
+				F894DEB508D759B900B340DB /* ObjcRuntimeSupport.h */,
+				F894DEE708D75A6A00B340DB /* GSObjcRuntimeSupport.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F8E4321208DB7A13007D66D7 /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				F858730B08E07022001F3F26 /* CocoaAppKitEvents.list */,
+				F858730C08E07022001F3F26 /* CocoaAppKitExceptions.list */,
+				F858730D08E07022001F3F26 /* CocoaAppKitNotifications.list */,
+				F85872FE08E06E9C001F3F26 /* AppKitConstants.list */,
+				F85872FF08E06E9C001F3F26 /* CocoaAppKitConstants.list */,
+				F8D41D7508DB837000812506 /* AppKit-Info.plist */,
+				F8E4321408DB7A45007D66D7 /* AppKitConstants.m */,
+				F8E4321508DB7A45007D66D7 /* AppKitEvents.list */,
+				F8E4321608DB7A45007D66D7 /* AppKitEvents.m */,
+				F8E4321708DB7A45007D66D7 /* AppKitExceptions.list */,
+				F8E4321808DB7A45007D66D7 /* AppKitExceptions.m */,
+				F8E4321908DB7A45007D66D7 /* AppKitNotifications.list */,
+				F8E4321A08DB7A45007D66D7 /* AppKitNotifications.m */,
+				F8E4321B08DB7A45007D66D7 /* create_constants.awk */,
+				F8E4321C08DB7A45007D66D7 /* footer.m */,
+				F8E4321D08DB7A45007D66D7 /* Functions.h */,
+				F8E4321E08DB7A45007D66D7 /* Functions.m */,
+				F8E4321F08DB7A45007D66D7 /* header.m */,
+				F8E4322008DB7A45007D66D7 /* NSApplication+additions.h */,
+				F8E4322108DB7A45007D66D7 /* NSApplication+additions.m */,
+				F8E4322208DB7A45007D66D7 /* ScriptingInfo.plist */,
+				F8E4322308DB7A45007D66D7 /* STAppKitModule.h */,
+				F8E4322408DB7A45007D66D7 /* STAppKitModule.m */,
+			);
+			name = AppKit;
+			sourceTree = "<group>";
+		};
+		F8E76EAE08DB56720063E046 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F8E76EAF08DB56D10063E046 /* stalk.m */,
+				F8E76EB008DB56D10063E046 /* stenvironment.m */,
+				F8E76EB108DB56D10063E046 /* STEnvironmentProcess.h */,
+				F8E76EB208DB56D10063E046 /* STEnvironmentProcess.m */,
+				F8E76EB308DB56D10063E046 /* stexec.m */,
+				F8E76EB408DB56D10063E046 /* STExecutor.h */,
+				F8E76EB508DB56D10063E046 /* STExecutor.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		F8E76F0E08DB5D280063E046 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				F8E76F0F08DB5D280063E046 /* AppKit.stenv */,
+				F8E76F1008DB5D280063E046 /* Common.stenv */,
+				F8E76F1108DB5D280063E046 /* Distributed.stenv */,
+				F8E76F1208DB5D280063E046 /* Foundation-operators.stenv */,
+				F8E76F1308DB5D280063E046 /* Foundation.stenv */,
+				F8E76F1408DB5D280063E046 /* Safe.stenv */,
+				F8E76F1508DB5D280063E046 /* Standard.stenv */,
+				F8E76F1608DB5D280063E046 /* StepTalk.stenv */,
+				F8E76F1708DB5D280063E046 /* SymbolicSelectors.stenv */,
+			);
+			name = Environments;
+			path = Frameworks/StepTalk/Environments;
+			sourceTree = "<group>";
+		};
+		F8E76F6808DB61820063E046 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F8E4321208DB7A13007D66D7 /* AppKit */,
+				F8E76F6B08DB618D0063E046 /* Foundation */,
+				F8E76FCE08DB66E90063E046 /* ObjectiveC */,
+				F8E7707A08DB6D430063E046 /* SimpleTranscript */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		F8E76F6B08DB618D0063E046 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F858731108E07089001F3F26 /* CocoaFoundationConstants.list */,
+				F8D41D7608DB838400812506 /* Foundation-Info.plist */,
+				F8E76F6C08DB61B50063E046 /* create_constants.awk */,
+				F8E76F6D08DB61B50063E046 /* footer.m */,
+				F8E76F6E08DB61B50063E046 /* FoundationConstants.list */,
+				F8E76F6F08DB61B50063E046 /* FoundationConstants.m */,
+				F8E76F7008DB61B50063E046 /* Functions.h */,
+				F8E76F7108DB61B50063E046 /* Functions.m */,
+				F8E76F7308DB61B50063E046 /* header.m */,
+				F8E76F7408DB61B50063E046 /* NSFileManager+additions.m */,
+				F8E76F7508DB61B50063E046 /* NSString+additions.m */,
+				F8E76F7608DB61B50063E046 /* ScriptingInfo.plist */,
+				F8E76F7708DB61B50063E046 /* STFoundationModule.h */,
+				F8E76F7808DB61B50063E046 /* STFoundationModule.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		F8E76FCE08DB66E90063E046 /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				F8D41D7708DB839700812506 /* ObjectiveC-Info.plist */,
+				F8E76FCF08DB670A0063E046 /* NSObject+additions.h */,
+				F8E76FD008DB670A0063E046 /* NSObject+additions.m */,
+				F8E76FD108DB670A0063E046 /* ObjectiveCModule.h */,
+				F8E76FD208DB670A0063E046 /* ObjectiveCModule.m */,
+				F8E76FD308DB670A0063E046 /* ObjectiveCRuntime.h */,
+				F8E76FD408DB670A0063E046 /* ObjectiveCRuntime.m */,
+				F8E76FD508DB670A0063E046 /* ScriptingInfo.plist */,
+			);
+			name = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		F8E7707A08DB6D430063E046 /* SimpleTranscript */ = {
+			isa = PBXGroup;
+			children = (
+				F8D41D7808DB83B100812506 /* SimpleTranscript-Info.plist */,
+				F8E7707B08DB6D5F0063E046 /* ScriptingInfo.plist */,
+				F8E7707C08DB6D5F0063E046 /* SimpleTranscript.h */,
+				F8E7707D08DB6D5F0063E046 /* SimpleTranscript.m */,
+				F8E7707E08DB6D5F0063E046 /* SimpleTranscriptModule.h */,
+				F8E7707F08DB6D5F0063E046 /* SimpleTranscriptModule.m */,
+			);
+			name = SimpleTranscript;
+			sourceTree = "<group>";
+		};
+		F8E770A608DB6E6C0063E046 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				F8E770AF08DB6E770063E046 /* Smalltalk */,
+			);
+			name = Languages;
+			sourceTree = "<group>";
+		};
+		F8E770AF08DB6E770063E046 /* Smalltalk */ = {
+			isa = PBXGroup;
+			children = (
+				F8E770B008DB6E930063E046 /* Externs.h */,
+				F8E770B108DB6E930063E046 /* Externs.m */,
+				F8E770B208DB6E930063E046 /* NSArray+additions.h */,
+				F8E770B308DB6E930063E046 /* NSArray+additions.m */,
+				F8E770B408DB6E930063E046 /* NSNumber+additions.h */,
+				F8E770B508DB6E930063E046 /* NSNumber+additions.m */,
+				F8E770B608DB6E930063E046 /* NSObject+additions.h */,
+				F8E770B708DB6E930063E046 /* NSObject+additions.m */,
+				F8E770B808DB6E930063E046 /* NSString+additions.h */,
+				F8E770B908DB6E930063E046 /* NSString+additions.m */,
+				F8E770BA08DB6E930063E046 /* SmalltalkEngine.h */,
+				F8E770BB08DB6E930063E046 /* SmalltalkEngine.m */,
+				F8E770BC08DB6E930063E046 /* SmalltalkInfo.plist */,
+				F8E770BD08DB6E930063E046 /* STBlock.h */,
+				F8E770BE08DB6E930063E046 /* STBlock.m */,
+				F8E770BF08DB6E930063E046 /* STBlockContext.h */,
+				F8E770C008DB6E930063E046 /* STBlockContext.m */,
+				F8E770C108DB6E930063E046 /* STBytecodeInterpreter.h */,
+				F8E770C208DB6E930063E046 /* STBytecodeInterpreter.m */,
+				F8E770C308DB6E930063E046 /* STBytecodes.h */,
+				F8E770C408DB6E930063E046 /* STBytecodes.m */,
+				F8E770C508DB6E930063E046 /* STCompiledCode.h */,
+				F8E770C608DB6E930063E046 /* STCompiledCode.m */,
+				F8E770C708DB6E930063E046 /* STCompiledMethod.h */,
+				F8E770C808DB6E930063E046 /* STCompiledMethod.m */,
+				F8E770C908DB6E930063E046 /* STCompiledScript.h */,
+				F8E770CA08DB6E930063E046 /* STCompiledScript.m */,
+				F8E770CB08DB6E930063E046 /* STCompiler.h */,
+				F8E770CC08DB6E930063E046 /* STCompiler.m */,
+				F8E770CD08DB6E930063E046 /* STCompilerUtils.h */,
+				F8E770CE08DB6E940063E046 /* STCompilerUtils.m */,
+				F8E770CF08DB6E940063E046 /* STExecutionContext.h */,
+				F8E770D008DB6E940063E046 /* STExecutionContext.m */,
+				F8E770D108DB6E940063E046 /* STGrammar.m */,
+				F8E770D208DB6E940063E046 /* STGrammar.m.h */,
+				F8E770D308DB6E940063E046 /* STGrammar.y */,
+				F8E770D408DB6E940063E046 /* STLiterals.h */,
+				F8E770D508DB6E940063E046 /* STLiterals.m */,
+				F8E770D608DB6E940063E046 /* STMessage.h */,
+				F8E770D708DB6E940063E046 /* STMessage.m */,
+				F8E770D808DB6E940063E046 /* STMethodContext.h */,
+				F8E770D908DB6E940063E046 /* STMethodContext.m */,
+				F8E770DA08DB6E940063E046 /* STSelector+additions.h */,
+				F8E770DB08DB6E940063E046 /* STSelector+additions.m */,
+				F8E770DC08DB6E940063E046 /* STSmalltalkScriptObject.h */,
+				F8E770DD08DB6E940063E046 /* STSmalltalkScriptObject.m */,
+				F8E770DE08DB6E940063E046 /* STSourceReader.h */,
+				F8E770DF08DB6E940063E046 /* STSourceReader.m */,
+				F8E770E008DB6E940063E046 /* STStack.h */,
+				F8E770E108DB6E940063E046 /* STStack.m */,
+				F8E770E208DB6E940063E046 /* STTokenTypes.h */,
+				F8E770E308DB6E940063E046 /* STUndefinedObject+additions.h */,
+				F8E770E408DB6E940063E046 /* STUndefinedObject+additions.m */,
+			);
+			name = Smalltalk;
+			sourceTree = "<group>";
+		};
+		F8E771AF08DB75260063E046 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				F8E771BB08DB75550063E046 /* Shell */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		F8E771BB08DB75550063E046 /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				F8E771CE08DB759E0063E046 /* AppKit.txt */,
+				F8E771CF08DB759E0063E046 /* README */,
+				F8E771C608DB75830063E046 /* stshell_tool.m */,
+				F8E771C708DB75830063E046 /* STShell.h */,
+				F8E771C808DB75830063E046 /* STShell.m */,
+				F8E771C908DB75830063E046 /* STShell+output.m */,
+				F8E771CA08DB75830063E046 /* Unix.txt */,
+			);
+			name = Shell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DD10BD08CE07F400B3AFDC /* NSNumber+additions.h in Headers */,
+				F8DD10BF08CE07F400B3AFDC /* NSObject+additions.h in Headers */,
+				F8DD10C108CE07F400B3AFDC /* STActor.h in Headers */,
+				F8DD10C308CE07F400B3AFDC /* STBehaviourInfo.h in Headers */,
+				F8DD10C508CE07F400B3AFDC /* STBundleInfo.h in Headers */,
+				F8DD10C708CE07F400B3AFDC /* STClassInfo.h in Headers */,
+				F8DD10C908CE07F400B3AFDC /* STContext.h in Headers */,
+				F8DD10CB08CE07F400B3AFDC /* STConversation.h in Headers */,
+				F8DD10D108CE07F400B3AFDC /* STEngine.h in Headers */,
+				F8DD10D308CE07F400B3AFDC /* STEnvironment.h in Headers */,
+				F8DD10D508CE07F400B3AFDC /* STEnvironmentDescription.h in Headers */,
+				F8DD10D708CE07F400B3AFDC /* StepTalk.h in Headers */,
+				F8DD10D808CE07F400B3AFDC /* StepTalkScriptingInfo.h in Headers */,
+				F8DD10DA08CE07F400B3AFDC /* STExterns.h in Headers */,
+				F8DD10DC08CE07F400B3AFDC /* STFileScript.h in Headers */,
+				F8DD10DE08CE07F400B3AFDC /* STFunctions.h in Headers */,
+				F8DD10E008CE07F400B3AFDC /* STLanguageManager.h in Headers */,
+				F8DD10E208CE07F400B3AFDC /* STMethod.h in Headers */,
+				F8DD10E408CE07F400B3AFDC /* STObjCRuntime.h in Headers */,
+				F8DD10E608CE07F400B3AFDC /* STObjectReference.h in Headers */,
+				F8DD10EA08CE07F400B3AFDC /* STScript.h in Headers */,
+				F8DD10EC08CE07F400B3AFDC /* STScripting.h in Headers */,
+				F8DD10F008CE07F400B3AFDC /* STScriptObject.h in Headers */,
+				F8DD10F208CE07F400B3AFDC /* STScriptsManager.h in Headers */,
+				F8DD10F408CE07F400B3AFDC /* STSelector.h in Headers */,
+				F8DD10F608CE07F400B3AFDC /* STStructure.h in Headers */,
+				F8DD10F808CE07F400B3AFDC /* STUndefinedObject.h in Headers */,
+				F85DDE5B08CE09B50071957B /* STCocoa.h in Headers */,
+				F85DDE6A08CE0A4A0071957B /* STCompat.h in Headers */,
+				F894DCAF08D7320700B340DB /* NSObject+CocoaAdditions.h in Headers */,
+				F894DCC608D7325800B340DB /* NSUserDefaults+CocoaAdditions.h in Headers */,
+				F894DEB708D759B900B340DB /* ObjcRuntimeSupport.h in Headers */,
+				F8E5E7F808D8A14800120628 /* NSInvocation+additions.h in Headers */,
+				F8D40DA808D8C01C00C52974 /* OSXObjcRuntime+Additions.h in Headers */,
+				F8E76EC908DB58620063E046 /* STRemoteConversation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* StepTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DD107108CE07A200B3AFDC /* Build configuration list for PBXNativeTarget "StepTalk" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				F8E76F2508DB5DD90063E046 /* Copy Environments */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = StepTalk_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_STYLE = DYNAMIC;
+				PREBINDING = NO;
+				PRODUCT_NAME = StepTalk;
+				WRAPPER_EXTENSION = framework;
+			};
+			dependencies = (
+			);
+			name = StepTalk;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = StepTalk;
+			productReference = 8DC2EF5B0486A6940098B216 /* StepTalk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F85DDF9408CE13FF0071957B /* CocoaUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85DDF9D08CE142B0071957B /* Build configuration list for PBXNativeTarget "CocoaUnitTests" */;
+			buildPhases = (
+				F85DDF9208CE13FF0071957B /* Sources */,
+				F85DDF9308CE13FF0071957B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaUnitTests;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = CocoaUnitTests;
+			productName = CocoaUnitTests;
+			productReference = F85DDF9508CE13FF0071957B /* CocoaUnitTests */;
+			productType = "com.apple.product-type.tool";
+		};
+		F8E431DE08DB762A007D66D7 /* stshell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E431E508DB7633007D66D7 /* Build configuration list for PBXNativeTarget "stshell" */;
+			buildPhases = (
+				F8E431DC08DB762A007D66D7 /* Sources */,
+				F8E431DD08DB762A007D66D7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = stshell;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+				F858737C08E09F75001F3F26 /* PBXTargetDependency */,
+			);
+			name = stshell;
+			productName = stshell;
+			productReference = F8E431DF08DB762A007D66D7 /* stshell */;
+			productType = "com.apple.product-type.tool";
+		};
+		F8E4322A08DB7A5F007D66D7 /* AppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E4322F08DB7A60007D66D7 /* Build configuration list for PBXNativeTarget "AppKit" */;
+			buildPhases = (
+				F8E4323508DB7A85007D66D7 /* Generate Constants */,
+				F8E4322708DB7A5F007D66D7 /* Resources */,
+				F8E4322808DB7A5F007D66D7 /* Sources */,
+				F8E4322908DB7A5F007D66D7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "AppKit-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = AppKit;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = AppKit;
+			productName = AppKit;
+			productReference = F8E4322B08DB7A5F007D66D7 /* AppKit.bundle */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>AppKit</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.AppKit</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+		F8E76EB808DB56E70063E046 /* stexec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E76EBD08DB571A0063E046 /* Build configuration list for PBXNativeTarget "stexec" */;
+			buildPhases = (
+				F8E76EB608DB56E70063E046 /* Sources */,
+				F8E76EB708DB56E70063E046 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = stexec;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+				F8E76EE608DB5A130063E046 /* PBXTargetDependency */,
+			);
+			name = stexec;
+			productName = stexec;
+			productReference = F8E76EB908DB56E70063E046 /* stexec */;
+			productType = "com.apple.product-type.tool";
+		};
+		F8E76FFB08DB67A40063E046 /* ObjectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E7700008DB67A50063E046 /* Build configuration list for PBXNativeTarget "ObjectiveC" */;
+			buildPhases = (
+				F8E76FF808DB67A40063E046 /* Resources */,
+				F8E76FF908DB67A40063E046 /* Sources */,
+				F8E76FFA08DB67A40063E046 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "ObjectiveC-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ObjectiveC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = ObjectiveC;
+			productName = ObjectiveC;
+			productReference = F8E76FFC08DB67A40063E046 /* ObjectiveC.bundle */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>ObjectiveC</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.ObjectiveC</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+		F8E7706008DB6C700063E046 /* Foundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E7706508DB6C710063E046 /* Build configuration list for PBXNativeTarget "Foundation" */;
+			buildPhases = (
+				F8E7707108DB6CAF0063E046 /* Generate FoundationConstants */,
+				F8E7705D08DB6C700063E046 /* Resources */,
+				F8E7705E08DB6C700063E046 /* Sources */,
+				F8E7705F08DB6C700063E046 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Foundation-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Foundation;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = Foundation;
+			productName = Foundation;
+			productReference = F8E7706108DB6C700063E046 /* Foundation.bundle */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Foundation</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.Foundation</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+		F8E7709108DB6D7A0063E046 /* SimpleTranscript */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E7709608DB6D7B0063E046 /* Build configuration list for PBXNativeTarget "SimpleTranscript" */;
+			buildPhases = (
+				F8E7708E08DB6D7A0063E046 /* Resources */,
+				F8E7708F08DB6D7A0063E046 /* Sources */,
+				F8E7709008DB6D7A0063E046 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SimpleTranscript-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = SimpleTranscript;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = SimpleTranscript;
+			productName = SimpleTranscript;
+			productReference = F8E7709208DB6D7A0063E046 /* SimpleTranscript.bundle */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>SimpleTranscript</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.SimpleTranscript</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+		F8E770EA08DB6EA30063E046 /* Smalltalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E770EF08DB6EA30063E046 /* Build configuration list for PBXNativeTarget "Smalltalk" */;
+			buildPhases = (
+				F8E770E708DB6EA30063E046 /* Resources */,
+				F8E770E808DB6EA30063E046 /* Sources */,
+				F8E770E908DB6EA30063E046 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Smalltalk-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Smalltalk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = Smalltalk;
+			productName = Smalltalk;
+			productReference = F8E770EB08DB6EA30063E046 /* Smalltalk.stlanguage */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Smalltalk</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.Smalltalk</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = F8DD107508CE07A200B3AFDC /* Build configuration list for PBXProject "StepTalk" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA440018CDF011CA2923 /* Debug */,
+				014CEA450018CDF011CA2923 /* Release */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* StepTalk */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* StepTalk */,
+				F8E7706008DB6C700063E046 /* Foundation */,
+				F8E4322A08DB7A5F007D66D7 /* AppKit */,
+				F8E76FFB08DB67A40063E046 /* ObjectiveC */,
+				F8E7709108DB6D7A0063E046 /* SimpleTranscript */,
+				F8E770EA08DB6EA30063E046 /* Smalltalk */,
+				F8E431DE08DB762A007D66D7 /* stshell */,
+				F8E76EB808DB56E70063E046 /* stexec */,
+				F85DDF9408CE13FF0071957B /* CocoaUnitTests */,
+				F858735508E09A59001F3F26 /* readline */,
+				F858743908E0A308001F3F26 /* All */,
+				F858738508E0A085001F3F26 /* Distribution */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				F8E76EEC08DB5BD70063E046 /* ScriptingInfo.plist in Resources */,
+				F8E76F0A08DB5CDF0063E046 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E4322708DB7A5F007D66D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E4324E08DB7AF0007D66D7 /* ScriptingInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E76FF808DB67A40063E046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7700708DB67B40063E046 /* ScriptingInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E7705D08DB6C700063E046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7706C08DB6C8B0063E046 /* ScriptingInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E7708E08DB6D7A0063E046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7709A08DB6D8F0063E046 /* ScriptingInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E770E708DB6EA30063E046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7711308DB6F140063E046 /* SmalltalkInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F858735408E09A59001F3F26 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f ${PROJECT_DIR}/ExternalLibs/readline/lib/libreadline-5.0.a ]; then\n   exit 0\nfi\n\ncd ${PROJECT_DIR}/ExternalLibs\nsh ./make_readline.sh\nexit $?";
+		};
+		F8E4323508DB7A85007D66D7 /* Generate Constants */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Constants";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}/Modules/AppKit\n/bin/sh ../../HelperScripts/create_constants.sh AppKitConstants Cocoa\n/bin/sh ../../HelperScripts/create_constants.sh AppKitEvents Cocoa\n/bin/sh ../../HelperScripts/create_constants.sh AppKitExceptions Cocoa\n/bin/sh ../../HelperScripts/create_constants.sh AppKitNotifications Cocoa";
+		};
+		F8E7707108DB6CAF0063E046 /* Generate FoundationConstants */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate FoundationConstants";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}/Modules/Foundation\n/bin/sh ../../HelperScripts/create_constants.sh FoundationConstants Cocoa";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DD10BE08CE07F400B3AFDC /* NSNumber+additions.m in Sources */,
+				F8DD10C008CE07F400B3AFDC /* NSObject+additions.m in Sources */,
+				F8DD10C208CE07F400B3AFDC /* STActor.m in Sources */,
+				F8DD10C408CE07F400B3AFDC /* STBehaviourInfo.m in Sources */,
+				F8DD10C608CE07F400B3AFDC /* STBundleInfo.m in Sources */,
+				F8DD10C808CE07F400B3AFDC /* STClassInfo.m in Sources */,
+				F8DD10CA08CE07F400B3AFDC /* STContext.m in Sources */,
+				F8DD10CC08CE07F400B3AFDC /* STConversation.m in Sources */,
+				F8DD10D208CE07F400B3AFDC /* STEngine.m in Sources */,
+				F8DD10D408CE07F400B3AFDC /* STEnvironment.m in Sources */,
+				F8DD10D608CE07F400B3AFDC /* STEnvironmentDescription.m in Sources */,
+				F8DD10D908CE07F400B3AFDC /* StepTalkScriptingInfo.m in Sources */,
+				F8DD10DB08CE07F400B3AFDC /* STExterns.m in Sources */,
+				F8DD10DD08CE07F400B3AFDC /* STFileScript.m in Sources */,
+				F8DD10DF08CE07F400B3AFDC /* STFunctions.m in Sources */,
+				F8DD10E108CE07F400B3AFDC /* STLanguageManager.m in Sources */,
+				F8DD10E308CE07F400B3AFDC /* STMethod.m in Sources */,
+				F8DD10E508CE07F400B3AFDC /* STObjCRuntime.m in Sources */,
+				F8DD10E708CE07F400B3AFDC /* STObjectReference.m in Sources */,
+				F8DD10EB08CE07F400B3AFDC /* STScript.m in Sources */,
+				F8DD10ED08CE07F400B3AFDC /* STScripting.m in Sources */,
+				F8DD10F108CE07F400B3AFDC /* STScriptObject.m in Sources */,
+				F8DD10F308CE07F400B3AFDC /* STScriptsManager.m in Sources */,
+				F8DD10F508CE07F400B3AFDC /* STSelector.m in Sources */,
+				F8DD10F708CE07F400B3AFDC /* STStructure.m in Sources */,
+				F8DD10F908CE07F400B3AFDC /* STUndefinedObject.m in Sources */,
+				F85DDE5C08CE09B50071957B /* STCocoa.m in Sources */,
+				F894DCB008D7320700B340DB /* NSObject+CocoaAdditions.m in Sources */,
+				F894DCC708D7325800B340DB /* NSUserDefaults+CocoaAdditions.m in Sources */,
+				F894DDB008D74F2600B340DB /* OSXObjcRuntimeSupport.m in Sources */,
+				F8E5E7F908D8A14A00120628 /* NSInvocation+additions.m in Sources */,
+				F8E76ECB08DB58640063E046 /* STRemoteConversation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85DDF9208CE13FF0071957B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85DDF9708CE14130071957B /* AllTests.m in Sources */,
+				F85DDF9908CE14150071957B /* NSObjectAdditionsTest.m in Sources */,
+				F85DDF9A08CE14150071957B /* STCocoa.m in Sources */,
+				F894DCAE08D7320700B340DB /* NSObject+CocoaAdditions.m in Sources */,
+				F894DCC508D7325800B340DB /* NSUserDefaults+CocoaAdditions.m in Sources */,
+				F894DDAE08D74F2600B340DB /* OSXObjcRuntimeSupport.m in Sources */,
+				F894DE0408D752AD00B340DB /* OSXObjcRuntimeSupportTest.m in Sources */,
+				F894DEB008D7594F00B340DB /* NSUserDefaultsAdditionsTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E431DC08DB762A007D66D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E431F508DB7650007D66D7 /* STShell+output.m in Sources */,
+				F8E431F608DB7651007D66D7 /* STShell.m in Sources */,
+				F8E431F708DB7651007D66D7 /* stshell_tool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E4322808DB7A5F007D66D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E4324208DB7A9C007D66D7 /* AppKitConstants.m in Sources */,
+				F8E4324308DB7A9E007D66D7 /* AppKitEvents.m in Sources */,
+				F8E4324A08DB7AE7007D66D7 /* AppKitExceptions.m in Sources */,
+				F8E4324B08DB7AE8007D66D7 /* AppKitNotifications.m in Sources */,
+				F8E4324D08DB7AEE007D66D7 /* NSApplication+additions.m in Sources */,
+				F8E4324F08DB7AF0007D66D7 /* STAppKitModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E76EB608DB56E70063E046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E76EBB08DB57150063E046 /* stexec.m in Sources */,
+				F8E76EBC08DB57160063E046 /* STExecutor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E76FF908DB67A40063E046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7700408DB67B20063E046 /* NSObject+additions.m in Sources */,
+				F8E7700508DB67B20063E046 /* ObjectiveCModule.m in Sources */,
+				F8E7700608DB67B30063E046 /* ObjectiveCRuntime.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E7705E08DB6C700063E046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7706908DB6C860063E046 /* FoundationConstants.m in Sources */,
+				F8E7706A08DB6C890063E046 /* NSFileManager+additions.m in Sources */,
+				F8E7706B08DB6C8A0063E046 /* NSString+additions.m in Sources */,
+				F8E7706D08DB6C8B0063E046 /* STFoundationModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E7708F08DB6D7A0063E046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7709B08DB6D8F0063E046 /* SimpleTranscript.m in Sources */,
+				F8E7709C08DB6D900063E046 /* SimpleTranscriptModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E770E808DB6EA30063E046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E7710D08DB6F100063E046 /* Externs.m in Sources */,
+				F8E7710E08DB6F110063E046 /* NSArray+additions.m in Sources */,
+				F8E7710F08DB6F120063E046 /* NSNumber+additions.m in Sources */,
+				F8E7711008DB6F120063E046 /* NSObject+additions.m in Sources */,
+				F8E7711108DB6F130063E046 /* NSString+additions.m in Sources */,
+				F8E7711208DB6F130063E046 /* SmalltalkEngine.m in Sources */,
+				F8E7711408DB6F140063E046 /* STBlock.m in Sources */,
+				F8E7711508DB6F150063E046 /* STBlockContext.m in Sources */,
+				F8E7711608DB6F170063E046 /* STBytecodeInterpreter.m in Sources */,
+				F8E7711708DB6F180063E046 /* STBytecodes.m in Sources */,
+				F8E7711808DB6F180063E046 /* STCompiledCode.m in Sources */,
+				F8E7711908DB6F190063E046 /* STCompiledMethod.m in Sources */,
+				F8E7711A08DB6F190063E046 /* STCompiledScript.m in Sources */,
+				F8E7711B08DB6F1A0063E046 /* STCompiler.m in Sources */,
+				F8E7711C08DB6F1D0063E046 /* STCompilerUtils.m in Sources */,
+				F8E7711D08DB6F1E0063E046 /* STExecutionContext.m in Sources */,
+				F8E7711E08DB6F1F0063E046 /* STGrammar.m in Sources */,
+				F8E7712008DB6F200063E046 /* STLiterals.m in Sources */,
+				F8E7712108DB6F210063E046 /* STMethodContext.m in Sources */,
+				F8E7712208DB6F220063E046 /* STMessage.m in Sources */,
+				F8E7712308DB6F230063E046 /* STSelector+additions.m in Sources */,
+				F8E7712408DB6F240063E046 /* STSmalltalkScriptObject.m in Sources */,
+				F8E7712508DB6F250063E046 /* STSourceReader.m in Sources */,
+				F8E7712608DB6F250063E046 /* STStack.m in Sources */,
+				F8E7712708DB6F260063E046 /* STUndefinedObject+additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F858737C08E09F75001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F858735508E09A59001F3F26 /* readline */;
+			targetProxy = F858737B08E09F75001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858743D08E0A317001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* StepTalk */;
+			targetProxy = F858743C08E0A317001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858743F08E0A317001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E7706008DB6C700063E046 /* Foundation */;
+			targetProxy = F858743E08E0A317001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858744108E0A317001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E4322A08DB7A5F007D66D7 /* AppKit */;
+			targetProxy = F858744008E0A317001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858744308E0A317001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E76FFB08DB67A40063E046 /* ObjectiveC */;
+			targetProxy = F858744208E0A317001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858744508E0A317001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E7709108DB6D7A0063E046 /* SimpleTranscript */;
+			targetProxy = F858744408E0A317001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858744708E0A317001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E770EA08DB6EA30063E046 /* Smalltalk */;
+			targetProxy = F858744608E0A317001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858744908E0A317001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E431DE08DB762A007D66D7 /* stshell */;
+			targetProxy = F858744808E0A317001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858744B08E0A317001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E76EB808DB56E70063E046 /* stexec */;
+			targetProxy = F858744A08E0A317001F3F26 /* PBXContainerItemProxy */;
+		};
+		F858745508E0A32B001F3F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F858743908E0A308001F3F26 /* All */;
+			targetProxy = F858745408E0A32B001F3F26 /* PBXContainerItemProxy */;
+		};
+		F8E76EE608DB5A130063E046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* StepTalk */;
+			targetProxy = F8E76EE508DB5A130063E046 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F858735908E09A78001F3F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = readline;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F858735A08E09A78001F3F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = readline;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F858735B08E09A78001F3F26 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = readline;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F85873B508E0A0B9001F3F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Distribution;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F85873B608E0A0B9001F3F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Distribution;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F85873B708E0A0B9001F3F26 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Distribution;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F858744F08E0A31D001F3F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = All;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F858745008E0A31D001F3F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = All;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F858745108E0A31D001F3F26 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = All;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F85DDF9E08CE142B0071957B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaUnitTests;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F85DDF9F08CE142B0071957B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaUnitTests;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F85DDFA008CE142B0071957B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaUnitTests;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F8DD107208CE07A200B3AFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = StepTalk_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = StepTalk;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		F8DD107308CE07A200B3AFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = StepTalk_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_STYLE = DYNAMIC;
+				PREBINDING = NO;
+				PRODUCT_NAME = StepTalk;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		F8DD107408CE07A200B3AFDC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = StepTalk_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_STYLE = DYNAMIC;
+				PREBINDING = NO;
+				PRODUCT_NAME = StepTalk;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		F8DD107608CE07A200B3AFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F8DD107708CE07A200B3AFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F8DD107808CE07A200B3AFDC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		F8E431E608DB7633007D66D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/ExternalLibs/readline/include";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/ExternalLibs/readline/lib\"";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-ltermcap",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = stshell;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F8E431E708DB7633007D66D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/ExternalLibs/readline/include";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/ExternalLibs/readline/lib\"";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-ltermcap",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = stshell;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F8E431E808DB7633007D66D7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/ExternalLibs/readline/include";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/ExternalLibs/readline/lib\"";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-ltermcap",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = stshell;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F8E4323008DB7A60007D66D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/AppKit/AppKit-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = AppKit;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F8E4323108DB7A60007D66D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/AppKit/AppKit-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = AppKit;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F8E4323208DB7A60007D66D7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/AppKit/AppKit-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = AppKit;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F8E76EBE08DB571A0063E046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = stexec;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F8E76EBF08DB571A0063E046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = stexec;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F8E76EC008DB571A0063E046 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = stexec;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F8E7700108DB67A50063E046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/ObjectiveC/ObjectiveC-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ObjectiveC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F8E7700208DB67A50063E046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/ObjectiveC/ObjectiveC-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ObjectiveC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F8E7700308DB67A50063E046 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/ObjectiveC/ObjectiveC-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ObjectiveC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F8E7706608DB6C710063E046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/Foundation/Foundation-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Foundation;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F8E7706708DB6C710063E046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/Foundation/Foundation-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Foundation;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F8E7706808DB6C710063E046 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/Foundation/Foundation-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Foundation;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F8E7709708DB6D7B0063E046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/SimpleTranscript/SimpleTranscript-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = SimpleTranscript;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		F8E7709808DB6D7B0063E046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/SimpleTranscript/SimpleTranscript-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = SimpleTranscript;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F8E7709908DB6D7B0063E046 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Modules/SimpleTranscript/SimpleTranscript-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = SimpleTranscript;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F8E770F008DB6EA30063E046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Languages/Smalltalk/SmalltalkInfo.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Smalltalk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = stlanguage;
+			};
+			name = Debug;
+		};
+		F8E770F108DB6EA30063E046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Languages/Smalltalk/SmalltalkInfo.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Smalltalk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = stlanguage;
+			};
+			name = Release;
+		};
+		F8E770F208DB6EA30063E046 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Languages/Smalltalk/SmalltalkInfo.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_STYLE = BUNDLE;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Smalltalk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = stlanguage;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F858735808E09A78001F3F26 /* Build configuration list for PBXAggregateTarget "readline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F858735908E09A78001F3F26 /* Debug */,
+				F858735A08E09A78001F3F26 /* Release */,
+				F858735B08E09A78001F3F26 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F85873B408E0A0B9001F3F26 /* Build configuration list for PBXAggregateTarget "Distribution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85873B508E0A0B9001F3F26 /* Debug */,
+				F85873B608E0A0B9001F3F26 /* Release */,
+				F85873B708E0A0B9001F3F26 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F858744E08E0A31D001F3F26 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F858744F08E0A31D001F3F26 /* Debug */,
+				F858745008E0A31D001F3F26 /* Release */,
+				F858745108E0A31D001F3F26 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F85DDF9D08CE142B0071957B /* Build configuration list for PBXNativeTarget "CocoaUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85DDF9E08CE142B0071957B /* Debug */,
+				F85DDF9F08CE142B0071957B /* Release */,
+				F85DDFA008CE142B0071957B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8DD107108CE07A200B3AFDC /* Build configuration list for PBXNativeTarget "StepTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DD107208CE07A200B3AFDC /* Debug */,
+				F8DD107308CE07A200B3AFDC /* Release */,
+				F8DD107408CE07A200B3AFDC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F8DD107508CE07A200B3AFDC /* Build configuration list for PBXProject "StepTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DD107608CE07A200B3AFDC /* Debug */,
+				F8DD107708CE07A200B3AFDC /* Release */,
+				F8DD107808CE07A200B3AFDC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F8E431E508DB7633007D66D7 /* Build configuration list for PBXNativeTarget "stshell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E431E608DB7633007D66D7 /* Debug */,
+				F8E431E708DB7633007D66D7 /* Release */,
+				F8E431E808DB7633007D66D7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8E4322F08DB7A60007D66D7 /* Build configuration list for PBXNativeTarget "AppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E4323008DB7A60007D66D7 /* Debug */,
+				F8E4323108DB7A60007D66D7 /* Release */,
+				F8E4323208DB7A60007D66D7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8E76EBD08DB571A0063E046 /* Build configuration list for PBXNativeTarget "stexec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E76EBE08DB571A0063E046 /* Debug */,
+				F8E76EBF08DB571A0063E046 /* Release */,
+				F8E76EC008DB571A0063E046 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8E7700008DB67A50063E046 /* Build configuration list for PBXNativeTarget "ObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E7700108DB67A50063E046 /* Debug */,
+				F8E7700208DB67A50063E046 /* Release */,
+				F8E7700308DB67A50063E046 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8E7706508DB6C710063E046 /* Build configuration list for PBXNativeTarget "Foundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E7706608DB6C710063E046 /* Debug */,
+				F8E7706708DB6C710063E046 /* Release */,
+				F8E7706808DB6C710063E046 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8E7709608DB6D7B0063E046 /* Build configuration list for PBXNativeTarget "SimpleTranscript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E7709708DB6D7B0063E046 /* Debug */,
+				F8E7709808DB6D7B0063E046 /* Release */,
+				F8E7709908DB6D7B0063E046 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8E770EF08DB6EA30063E046 /* Build configuration list for PBXNativeTarget "Smalltalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E770F008DB6EA30063E046 /* Debug */,
+				F8E770F108DB6EA30063E046 /* Release */,
+				F8E770F208DB6EA30063E046 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

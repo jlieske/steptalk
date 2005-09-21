@@ -26,6 +26,7 @@ include ../../Version
 FRAMEWORK_NAME = StepTalk
 
 StepTalk_OBJC_FILES = \
+    GSObjcRuntimeSupport.m \
     NSInvocation+additions.m \
     STActor.m \
     STBehaviourInfo.m \
@@ -64,6 +65,7 @@ STEPTALK_HEADER_FILES = \
     STBundleInfo.h \
     STContext.h \
     STConversation.h \
+    STCompat.h \
     STRemoteConversation.h \
     STEngine.h \
     STEnvironment.h \
@@ -82,7 +84,8 @@ STEPTALK_HEADER_FILES = \
     STSelector.h \
     STUndefinedObject.h  \
     NSInvocation+additions.h \
-    NSObject+additions.h 
+    NSObject+additions.h \
+    ObjcRuntimeSupport.h
 
 StepTalk_HEADER_FILES = $(STEPTALK_HEADER_FILES) \
                             StepTalk.h
@@ -90,7 +93,7 @@ StepTalk_HEADER_FILES = $(STEPTALK_HEADER_FILES) \
 
 StepTalk_RESOURCE_FILES = ScriptingInfo.plist Environments
 
-ADDITIONAL_CPPFLAGS += -pipe 
+ADDITIONAL_CPPFLAGS += -pipe -I../..
 ADDITIONAL_OBJCFLAGS = -Wno-import -DSTEPTALK_VERSION=$(STEPTALK_VERSION)
 
 DOCUMENT_NAME = StepTalk

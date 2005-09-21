@@ -4,7 +4,7 @@
   
     Copyright (c) 2002 Free Software Foundation
   
-    Written by: Stefan Urbanek <urbanek@host.sk>
+    Written by: Stefan Urbanek 
     Date: 2003 Jan 22
   
     This file is part of the StepTalk project.
@@ -29,6 +29,7 @@
 
 #import "STFunctions.h"
 #import "STExterns.h"
+#import "STCompat.h"
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSBundle.h>

@@ -3,7 +3,7 @@
   
     Copyright (c) 2002 Free Software Foundation
   
-    Written by: Stefan Urbanek <urbanek@host.sk>
+    Written by: Stefan Urbanek 
     Date: 2002 Feb 4
    
     This file is part of the StepTalk project.

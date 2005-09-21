@@ -1,14 +1,11 @@
-/* FIXME: not used! just an unimplemented idea. 
-*/
-/**
-    STDistantConversation
+/** NSTextView additions
  
-    Copyright (c) 2002 Free Software Foundation
- 
-    Written by: Stefan Urbanek <urbanek@host.sk>
-    Date: 2003 Sep 21
-   
-    This file is part of the StepTalk project.
+    Copyright (c) 2003 Stefan Urbanek
+
+    Written by: Stefan Urbanek
+    Date: 2003 Apr 26
+    
+    This file is part of the Farmer application.
  
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -24,19 +21,20 @@
     License along with this library; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  
- */
+*/
 
-#import "STConversation.h"
+#import "NSTextView+additions.h"
 
-@class STDistantEnvironment;
-
-@interface STDistantConversation:STConversation
+@implementation NSTextView(PaperAdditions)
+- (NSString *)selectedString
 {
-    STDistantEnvironment *environment;
-    STConversation       *proxy;
-    NSString             *languageName;
+    NSRange    range = [self selectedRange];
+    
+    return [[self attributedSubstringFromRange:range] string];
 }
-- (BOOL)isResumable;
-- (BOOL)resume;
+- (BOOL)hasSelection
+{
+    NSRange    range = [self selectedRange];
+    return (range.length != 0);    
+}
 @end
-

@@ -26,6 +26,7 @@
 
 #import "STScript.h"
 
+#import "STCompat.h"
 #import <Foundation/NSString.h>
 
 @implementation STScript

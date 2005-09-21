@@ -4,7 +4,7 @@
  
     Copyright (c) 2002 Free Software Foundation
  
-    Written by: Stefan Urbanek <urbanek@host.sk>
+    Written by: Stefan Urbanek 
     Date: 2000
    
     This file is part of the StepTalk project.
@@ -27,6 +27,8 @@
 
 #import "STObjCRuntime.h"
 #import "STExterns.h"
+#import "STCompat.h"
+#import "ObjcRuntimeSupport.h"
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSDebug.h>
@@ -55,25 +57,21 @@ static const char *selector_types[] =
                             "@44@0:4@8@12@16@20@24@28@32@36@40" 
                         };
 
+static int VisitClassAndAddToDictionary(Class clazz, void* dictionary)
+{
+   if (!dictionary)
+      return 0;
+   NSString* name = [NSString stringWithCString: ObjcClassName(clazz)];
+   [(NSMutableDictionary*)dictionary setObject: clazz forKey: name];
+   return 1;
+}
+
 NSMutableDictionary *STAllObjectiveCClasses(void)
 {
-    NSString            *name;
-    NSMutableDictionary *dict;
-    void                *state = 0;
-    Class                class;
-
-    dict = [NSMutableDictionary dictionary];
-
-    while( (class = objc_next_class(&state)) )
-    {
-        name = [NSString stringWithCString:class_get_class_name(class)];
-        
-        [dict setObject:class forKey:name];
-    }
-    
-//    NSLog(@"%i Objective-C classes found",[dict count]);
-
-    return dict;
+   NSMutableDictionary* dict = [NSMutableDictionary dictionary];
+   ObjcIterateClasses(&VisitClassAndAddToDictionary, dict);
+   //   NSLog(@"%i Objective-C classes found",[dict count]);
+   return dict;
 }
 
 NSDictionary *STClassDictionaryWithNames(NSArray *classNames)
@@ -141,7 +139,7 @@ SEL STSelectorFromString(NSString *aString)
                        @"with %i arguments, types:'%s'",
                         name,argc,selector_types[argc]);
                     
-            sel = sel_register_typed_name(name, selector_types[argc]);
+            sel = ObjcRegisterSel(name, selector_types[argc]);
         }
 
         if(!sel)
@@ -162,7 +160,7 @@ SEL STSelectorFromString(NSString *aString)
 
 SEL STCreateTypedSelector(SEL sel)
 {
-    const char *name = sel_get_name(sel);
+    const char *name = ObjcSelName(sel);
     const char *ptr;
     int         argc = 0;
 
@@ -188,7 +186,7 @@ SEL STCreateTypedSelector(SEL sel)
                    @"with %i arguments, types:'%s'",
                     name,argc,selector_types[argc]);
 
-        newSel = sel_register_typed_name(name, selector_types[argc]);
+        newSel = ObjcRegisterSel(name, selector_types[argc]);
     }
 
     if(!newSel)
@@ -204,7 +202,7 @@ SEL STCreateTypedSelector(SEL sel)
 
 NSMethodSignature *STConstructMethodSignatureForSelector(SEL sel)
 {
-    const char *name = sel_get_name(sel);
+    const char *name = ObjcSelName(sel);
     const char *ptr;
     const char *types = (const char *)0;
     int         argc = 0;
@@ -247,62 +245,46 @@ NSMethodSignature *STMethodSignatureForSelector(SEL sel)
     
     NSLog(@"STMethodSignatureForSelector is deprecated.");
 
-    types = sel_get_type(sel);
+    types = ObjcSelGetType(sel);
     
     if(!types)
     {
         sel = STCreateTypedSelector(sel);
-        types = sel_get_type(sel);
+        types = ObjcSelGetType(sel);
+        if (!types) {
+           // OSX implementation of ObjcSelGetType and returns NULL.
+           // It is not possible to extract the types from a selector
+           // on OSX. This shouldn't be a problem since this method
+           // is marked as deprectated.
+           [NSException raise: NSGenericException format: @"unsupported operation STMethodSignatureForSelector"];
+        }
     }
     return [NSMethodSignature signatureWithObjCTypes:types];
 }
 
 
-static NSArray *selectors_from_list(struct objc_method_list *methods)
+static int VisitSelectorAndAddToArray(Class clazz, SEL selector, void* array)
 {
-    NSMutableArray *array = [NSMutableArray array];
-    int             count = methods->method_count;
-    int             i;
-    
-    for(i=0;i<count;i++)
-    {
-        [array addObject:NSStringFromSelector(methods->method_list[i].method_name)];
-    }
-
-    if(methods->method_next)
-    {
-        [array addObjectsFromArray:selectors_from_list(methods->method_next)];
-    }
-    
-    return array;
+   if (!array)
+      return 0;
+   if (selector)
+      [(NSMutableArray*)array addObject: NSStringFromSelector(selector)];
+   return 1;
 }
 
+static int VisitClassAndExtractSelectors(Class clazz, void* array)
+{
+   if (!array)
+      return 0;
+   ObjcIterateSelectors(clazz, YES, &VisitSelectorAndAddToArray, array);
+   return 1;
+}
 
 NSArray *STAllObjectiveCSelectors(void)
 {
-    NSMutableArray *array;
-    NSArray        *methods;
-    Class           class;
-    void           *state = 0;
-    
-    array = [[NSMutableArray alloc] init];
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    ObjcIterateClasses(&VisitClassAndExtractSelectors, array);
 
-    while( (class = objc_next_class(&state)) )
-    {
-        if(class->methods)
-        {
-            methods = selectors_from_list(class->methods);
-            [array addObjectsFromArray:methods];
-        }
-        class = class->class_pointer;
-
-        if(class->methods)
-        {
-            methods = selectors_from_list(class->methods);
-            [array addObjectsFromArray:methods];
-        }
-    }
-    
     /* get rid of duplicates */
     array = (NSMutableArray *)[[NSSet setWithArray:(NSArray *)array] allObjects];
     array = (NSMutableArray *)[array sortedArrayUsingSelector:@selector(compare:)];

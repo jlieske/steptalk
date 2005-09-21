@@ -4,7 +4,7 @@
  
     Copyright (c) 2002 Free Software Foundation
  
-    Written by: Stefan Urbanek <urbanek@host.sk>
+    Written by: Stefan Urbanek 
     Date: 2000
    
     This file is part of the StepTalk project.
@@ -51,7 +51,7 @@ STUndefinedObject *STNil = nil;
 
 - (void) dealloc
 {
-    NSLog(@"Warning: Trying to dealloc STNil object");
+   NSLog(@"Warning: Trying to dealloc STNil object");
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)sel

@@ -27,6 +27,7 @@
 #import "STFileScript.h"
 
 #import "STLanguageManager.h"
+#import "STCompat.h"
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSDictionary.h>

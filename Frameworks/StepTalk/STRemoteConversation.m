@@ -8,6 +8,7 @@
 #import <Foundation/NSDistantObject.h>
 
 #import "STEnvironment.h"
+#import "STCompat.h"
 
 @implementation STRemoteConversation
 - initWithEnvironmentName:(NSString *)envName

@@ -31,6 +31,7 @@
 #import <StepTalk/STEnvironment.h>
 #import <StepTalk/STExterns.h>
 #import <StepTalk/STObjectReference.h>
+#import <StepTalk/STCompat.h>
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSDebug.h>

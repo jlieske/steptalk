@@ -6,6 +6,7 @@
 #import "STEnvironment.h"
 #import "STEngine.h"
 #import "STExterns.h"
+#import "STCompat.h"
 #import "STObjCRuntime.h"
 
 #import <Foundation/NSArray.h>

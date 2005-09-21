@@ -24,6 +24,7 @@
 #import "STBytecodes.h"
 
 #import <StepTalk/STExterns.h>
+#import <StepTalk/STCompat.h>
 
 #import "Externs.h"
 

@@ -32,6 +32,7 @@
 #import "STEnvironment.h"
 #import "STEngine.h"
 #import "STLanguageManager.h"
+#import "STCompat.h"
 
 @implementation STConversation
 /** Creates a new conversation with environment created using default 

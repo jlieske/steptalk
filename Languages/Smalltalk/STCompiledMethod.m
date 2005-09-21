@@ -30,6 +30,7 @@
 
 #import <StepTalk/STMethod.h>
 #import <StepTalk/STScripting.h>
+#import <StepTalk/STCompat.h>
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSCoder.h>

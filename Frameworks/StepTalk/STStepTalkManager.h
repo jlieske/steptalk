@@ -1,0 +1,3 @@
+@interface STStepTalkManager
+- createLocalEnvironment
+@end

@@ -28,10 +28,9 @@
 
 #import "NSObject+additions.h"
 
-#import <objc/objc-api.h>
-
 #import <StepTalk/STObjCRuntime.h>
 #import <StepTalk/STSelector.h>
+#import <StepTalk/ObjcRuntimeSupport.h>
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSString.h>
@@ -48,19 +47,18 @@ static ObjectiveCRuntime *sharedRuntime=nil;
     return sharedRuntime;
 }
 
+static int VisitClassAndAddToArray(Class class, void* array)
+{
+   if (!array)
+      return 0;
+   [(NSMutableArray*)array addObject: class];
+   return 1;
+}
+
 - (NSArray *)allClasses
 {
-    NSMutableArray *array;
-    Class           class;
-    void           *state = NULL;
-
-    array = [NSMutableArray array];
-
-    while( (class = objc_next_class(&state)) )
-    {
-        [array addObject:class];
-    }
-    
+    NSMutableArray *array = [NSMutableArray array];
+    ObjcIterateClasses(&VisitClassAndAddToArray, array);
     return [NSArray arrayWithArray:array];
 }
 

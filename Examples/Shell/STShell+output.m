@@ -27,6 +27,7 @@
 #import "STShell.h"
 
 #import <StepTalk/StepTalk.h>
+#import <StepTalk/STCompat.h>
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSBundle.h>

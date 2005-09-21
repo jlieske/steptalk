@@ -26,33 +26,25 @@
 
 #import "NSObject+additions.h"
 
-#import <objc/objc-api.h>
-
 #import <Foundation/NSArray.h>
+#import <StepTalk/ObjcRuntimeSupport.h>
+
+static int VisitSelectorAndAddToArray(Class class, SEL selector, void* array)
+{
+   if (!array)
+      return 0;
+   [(NSMutableArray*)array addObject: NSStringFromSelector(selector)];
+   return 1;
+}
 
 static NSArray *methods_for_class(Class class)
 {
     NSMutableArray          *array = [NSMutableArray array];
-    struct objc_method_list *methods;
-    SEL                      sel;
-    int                      i;
 
     if(!class)
         return nil;
     
-    methods = class->methods;
-
-    while(methods)
-    {
-        for(i = 0; i < methods->method_count; i++)
-        {
-            sel = methods->method_list[i].method_name;
-            [array addObject:NSStringFromSelector(sel)];
-        }
-        
-        methods = methods->method_next;
-    }
-    
+    ObjcIterateSelectors(class, NO, &VisitSelectorAndAddToArray, array);
     return [NSArray arrayWithArray:array];
 }
 
@@ -96,7 +88,7 @@ static NSArray *ivars_for_class(Class class)
 
 + (NSArray *)methodNames
 {
-    return methods_for_class(class_get_meta_class(self));
+    return methods_for_class(ObjcClassGetMeta(self));
 }
 
 + (NSArray *)instanceVariableNames

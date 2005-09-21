@@ -1,0 +1,12 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    StepTalkPalette = {
+	Actions = (
+	);
+	Outlets = (
+	    buttonSTObject,
+	    buttonSTClass
+	);
+	Super = IBPalette;
+    };
+}

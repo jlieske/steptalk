@@ -35,6 +35,7 @@
 #import <StepTalk/STContext.h>
 #import <StepTalk/STEnvironment.h>
 #import <StepTalk/STMethod.h>
+#import <StepTalk/STCompat.h>
 #import <Foundation/NSDebug.h>
 #import <Foundation/NSException.h>
 
