@@ -29,9 +29,9 @@
 
 #import "STClassInfo.h"
 #import "STExterns.h"
-#import "STFunctions.h"
 #import "STBehaviourInfo.h"
 #import "STCompat.h"
+#import "STResourceManager.h"
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSDebug.h>
@@ -47,19 +47,27 @@ static NSDictionary *dictForDescriptionWithName(NSString *defName)
     NSString     *file;
     NSDictionary *dict;
 
-    file = STFindResource(defName,
-                          STScriptingEnvironmentsDirectory,
-                          STScriptingEnvironmentExtension);
+    file = [[STResourceManager defaultManager] pathForResource:defName
+                                                        ofType:STScriptingEnvironmentExtension
+                                                   inDirectory:STScriptingEnvironmentsDirectory];
 
+    if(!file)
+    {
+        file = [[NSBundle bundleForClass:[STEnvironmentDescription class]]
+                        pathForResource:defName
+                                 ofType:STScriptingEnvironmentExtension
+                            inDirectory:nil];
+    }
+    
     if(!file)
     {
         [NSException raise:STGenericException
                     format: @"Could not find "
-                            @"environment description with name '%@'.",
-                            defName];
+            @"environment description with name '%@'.",
+            defName];
         return nil;
     }
-
+    
     dict = [NSDictionary dictionaryWithContentsOfFile:file];
 
     if(!dict)
@@ -72,6 +80,7 @@ static NSDictionary *dictForDescriptionWithName(NSString *defName)
         return nil;
     }
 
+    
     return dict;
 }
 

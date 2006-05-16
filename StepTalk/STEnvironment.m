@@ -33,12 +33,12 @@
 #import "STClassInfo.h"
 #import "STEnvironmentDescription.h"
 #import "STExterns.h"
-#import "STFunctions.h"
 #import "STBundleInfo.h"
 #import "STObjCRuntime.h"
 #import "STObjectReference.h"
 #import "STUndefinedObject.h"
 #import "STCompat.h"
+#import "STResourceManager.h"
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSBundle.h>
@@ -484,8 +484,10 @@ STEnvironment *sharedEnvironment = nil;
         return;
     }
     
-    path = STFindResource(name, @"Finders", @"bundle");
-    
+    path = [[STResourceManager defaultManager] pathForResource:name
+                                                        ofType:@"bundle"
+                                                   inDirectory:@"Finders"];
+
     if(!path)
     {
         NSLog(@"Unknown object finder with name '%@'", name);

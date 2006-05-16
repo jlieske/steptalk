@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'StepTalk' target in the 'StepTalk' project.
+//
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

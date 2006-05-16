@@ -27,7 +27,7 @@
  
    */
 
-#import <StepTalk/STContext.h>
+#import "STContext.h"
 
 @class NSBundle;
 @class NSDictionary;

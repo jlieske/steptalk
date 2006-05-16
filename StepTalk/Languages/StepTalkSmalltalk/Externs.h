@@ -9,7 +9,6 @@
  */
 #import <Foundation/NSString.h>
 
-extern NSString *STCompilerSyntaxException;
 extern NSString *STCompilerGenericException;
 extern NSString *STCompilerInconsistencyException;
 

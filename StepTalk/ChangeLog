@@ -1,3 +1,15 @@
+2006 May 14 Stefan Urbanek
+
+    * Added STResourceManager + updated other files to use it
+    * Include default bundles and languages inside the StepTalk.framework
+    bundle
+
+2006 May 12 Stefan Urbanek
+
+    * STActor: added traits, added method for adding method from source
+    * STSyntaxErrorException: new exception, used in Smalltalk as well
+    * Changed to X Code project
+
 2005 Sep 5 Stefan Urbanek
 
     * Version 0.10.0

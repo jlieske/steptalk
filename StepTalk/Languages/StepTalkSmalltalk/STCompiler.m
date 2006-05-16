@@ -210,15 +210,15 @@ extern int STCparse(void *context);
     isSingleMethod = YES;   
     STParserContextInit(&context,self,reader);
     
-    NS_DURING
+    @try
     {
         // extern int STCdebug;
         // STCdebug = 1;
         parsRetval = STCparse(&context);
     }
-    NS_HANDLER
+    @catch(NSException *localException)
     {
-        if ([[localException name] isEqualToString: STCompilerSyntaxException])
+        if ([[localException name] isEqualToString: STSyntaxErrorException])
         {
             NSString *tokenString;
             int       line;
@@ -226,22 +226,23 @@ extern int STCparse(void *context);
             tokenString = [reader tokenString];
             line = [reader currentLine];
 
-            RELEASE(reader);
-            reader = nil;
-            
-            [NSException  raise:STCompilerSyntaxException
+            [NSException  raise:STSyntaxErrorException
                          format:exceptionFmt,
                                 line,
                                 tokenString,
                                 [localException reason]];
-                         
         }
-        [localException raise];
+        else
+        {
+            @throw;
+        }
     }
-    NS_ENDHANDLER
-
-    RELEASE(reader);
-
+    @finally
+    {
+        RELEASE(reader);
+        reader = nil;
+    }
+    
     result = AUTORELEASE(resultMethod);
     resultMethod = nil;
 
@@ -287,7 +288,7 @@ extern int STCparse(void *context);
         RELEASE(reader);
         reader = nil;
 
-        if ([[localException name] isEqualToString: STCompilerSyntaxException])
+        if ([[localException name] isEqualToString: STSyntaxErrorException])
         {
             NSString *tokenString;
             int       line;
@@ -295,7 +296,7 @@ extern int STCparse(void *context);
             tokenString = [reader tokenString];
             line = [reader currentLine];
             
-            [NSException  raise:STCompilerSyntaxException
+            [NSException  raise:STSyntaxErrorException
                          format:exceptionFmt,
                                 line,
                                 tokenString,

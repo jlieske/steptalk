@@ -24,7 +24,7 @@
  
  */
 
-#import <StepTalk/STEngine.h>
+#import "STEngine.h"
 
 @interface SmalltalkEngine:STEngine
 {

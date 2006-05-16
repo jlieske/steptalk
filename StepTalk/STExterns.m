@@ -30,6 +30,7 @@ NSString *STInvalidArgumentException = @"STInvalidArgumentException";
 NSString *STInternalInconsistencyException = @"STInternalInconsistencyException";
 NSString *STRangeException = @"STRangeException";
 NSString *STScriptingException = @"STScriptingException";
+NSString *STSyntaxErrorException = @"STSyntaxErrorException";
 
 NSString *STCompilerSyntaxException = @"STCompilerSyntaxException";
 NSString *STCompilerGenericException = @"STCompilerGenericException";

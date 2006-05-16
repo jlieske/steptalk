@@ -24,7 +24,7 @@
 
    */
 
-#import <StepTalk/STScript.h>
+#import "STScript.h"
 
 @interface STFileScript:STScript
 {

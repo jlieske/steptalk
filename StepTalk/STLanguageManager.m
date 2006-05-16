@@ -2,6 +2,7 @@
 
 #import "STExterns.h"
 #import "STCompat.h"
+#import "STResourceManager.h"
 
 #import <Foundation/NSDebug.h>
 #import <Foundation/NSArray.h>
@@ -57,29 +58,26 @@ static STLanguageManager *defaultManager = nil;
 {
     NSFileManager *manager = [NSFileManager defaultManager];
     NSEnumerator  *enumerator;
+    NSArray       *bundles;
     NSBundle      *bundle;
     NSString      *path;
     NSArray       *paths;
     BOOL           isDir;
+    NSLog(@"Register known languages...");
+    /* Search all languages */
+    paths = [[STResourceManager defaultManager] findAllResourcesInDirectory:@"Languages"
+                                                                         type:STLanguageBundleExtension];
     
-    paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, 
-                                                    NSAllDomainsMask, YES);
-
+    /* Register plug-in languages */
     enumerator = [paths objectEnumerator];
     
-    /* find languages at knowl loactions */
     while( (path = [enumerator nextObject]) )
     {
-        path = [path stringByAppendingPathComponent:@"StepTalk"];
-        path = [path stringByAppendingPathComponent:STLanguageBundlesDirectory];
-
-        if([manager fileExistsAtPath:path isDirectory:&isDir] && isDir)
-        {
-            [self _registerLanguagesFromPath:path];
-        }
+        bundle = [NSBundle bundleWithPath:path];
+        [self registerLanguagesFromBundle:bundle];
     }
 
-    /* find languages at known loactions */
+    /* Register contained(linked) languages */
     enumerator = [[NSBundle allBundles] objectEnumerator];
     while( (bundle = [enumerator nextObject]) )
     {

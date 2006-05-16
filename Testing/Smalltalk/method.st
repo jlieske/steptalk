@@ -1,2 +1,0 @@
-qwe
-    Transcript showLine:'Test'

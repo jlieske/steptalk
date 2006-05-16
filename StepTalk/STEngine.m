@@ -29,7 +29,6 @@
 
 #import "STEnvironment.h"
 #import "STExterns.h"
-#import "STFunctions.h"
 #import "STLanguageManager.h"
 #import "STMethod.h"
 #import "STUndefinedObject.h"

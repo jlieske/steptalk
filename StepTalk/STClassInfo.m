@@ -27,7 +27,6 @@
 
 #import "STClassInfo.h"
 
-#import "STFunctions.h"
 #import "STCompat.h"
 
 #import <Foundation/NSDictionary.h>

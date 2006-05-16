@@ -19,6 +19,7 @@
 #import "STExterns.h"
 #import "STObjCRuntime.h"
 #import "STCompat.h"
+#import "STContext.h"
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSCoder.h>
@@ -29,10 +30,24 @@
 #import <Foundation/NSString.h>
 
 @implementation STActor
+
++ actorInContext:(STContext *)aContext
+{
+    return AUTORELEASE([[self alloc] initWithContext:aContext]);
+}
+- initWithContext:(STContext *)aContext
+{
+    self = [self init];
+    [self setContext:aContext];
+
+    return self;
+}
+
 /** Return new instance of script object without any instance variables */
 + actorInEnvironment:(STEnvironment *)env
 {
-    return AUTORELEASE([[self alloc] initWithEnvironment:env]);
+    NSLog(@"Warning: environment methods in STActor are depreciated");
+    return AUTORELEASE([[self alloc] initWithContext:env]);
 }
 + actor
 {
@@ -47,10 +62,9 @@
 }
 - initWithEnvironment:(STEnvironment *)env;
 {
-    self = [self init];
-    [self setEnvironment:env];
+    NSLog(@"Warning: environment methods in STActor are depreciated");
 
-    return self;
+    return [self initWithContext:env];
 }
 - (void)dealloc
 {
@@ -61,27 +75,68 @@
 
 - (void)setValue:(id)value forKey:(NSString *)key
 {
-    /* FIXME: this is not optimal */
-    if([ivars valueForKey:key] != nil)
+    /* try to set traits value. if there is no such key, then set actors key */
+    if([ivars objectForKey:key] != nil)
     {
         [ivars setValue:value forKey:key];
     }
     else
     {
+        if(traits)
+        {
+            @try {
+                [traits setValue:value forKey:key];
+                return;
+            }
+            @catch(NSException *exception)
+            {
+                if(![[exception name] isEqualToStrin:NSUndefinedKeyException])
+                {
+                    @throw;
+                }
+            }
+        }
+        
         [super setValue:value forKey:key];
     }
 }
 - (id)valueForKey:(NSString *)key
 {
     id value = nil;
-    
-    value = [ivars valueForKey:key];
+        
+    value = [ivars objectForKey:key];
     
     if(value == nil)
     {
+
+        if(traits)
+        {
+            @try {
+                value = [traits valueForKey:key];
+                return value;
+            }
+            @catch(NSException *exception)
+            {
+                if(![[exception name] isEqualToString:NSUndefinedKeyException])
+                {
+                    @throw;
+                }
+            }
+        }
+
         value = [super valueForKey:key];
     }
     return value;
+}
+- (void)setTraits:(id)anObject
+{
+    [anObject retain];
+    [traits release];
+    traits = anObject;
+}
+- (id)traits
+{
+    return traits;
 }
 
 - (NSArray *)instanceVariableNames
@@ -100,6 +155,17 @@
 - (void)addMethod:(id <STMethod>)aMethod
 {
     [methodDictionary setObject:aMethod forKey:[aMethod methodName]];
+}
+- (void)addMethodWithSource:(NSString *)source
+                   language:(NSString *)language
+{
+    STMethod *method;
+    STEngine *engine;
+    engine = [STEngine engineForLanguage:language];  
+    method = [engine methodFromSource:source
+                          forReceiver:self
+                            inContext:context];
+    [self addMethod:method];
 }
 - (id <STMethod>)methodWithName:(NSString *)aName
 {
@@ -125,11 +191,24 @@
 some other, more clever mechanism. */
 - (void)setEnvironment:(STEnvironment *)env
 {
-    ASSIGN(environment, env);
+    NSLog(@"Warning: environment methods in STActor are depreciated");
+
+    [self setContext:env];
 }
+- (void)setContext:(STContext *)aContext
+{
+    ASSIGN(context, aContext);
+}
+
 - (STEnvironment *)environment
 {
-    return environment;
+    NSLog(@"Warning: environment methods in STActor are depreciated");
+
+    return [self context];
+}
+- (STContext *)context
+{
+    return context;
 }
 - (BOOL)respondsToSelector:(SEL)aSelector
 {
@@ -199,7 +278,7 @@ some other, more clever mechanism. */
     retval = [engine executeMethod:method
                        forReceiver:self
                      withArguments:args
-                         inContext:environment];
+                         inContext:context];
 
     [invocation setReturnValue:&retval];
 }

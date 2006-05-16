@@ -220,7 +220,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                 {
                     tokenRange = NSMakeRange(start, 1);
                 
-                    [NSException raise:STCompilerSyntaxException
+                    [NSException raise:STSyntaxErrorException
                                 format:@"Unterminated comment"];
                     return 1;
                 }
@@ -395,7 +395,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                 else
                 {
                     tokenRange = NSMakeRange(start,srcOffset - start + 1);
-                    [NSException raise:STCompilerSyntaxException
+                    [NSException raise:STSyntaxErrorException
                                 format:@"Invalid character '%c' after decimal point",
                                 c];
                 }
@@ -428,7 +428,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                    This is error. */
  
                 tokenRange = NSMakeRange(start,srcOffset - start);
-                [NSException raise:STCompilerSyntaxException
+                [NSException raise:STSyntaxErrorException
                             format:@"Unexpected end of source. "
                                    @"Exponent is missing."];
                 return STErrorTokenType;
@@ -444,7 +444,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                        This is error. */
 
                     tokenRange = NSMakeRange(start,srcOffset - start);
-                    [NSException raise:STCompilerSyntaxException
+                    [NSException raise:STSyntaxErrorException
                                 format:@"Unexpected end of source. "
                                        @"Exponent is missing after '%c'.", c];
                     return STErrorTokenType;
@@ -470,7 +470,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
             if([identStartCharacterSet characterIsMember:c])
             {
                 tokenRange = NSMakeRange(start,srcOffset - start);
-                [NSException raise:STCompilerSyntaxException
+                [NSException raise:STSyntaxErrorException
                             format:@"Invalid character '%c' in real number.", c];
                 return STErrorTokenType;
             }
@@ -479,7 +479,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
         else if([identStartCharacterSet characterIsMember:c])
         {
             tokenRange = NSMakeRange(start,srcOffset - start);
-            [NSException raise:STCompilerSyntaxException
+            [NSException raise:STSyntaxErrorException
                         format:@"Invalid character '%c' in integer.", c];
             return STErrorTokenType;
         }
@@ -490,7 +490,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
         if([identStartCharacterSet characterIsMember:c] && c != 'e' && c != 'E')
         {
             tokenRange = NSMakeRange(start,srcOffset - start + 1);
-            [NSException raise:STCompilerSyntaxException
+            [NSException raise:STSyntaxErrorException
                         format:@"Letter '%c' in number", c];
             return STErrorTokenType;
         }
@@ -528,7 +528,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                 if(AT_END)
                 {
                     tokenRange = NSMakeRange(srcOffset-2, 1);
-                    [NSException raise:STCompilerSyntaxException
+                    [NSException raise:STSyntaxErrorException
                                 format:@"Character expected"];
                     return STErrorTokenType;
                 };
@@ -539,7 +539,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                     if([identCharacterSet characterIsMember:c])
                     {
                         tokenRange = NSMakeRange(srcOffset-2, 3);
-                        [NSException raise:STCompilerSyntaxException
+                        [NSException raise:STSyntaxErrorException
                                     format:@"Too many characters"];
                         return STErrorTokenType;
                     }
@@ -549,7 +549,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                 }
 
                 tokenRange = NSMakeRange(srcOffset-2,2);\
-                [NSException raise:STCompilerSyntaxException
+                [NSException raise:STSyntaxErrorException
                             format:@"Invalid character literal"];
                 return STErrorTokenType;
 
@@ -612,7 +612,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                     {
                         tokenRange = NSMakeRange(start-1,1);\
 
-                        [NSException raise:STCompilerSyntaxException
+                        [NSException raise:STSyntaxErrorException
                                     format:@"Unterminated string"];
                         return STErrorTokenType;
                     };
@@ -622,7 +622,7 @@ static NSString *_STNormalizeStringToken(NSString *token)
                     {
                         if(AT_END)
                         {
-                            [NSException raise:STCompilerSyntaxException
+                            [NSException raise:STSyntaxErrorException
                                         format:@"\\ at end"];
                             return STErrorTokenType;
                         }

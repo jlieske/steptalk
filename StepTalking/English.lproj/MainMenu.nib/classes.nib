@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {CLASS = AppController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                cleanConversation = id; 
+                interpret = id; 
+                interpretAndKeep = id; 
+                recallNextScript = id; 
+                recallPreviousScript = id; 
+                scrollConversationDown = id; 
+                scrollConversationUp = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = STScriptEditor; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }
+    ); 
+    IBVersion = 1; 
+}

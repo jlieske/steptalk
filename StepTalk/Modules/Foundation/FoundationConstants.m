@@ -95,7 +95,6 @@ NSDictionary *STGetFoundationConstants(void)
     ADD_int_OBJECT(NSBackwardsSearch,@"NSBackwardsSearch");
     ADD_int_OBJECT(NSAnchoredSearch,@"NSAnchoredSearch");
     ADD_id_OBJECT(NSAMPMDesignation,@"NSAMPMDesignation");
-    ADD_id_OBJECT(NSCurrencyString,@"NSCurrencyString");
     ADD_id_OBJECT(NSCurrencySymbol,@"NSCurrencySymbol");
     ADD_id_OBJECT(NSDateFormatString,@"NSDateFormatString");
     ADD_id_OBJECT(NSDateTimeOrdering,@"NSDateTimeOrdering");
@@ -166,8 +165,6 @@ NSDictionary *STGetFoundationConstants(void)
     ADD_id_OBJECT(NSFailedAuthenticationException,@"NSFailedAuthenticationException");
     ADD_id_OBJECT(NSConnectionDidDieNotification,@"NSConnectionDidDieNotification");
     ADD_id_OBJECT(NSPortDidBecomeInvalidNotification,@"NSPortDidBecomeInvalidNotification");
-    ADD_id_OBJECT(NSBecomingMultiThreaded,@"NSBecomingMultiThreaded");
-    ADD_id_OBJECT(NSThreadExiting,@"NSThreadExiting");
     ADD_id_OBJECT(NSGlobalDomain,@"NSGlobalDomain");
     ADD_id_OBJECT(NSArgumentDomain,@"NSArgumentDomain");
     ADD_id_OBJECT(NSRegistrationDomain,@"NSRegistrationDomain");
@@ -181,8 +178,6 @@ NSDictionary *STGetFoundationConstants(void)
     ADD_int_OBJECT(NSDocumentationDirectory,@"NSDocumentationDirectory");
     ADD_int_OBJECT(NSAllApplicationsDirectory,@"NSAllApplicationsDirectory");
     ADD_int_OBJECT(NSAllLibrariesDirectory,@"NSAllLibrariesDirectory");
-    ADD_int_OBJECT(GSLibrariesDirectory,@"GSLibrariesDirectory");
-    ADD_int_OBJECT(GSToolsDirectory,@"GSToolsDirectory");
     ADD_int_OBJECT(NSUserDomainMask,@"NSUserDomainMask");
     ADD_int_OBJECT(NSLocalDomainMask,@"NSLocalDomainMask");
     ADD_int_OBJECT(NSNetworkDomainMask,@"NSNetworkDomainMask");

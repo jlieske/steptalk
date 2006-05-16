@@ -1,5 +1,0 @@
-#!/bin/csh
-
-foreach i ( `seq 0 5` )
-    stexec speed.st
-end

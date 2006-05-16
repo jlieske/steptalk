@@ -27,9 +27,9 @@
 
 #import "STBundleInfo.h"
 
-#import "STFunctions.h"
 #import "STExterns.h"
 #import "STCompat.h"
+#import "STResourceManager.h"
 
 #import <Foundation/NSArray.h>
 #import <Foundation/NSBundle.h>
@@ -61,7 +61,8 @@ static NSMutableDictionary *bundleInfoDict;
     NSMutableArray *names = [NSMutableArray array];
     NSString       *name;
     
-    bundles = STFindAllResources(@"Bundles", STModuleExtension);
+    bundles = [[STResourceManager defaultManager] findAllResourcesInDirectory:@"Bundles"
+                                                                         type:STModuleExtension];
 
     enumerator = [bundles objectEnumerator];    
     
@@ -72,7 +73,8 @@ static NSMutableDictionary *bundleInfoDict;
         [names addObject:name];        
     }
     
-    bundles = STFindAllResources(@"Modules", STModuleExtension);
+    bundles = [[STResourceManager defaultManager] findAllResourcesInDirectory:@"Modules"
+                                                                         type:STModuleExtension];
 
     enumerator = [bundles objectEnumerator];    
     
@@ -88,12 +90,16 @@ static NSMutableDictionary *bundleInfoDict;
 
 + stepTalkBundleWithName:(NSString *)moduleName
 {
-    NSString *file = STFindResource(moduleName, @"Bundles",
-                                                @"bundle");
+    NSString *file;
+    
+    file = [[STResourceManager defaultManager] pathForResource:moduleName
+                                                        ofType:@"bundle"
+                                                   inDirectory:@"Bundles"];
     if(!file)
     {
-        file = STFindResource(moduleName, STModulesDirectory,
-                                          STModuleExtension);
+        file = [[STResourceManager defaultManager] pathForResource:moduleName
+                                                            ofType:STModuleExtension
+                                                       inDirectory:STModulesDirectory];
         
         if(!file)
         {

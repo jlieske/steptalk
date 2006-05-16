@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {cleanConversation = id; interpret = id; }; 
+            CLASS = ConversationDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                conversationView = NSTextView; 
+                languagesPopUp = NSPopUpButton; 
+                scriptEditor = NSTextView; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = STScriptEditor; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }
+    ); 
+    IBVersion = 1; 
+}

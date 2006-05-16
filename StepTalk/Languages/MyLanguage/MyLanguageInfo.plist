@@ -1,9 +1,0 @@
-{
-    /* Array of file types of your language scripts */
-    StepTalkLanguages = {
-        MyLanguage = {
-                FileTypes = ("mylang");
-                EngineClass = "MyLanguageEngine";
-            }
-    }
-}

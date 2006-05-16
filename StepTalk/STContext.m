@@ -33,7 +33,6 @@
 #import "STClassInfo.h"
 #import "STEnvironmentDescription.h"
 #import "STExterns.h"
-#import "STFunctions.h"
 #import "STBundleInfo.h"
 #import "STObjCRuntime.h"
 #import "STObjectReference.h"
@@ -206,7 +205,17 @@
     
     return AUTORELEASE(ref);
 }
-
+- (NSString  *)translateSelector:(NSString *)aString forReceiver:(id)anObject
+{
+    if(parentContext)
+    {
+        return [parentContext translateSelector:aString forReceiver:anObject];
+    }
+    else
+    {
+        return nil;
+    }
+}
 - (NSArray *)knownObjectNames
 {
     NSMutableArray *array = [NSMutableArray array];

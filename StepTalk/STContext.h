@@ -64,6 +64,7 @@
 - (id)objectWithName:(NSString *)objName;
 
 - (STObjectReference *)objectReferenceForObjectWithName:(NSString *)name;
+- (NSString  *)translateSelector:(NSString *)aString forReceiver:(id)anObject;
 
 - (NSArray *)knownObjectNames;
 @end

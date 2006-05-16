@@ -1,6 +1,0 @@
-(
-    {
-        Name = @"Unable to connect";
-        Description = @"Unable to connect to the distant environment."
-    }
-)

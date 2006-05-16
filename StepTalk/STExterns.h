@@ -35,6 +35,7 @@ extern NSString *STGenericException;               /* can be ignored */
 extern NSString *STInvalidArgumentException;
 extern NSString *STInternalInconsistencyException; /* not recoverable */
 extern NSString *STScriptingException;
+extern NSString *STSyntaxErrorException;
 
 extern NSString *STLibraryDirectory;
 

@@ -1,0 +1,4 @@
+- rename Transcript class to ConversationView
+- add script history
+- add language button
+

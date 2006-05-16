@@ -52,6 +52,7 @@ STUndefinedObject *STNil = nil;
 - (void) dealloc
 {
    NSLog(@"Warning: Trying to dealloc STNil object");
+    [super dealloc];
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)sel

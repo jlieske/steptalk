@@ -19,23 +19,40 @@
 @class NSDictionary;
 @class NSArray;
 @class STEnvironment;
+@class STContext;
 
 @interface STActor:NSObject<NSCoding>
 {
     NSMutableDictionary *ivars;
     NSMutableDictionary *methodDictionary;
-    
-    STEnvironment       *environment;
+    id                   traits;
+    STContext           *context;
 }
-+ actorInEnvironment:(STEnvironment *)env;
-- initWithEnvironment:(STEnvironment *)env;
-- (void)setEnvironment:(STEnvironment *)env;
-- (STEnvironment *)environment;
++ actorInContext:(STContext *)aContext;
+- initWithContext:(STContext *)aContext;
+- (void)setContext:(STContext *)aContext;
+- (STContext *)context;
+
+- (void)setTraits:(id)anObject;
+- (id)traits;
 
 - (void)addMethod:(id <STMethod>)aMethod;
+- (void)addMethodWithSource:(NSString *)source
+                   language:(NSString *)language;
+
 - (id <STMethod>)methodWithName:(NSString *)aName;
 - (void)removeMethod:(id <STMethod>)aMethod;
 - (void)removeMethodWithName:(NSString *)aName;
 - (NSArray *)methodNames;
 - (NSDictionary *)methodDictionary;
+
+- (NSArray *)instanceVariableNames;
+- (void)setInstanceVariables:(NSDictionary *)dictionary;
+- (NSDictionary *)instanceVarables;
+
+/* Depreciated */
++ actorInEnvironment:(STEnvironment *)env;
+- initWithEnvironment:(STEnvironment *)env;
+- (void)setEnvironment:(STEnvironment *)env;
+- (STEnvironment *)environment;
 @end

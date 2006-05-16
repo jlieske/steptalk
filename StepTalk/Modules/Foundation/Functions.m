@@ -31,6 +31,7 @@
                                                        NSString **names,  \
                                                        int count) \
             { \
+                int i;\
                 NSMutableDictionary *dict = [NSMutableDictionary dictionary]; \
                  \
                 for(i = 0; i<count; i++) \

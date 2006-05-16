@@ -413,7 +413,7 @@ symbol: TK_IDENTIFIER
 
 int STCerror(const char *str)
 {
-    [NSException raise:STCompilerSyntaxException
+    [NSException raise:STSyntaxErrorException
                  format:@"Unknown parse error (%s)", str];
     return 0;
 }

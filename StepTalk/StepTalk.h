@@ -24,16 +24,20 @@
  
  */
 
+#import <StepTalk/STActor.h>
+#import <StepTalk/STCompat.h>
+#import <StepTalk/STContext.h>
 #import <StepTalk/STConversation.h>
-#import <StepTalk/STRemoteConversation.h>
 #import <StepTalk/STEngine.h>
 #import <StepTalk/STEnvironment.h>
 #import <StepTalk/STEnvironmentDescription.h>
 #import <StepTalk/STExterns.h>
-#import <StepTalk/STFunctions.h>
 #import <StepTalk/STLanguageManager.h>
+#import <StepTalk/STMethod.h>
 #import <StepTalk/STObjCRuntime.h>
 #import <StepTalk/STObjectReference.h>
+#import <StepTalk/STRemoteConversation.h>
+#import <StepTalk/STResourceManager.h>
 #import <StepTalk/STScript.h>
 #import <StepTalk/STScripting.h>
 #import <StepTalk/STScriptsManager.h>

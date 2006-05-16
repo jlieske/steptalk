@@ -37,7 +37,6 @@
 
 #import <StepTalk/STEnvironment.h>
 #import <StepTalk/STExterns.h>
-#import <StepTalk/STFunctions.h>
 #import <StepTalk/NSInvocation+additions.h>
 #import <StepTalk/STScripting.h>
 #import <StepTalk/STCompat.h>
@@ -402,6 +401,7 @@ static Class NSInvocation_class = nil;
     Bytecode manipulation
  * ---------------------------------------------------------------------------
  */
+#ifndef DEBUG_BYTECODES
 #define STDebugBytecode(bc) \
                 NSDebugLLog(@"STBytecodeInterpreter", \
                             @"#%04x %@", \
@@ -414,6 +414,18 @@ static Class NSInvocation_class = nil;
                             (bc).pointer, \
                             STDissasembleBytecode(bc), \
                             (object))
+#else
+#define STDebugBytecode(bc) \
+NSLog(      @"#%04x %@", \
+            (bc).pointer, \
+            STDissasembleBytecode(bc))
+
+#define STDebugBytecodeWith(bc,object) \
+NSLog(      @"#%04x %@ (%@)", \
+            (bc).pointer, \
+            STDissasembleBytecode(bc), \
+            (object))
+#endif
 
 #define STPush(s, v) (*pushImp)(s, pushSel, v)
 // #define STPush(s, v) [s push:v]           

@@ -50,11 +50,15 @@
     STContext     *context;
     id             returnValue;
 }
++ conversation;
 - initWithContext:(STContext *)aContext 
          language:(NSString *)aLanguage;
 
 - (void)setLanguage:(NSString *)newLanguage;
 - (NSString *)language;
+
+- (void)interpretScript:(NSString *)aString;
+- (id)result;
 
 - (STContext *)context;
 

@@ -31,7 +31,6 @@ UNDEFINED
    is already used by Apple
 - Add framework list into environment description
 - Change Modules to Frameworks
-- Fill implementation of STScriptObject, STMethod and related STEngine methods
 - Remove empty directories (Source, Modules/StepTalk)
 - Replace STMethod languageName with map table of method class->engine class
 
