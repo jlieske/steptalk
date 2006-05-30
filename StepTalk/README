@@ -4,6 +4,7 @@ StepTalk
 Ahthor: Stefan Urbanek (Google the name for contact)
 License: LGPL (see file COPYING)
 
+Mac OS X users: See the ReadMe-OSX.txt file insead.
 
 What is StepTalk ?
 ------------------
@@ -11,7 +12,7 @@ What is StepTalk ?
 StepTalk is a scripting framework for creating scriptable servers or
 applications. StepTalk, when combined with the dynamism that the Objective-C
 language provides, goes way beyond mere scripting.  It is written using
-GNUstep.
+Cocoa/GNUstep.
 
 
 Where to get it?

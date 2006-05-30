@@ -25,14 +25,13 @@
  
  */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @protocol STMethod;
 
 @class STContext;
 @class STEnvironment;
 @class STLanguageEngine;
-@class STMethod;
 
 /** STEngine is abstract class for language engines used to intepret scripts.*/
 @interface STEngine:NSObject
@@ -47,7 +46,7 @@
             inContext:(STContext *)context;
             
 /* Methods */
-- (STMethod *)methodFromSource:(NSString *)sourceString
+- (id <STMethod>)methodFromSource:(NSString *)sourceString
                    forReceiver:(id)receiver
                      inContext:(STContext *)context;
 - (id)  executeMethod:(id <STMethod>)aMethod

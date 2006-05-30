@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		565E2AB10A1922B900B230EE /* Run.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 565E2AB00A1922B900B230EE /* Run.tiff */; };
-		565E2B920A192FFE00B230EE /* STScriptEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E2B910A192FFE00B230EE /* STScriptEditor.m */; };
+		56A29C9D0A2CE4C40063DD53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A29C9C0A2CE4C40063DD53 /* main.m */; };
+		56A29CA00A2CE5450063DD53 /* Welcome to StepTalk.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 56A29C9F0A2CE5450063DD53 /* Welcome to StepTalk.rtf */; };
+		56A29D0D0A2CE7130063DD53 /* StepTalkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A29D0C0A2CE7130063DD53 /* StepTalkKit.framework */; };
+		56A29D810A2CEC2B0063DD53 /* StepTalking.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56A29D800A2CEC2B0063DD53 /* StepTalking.icns */; };
 		56EAC9680A172E7D00669056 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EAC9670A172E7D00669056 /* AppController.m */; };
-		56EAC97A0A172FB500669056 /* Transcript.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EAC9790A172FB500669056 /* Transcript.m */; };
 		56EAC9870A17307400669056 /* StepTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EAC9860A17307400669056 /* StepTalk.framework */; };
 		56EAC98F0A1730C100669056 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 56EAC98E0A1730C100669056 /* TODO */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
@@ -18,24 +19,8 @@
 		8D15AC2E0486D014006FF6A4 /* ConversationDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* ConversationDocument.nib */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* ConversationDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* ConversationDocument.m */; settings = {ATTRIBUTES = (); }; };
-		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildStyle section */
-		4A9504D0FFE6A4CB11CA0CBA /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		4A9504D1FFE6A4CB11CA0CBA /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-			};
-			name = Release;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -43,20 +28,18 @@
 		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		2A37F4ACFDCFA73011CA2CEA /* ConversationDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationDocument.m; sourceTree = "<group>"; };
 		2A37F4AEFDCFA73011CA2CEA /* ConversationDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationDocument.h; sourceTree = "<group>"; };
-		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ConversationDocument.nib; sourceTree = "<group>"; };
 		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* StepTalking_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepTalking_Prefix.pch; sourceTree = "<group>"; };
-		565E2AB00A1922B900B230EE /* Run.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Run.tiff; sourceTree = "<group>"; };
-		565E2B900A192FFE00B230EE /* STScriptEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScriptEditor.h; sourceTree = "<group>"; };
-		565E2B910A192FFE00B230EE /* STScriptEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScriptEditor.m; sourceTree = "<group>"; };
+		56A29C9C0A2CE4C40063DD53 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56A29C9F0A2CE5450063DD53 /* Welcome to StepTalk.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Welcome to StepTalk.rtf"; sourceTree = "<group>"; };
+		56A29D0C0A2CE7130063DD53 /* StepTalkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StepTalkKit.framework; path = ../../../Library/Frameworks/StepTalkKit.framework; sourceTree = SOURCE_ROOT; };
+		56A29D800A2CEC2B0063DD53 /* StepTalking.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = StepTalking.icns; sourceTree = "<group>"; };
 		56EAC9660A172E7D00669056 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		56EAC9670A172E7D00669056 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		56EAC9780A172FB500669056 /* Transcript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Transcript.h; sourceTree = "<group>"; };
-		56EAC9790A172FB500669056 /* Transcript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Transcript.m; sourceTree = "<group>"; };
 		56EAC9860A17307400669056 /* StepTalk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StepTalk.framework; path = ../../../Library/Frameworks/StepTalk.framework; sourceTree = SOURCE_ROOT; };
 		56EAC98E0A1730C100669056 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +53,7 @@
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
 				56EAC9870A17307400669056 /* StepTalk.framework in Frameworks */,
+				56A29D0D0A2CE7130063DD53 /* StepTalkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +63,7 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56A29D0C0A2CE7130063DD53 /* StepTalkKit.framework */,
 				56EAC9860A17307400669056 /* StepTalk.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 			);
@@ -107,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				56EAC98E0A1730C100669056 /* TODO */,
+				56A29C9F0A2CE5450063DD53 /* Welcome to StepTalk.rtf */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
@@ -123,10 +109,6 @@
 				2A37F4ACFDCFA73011CA2CEA /* ConversationDocument.m */,
 				56EAC9660A172E7D00669056 /* AppController.h */,
 				56EAC9670A172E7D00669056 /* AppController.m */,
-				56EAC9780A172FB500669056 /* Transcript.h */,
-				56EAC9790A172FB500669056 /* Transcript.m */,
-				565E2B900A192FFE00B230EE /* STScriptEditor.h */,
-				565E2B910A192FFE00B230EE /* STScriptEditor.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -135,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				32DBCF750370BD2300C91783 /* StepTalking_Prefix.pch */,
-				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				56A29C9C0A2CE4C40063DD53 /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -143,11 +125,11 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56A29D800A2CEC2B0063DD53 /* StepTalking.icns */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
 				2A37F4B4FDCFA73011CA2CEA /* ConversationDocument.nib */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
-				565E2AB00A1922B900B230EE /* Run.tiff */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 			);
 			name = Resources;
@@ -175,8 +157,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-			};
 			dependencies = (
 			);
 			name = StepTalking;
@@ -191,12 +171,6 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "StepTalking" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				4A9504D0FFE6A4CB11CA0CBA /* Debug */,
-				4A9504D1FFE6A4CB11CA0CBA /* Release */,
-			);
 			hasScannedForEncodings = 1;
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* StepTalking */;
 			projectDirPath = "";
@@ -216,7 +190,8 @@
 				8D15AC2E0486D014006FF6A4 /* ConversationDocument.nib in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				56EAC98F0A1730C100669056 /* TODO in Resources */,
-				565E2AB10A1922B900B230EE /* Run.tiff in Resources */,
+				56A29CA00A2CE5450063DD53 /* Welcome to StepTalk.rtf in Resources */,
+				56A29D810A2CEC2B0063DD53 /* StepTalking.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC310486D014006FF6A4 /* ConversationDocument.m in Sources */,
-				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				56EAC9680A172E7D00669056 /* AppController.m in Sources */,
-				56EAC97A0A172FB500669056 /* Transcript.m in Sources */,
-				565E2B920A192FFE00B230EE /* STScriptEditor.m in Sources */,
+				56A29C9D0A2CE4C40063DD53 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

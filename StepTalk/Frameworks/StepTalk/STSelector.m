@@ -28,8 +28,6 @@
 
 #import "STObjCRuntime.h"
 #import "STCompat.h"
-#import <Foundation/NSCoder.h>
-#import <Foundation/NSString.h>
 
 @implementation STSelector
 - initWithName:(NSString *)aString

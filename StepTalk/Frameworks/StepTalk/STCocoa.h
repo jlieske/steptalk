@@ -30,9 +30,6 @@ if (__value != __object) { \
       [__object release]; \
 }})
 
-/* Functions available in GNUstep but not in Cocoa */
-NSArray* NSStandardLibraryPaths(void);
-
 /* Debugging functions and macros */
 BOOL DebugSet(NSString* level);
 

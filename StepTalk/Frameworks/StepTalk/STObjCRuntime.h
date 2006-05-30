@@ -25,14 +25,7 @@
  
  */
 
-#import <Foundation/NSObject.h>
-
-@class NSMutableDictionary;
-@class NSString;
-@class NSValue;
-@class NSMethodSignature;
-@class NSDictionary;
-@class NSArray;
+#import <Foundation/Foundation.h>
 
 extern NSMutableDictionary *STAllObjectiveCClasses(void);
 extern NSMutableDictionary *STGetFoundationConstants(void);

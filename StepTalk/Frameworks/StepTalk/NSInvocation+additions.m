@@ -30,9 +30,6 @@
 #import "NSInvocation+additions.h"
 
 #import <Foundation/NSDebug.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSValue.h>
-#import <Foundation/NSString.h>
 
 #import "STExterns.h"
 #import "STObjCRuntime.h"

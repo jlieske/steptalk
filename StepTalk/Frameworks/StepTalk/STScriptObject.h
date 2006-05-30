@@ -1,6 +1,6 @@
 /* 2003 Aug 5 */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 #import "STMethod.h"
 

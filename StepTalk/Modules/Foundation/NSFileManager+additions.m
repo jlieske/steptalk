@@ -25,8 +25,7 @@
  
  */
 
-#import <Foundation/NSFileManager.h>
-#import <Foundation/NSPathUtilities.h>
+#import <Foundation/Foundation.h>
 
 @implementation NSFileManager(STAdditions)
 + (NSString *)homeDirectory

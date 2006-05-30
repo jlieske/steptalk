@@ -1,3 +1,14 @@
+2006 May 23 Stefan Urbanek
+
+    * AppKit: re-added AppKit bundle
+    * Foundation, AppKit: generate *.m source files for all framework
+    constants from *.list files (XCode: for more information see rules for each
+    target in target inspector window)
+
+2006 May 20 Stefan Urbanek
+
+    * STActor: Added forwarding of methods to actor's traits
+
 2006 May 14 Stefan Urbanek
 
     * Added STResourceManager + updated other files to use it

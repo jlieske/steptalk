@@ -39,15 +39,6 @@
 #import "STUndefinedObject.h"
 #import "STCompat.h"
 
-#import <Foundation/NSArray.h>
-#import <Foundation/NSBundle.h>
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSSet.h>
-#import <Foundation/NSString.h>
-#import <Foundation/NSInvocation.h>
-
 @implementation STContext
 -init
 {

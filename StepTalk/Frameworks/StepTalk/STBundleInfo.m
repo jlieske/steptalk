@@ -31,15 +31,6 @@
 #import "STCompat.h"
 #import "STResourceManager.h"
 
-#import <Foundation/NSArray.h>
-#import <Foundation/NSBundle.h>
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSFileManager.h>
-#import <Foundation/NSNotification.h>
-#import <Foundation/NSPathUtilities.h>
-#import <Foundation/NSString.h>
-
 static NSMutableDictionary *bundleInfoDict;
 
 @protocol STScriptingInfoClass
@@ -138,7 +129,8 @@ static NSMutableDictionary *bundleInfoDict;
     NSString       *file;
     NSString       *name;
 
-    paths = NSStandardLibraryPaths();
+    paths = NSSearchPathForDirectoriesInDomains(NSAllLibrariesDirectory,
+                                                NSAllDomainsMask, YES);
 
     penum = [paths objectEnumerator];
     
@@ -178,7 +170,8 @@ static NSMutableDictionary *bundleInfoDict;
     NSString       *file;
     NSString       *name;
 
-    paths = NSStandardLibraryPaths();
+    paths = NSSearchPathForDirectoriesInDomains(NSAllLibrariesDirectory,
+                                                NSAllDomainsMask, YES);
 
     penum = [paths objectEnumerator];
     

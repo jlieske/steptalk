@@ -1,0 +1,36 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {takeLanguageFromSender = id; }; 
+            CLASS = STConversationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {transcript = STTranscriptView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = STConversationWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_contents" = id; 
+                conversationController = STConversationController; 
+                inputView = STScriptInputView; 
+                transcript = id; 
+            }; 
+            SUPERCLASS = NSPanel; 
+        }, 
+        {
+            ACTIONS = {
+                cleanInputAndSaveHistory = id; 
+                recallNextScript = id; 
+                recallPreviousScript = id; 
+            }; 
+            CLASS = STScriptInputView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {conversationController = id; }; 
+            SUPERCLASS = NSTextView; 
+        }, 
+        {CLASS = STTranscriptView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }
+    ); 
+    IBVersion = 1; 
+}

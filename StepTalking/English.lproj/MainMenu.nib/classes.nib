@@ -3,7 +3,7 @@
         {CLASS = AppController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
             ACTIONS = {
-                cleanConversation = id; 
+                cleanTranscript = id; 
                 interpret = id; 
                 interpretAndKeep = id; 
                 recallNextScript = id; 

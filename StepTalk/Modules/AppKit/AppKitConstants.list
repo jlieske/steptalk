@@ -18,7 +18,7 @@ id NSBaselineOffsetAttributeName
 id NSKernAttributeName
 id NSLinkAttributeName
 
-id NSDataLinkFileNameExtension
+#id NSDataLinkFileNameExtension
 
 id NSAFMAscender
 id NSAFMCapHeight
@@ -48,19 +48,19 @@ id NSDeviceCMYKColorSpace
 id NSNamedColorSpace
 id NSCustomColorSpace
 
-int NSDefaultDepth
-int NSTwoBitGrayDepth
-int NSEightBitGrayDepth
-int NSEightBitRGBDepth
-int NSTwelveBitRGBDepth
-int GSSixteenBitRGBDepth
-int NSTwentyFourBitRGBDepth
+#int NSDefaultDepth
+#int NSTwoBitGrayDepth
+#int NSEightBitGrayDepth
+#int NSEightBitRGBDepth
+#int NSTwelveBitRGBDepth
+#int GSSixteenBitRGBDepth
+#int NSTwentyFourBitRGBDepth
 
 float NSBlack
 float NSDarkGray
 float NSWhite
 float NSLightGray
-float NSGray
+#float NSGray
 
 id NSDeviceResolution
 id NSDeviceColorSpaceName
@@ -80,8 +80,8 @@ id NSTabularTextPboardType
 id NSRTFPboardType
 id NSRTFDPboardType
 id NSTIFFPboardType
-id NSDataLinkPboardType
-id NSGeneralPboardType
+#id NSDataLinkPboardType
+#id NSGeneralPboardType
 id NSDragPboard
 id NSFindPboard
 id NSFontPboard
@@ -126,7 +126,7 @@ id NSPrintFaxJob
 id NSPrintPreviewJob
 id NSPrintSaveJob
 id NSPrintSpoolJob
-id NSOldSelectedCharacterRange
+#id NSOldSelectedCharacterRange
 
 # FIXME:
 
@@ -153,7 +153,7 @@ int NSRunStoppedResponse
 int NSRunAbortedResponse
 int NSRunContinuesResponse
 
-int GSNoUnderlineStyle
+#int GSNoUnderlineStyle
 int NSSingleUnderlineStyle
 
 int NSButtLineCapStyle
@@ -207,11 +207,11 @@ int NSRoundedBezelStyle
 int NSRegularSquareBezelStyle
 int NSThickSquareBezelStyle
 int NSThickerSquareBezelStyle
-int NSNeXTBezelStyle
-int NSPushButtonBezelStyle
+#int NSNeXTBezelStyle
+#int NSPushButtonBezelStyle
 int NSSmallIconButtonBezelStyle
-int NSMediumIconButtonBezelStyle
-int NSLargeIconButtonBezelStyle
+#int NSMediumIconButtonBezelStyle
+#int NSLargeIconButtonBezelStyle
 
 int NSGradientNone
 int NSGradientConcaveWeak
@@ -241,7 +241,7 @@ int NSIntType
 int NSPositiveIntType
 int NSFloatType
 int NSPositiveFloatType
-int NSDateType
+#int NSDateType
 int NSDoubleType
 int NSPositiveDoubleType
 
@@ -301,19 +301,19 @@ int NSColorPanelWheelModeMask
 int NSColorPanelAllModesMask
 
 # GSCursorTypes
-int GSArrowCursor
-int GSIBeamCursor
+#int GSArrowCursor
+#int GSIBeamCursor
 
 # NSDataLinkDisposition
-int NSLinkInDestination
-int NSLinkInSource
-int NSLinkBroken 
+#int NSLinkInDestination
+#int NSLinkInSource
+#int NSLinkBroken 
 
 # NSDataLinkUpdateMode
-int NSUpdateContinuously
-int NSUpdateWhenSourceSaved
-int NSUpdateManually
-int NSUpdateNever
+#int NSUpdateContinuously
+#int NSUpdateWhenSourceSaved
+#int NSUpdateManually
+#int NSUpdateNever
 
 int NSChangeDone
 int NSChangeUndone
@@ -383,9 +383,9 @@ int NSFPSizeField
 int NSFPSizeTitle
 int NSFPCurrentField
 
-int NSFPFamilyBrowser
-int NSFPFaceBrowser
-int NSFPSizeBrowser
+#int NSFPFamilyBrowser
+#int NSFPFaceBrowser
+#int NSFPSizeBrowser
 
 # NSBackingStoreType
 
@@ -418,9 +418,9 @@ int NSWindowBelow
 int NSWindowOut
 
 # GSWindowInputState
-int GSTitleBarKey
-int GSTitleBarNormal
-int GSTitleBarMain
+#int GSTitleBarKey
+#int GSTitleBarNormal
+#int GSTitleBarMain
 
 # NSImageScaling
 int NSScaleProportionally

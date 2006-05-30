@@ -25,13 +25,7 @@
  
  */
 
-#include <Foundation/NSObject.h>
-
-@class NSString;
-@class NSDictionary;
-@class NSMutableDictionary;
-@class NSMutableSet;
-@class NSSet;
+#import <Foundation/Foundation.h>
 
 @interface STBehaviourInfo:NSObject
 {

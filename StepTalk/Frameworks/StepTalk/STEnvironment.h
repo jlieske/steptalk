@@ -29,12 +29,6 @@
 
 #import "STContext.h"
 
-@class NSBundle;
-@class NSDictionary;
-@class NSMutableDictionary;
-@class NSMutableArray;
-@class NSMutableSet;
-
 @class STObjectReference;
 @class STEnvironmentDescription;
 

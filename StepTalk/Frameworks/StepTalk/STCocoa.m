@@ -12,11 +12,6 @@
 
 #import "STCocoa.h"
 
-NSArray* NSStandardLibraryPaths(void)
-{
-   return NSSearchPathForDirectoriesInDomains(NSAllLibrariesDirectory, NSAllDomainsMask, YES);
-}
-
 BOOL DebugSet(NSString* level)
 {
    // TODO use a bit more sophisticated approach

@@ -24,7 +24,7 @@
  
  */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 enum
 {
@@ -32,10 +32,6 @@ enum
     STAllowAllRestriction,
     STDenyAllRestriction
 };
-
-@class NSDictionary;
-@class NSMutableArray;
-@class NSMutableDictionary;
 
 @interface STEnvironmentDescription:NSObject
 {

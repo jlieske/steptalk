@@ -1,4 +1,4 @@
-# Objective-C constants
+# Objective-C constants 
 int NO
 int YES
 
@@ -178,8 +178,6 @@ int NSUserDirectory
 int NSDocumentationDirectory
 int NSAllApplicationsDirectory
 int NSAllLibrariesDirectory
-int GSLibrariesDirectory
-int GSToolsDirectory
 
 int NSUserDomainMask
 int NSLocalDomainMask

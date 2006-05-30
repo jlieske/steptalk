@@ -12,14 +12,13 @@
 			buildConfigurationList = 562A19130A06228B0014F177 /* Build configuration list for PBXAggregateTarget "All" */;
 			buildPhases = (
 			);
-			buildSettings = {
-				PRODUCT_NAME = All;
-			};
 			dependencies = (
 				562A19170A06228D0014F177 /* PBXTargetDependency */,
+				563155F70A2B90240087B2DF /* PBXTargetDependency */,
 				56EAC6B70A1507C800669056 /* PBXTargetDependency */,
 				56EAC6B90A1507CA00669056 /* PBXTargetDependency */,
 				56EAC6BB0A1507CC00669056 /* PBXTargetDependency */,
+				56D5441E0A24CF53000A8598 /* PBXTargetDependency */,
 			);
 			name = All;
 			productName = All;
@@ -31,9 +30,6 @@
 				56EAC7750A16B1C700669056 /* Copy Modules */,
 				56EAC7B60A16B35D00669056 /* Copy Languages */,
 			);
-			buildSettings = {
-				PRODUCT_NAME = Package;
-			};
 			dependencies = (
 			);
 			name = Package;
@@ -44,9 +40,6 @@
 			buildConfigurationList = 56EAC7CA0A16B42400669056 /* Build configuration list for PBXAggregateTarget "Umbrella Package" */;
 			buildPhases = (
 			);
-			buildSettings = {
-				PRODUCT_NAME = "Umbrella Package";
-			};
 			dependencies = (
 				56EAC7C60A16B40100669056 /* PBXTargetDependency */,
 				56EAC7C80A16B40300669056 /* PBXTargetDependency */,
@@ -61,12 +54,9 @@
 		562A19630A0624860014F177 /* ObjectiveCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A195E0A0624860014F177 /* ObjectiveCModule.m */; };
 		562A19640A0624860014F177 /* ObjectiveCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19600A0624860014F177 /* ObjectiveCRuntime.m */; };
 		562A19650A0624860014F177 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 562A19610A0624860014F177 /* ScriptingInfo.plist */; };
-		562A196B0A0624920014F177 /* FoundationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19660A0624920014F177 /* FoundationConstants.m */; };
-		562A196C0A0624920014F177 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19680A0624920014F177 /* Functions.m */; };
 		562A196D0A0624920014F177 /* NSFileManager+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19690A0624920014F177 /* NSFileManager+additions.m */; };
 		562A196E0A0624920014F177 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 562A196A0A0624920014F177 /* ScriptingInfo.plist */; };
 		562A19760A06253D0014F177 /* StepTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568A2A4D0A04C8FC00D60852 /* StepTalk.framework */; };
-		562A19B10A0625D40014F177 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 562A19B00A0625D40014F177 /* ScriptingInfo.plist */; };
 		562A19EB0A0627050014F177 /* NSArray+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19C00A0627050014F177 /* NSArray+additions.m */; };
 		562A19EC0A0627050014F177 /* NSString+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19C20A0627050014F177 /* NSString+additions.m */; };
 		562A19ED0A0627050014F177 /* SmalltalkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19C40A0627050014F177 /* SmalltalkEngine.m */; };
@@ -89,94 +79,120 @@
 		562A19FF0A0627050014F177 /* STSourceReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19E70A0627050014F177 /* STSourceReader.m */; };
 		562A1A000A0627050014F177 /* STStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 562A19E90A0627050014F177 /* STStack.m */; };
 		562A1A960A062CB60014F177 /* Smalltalk-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 568A2A1A0A04BF1500D60852 /* Smalltalk-Info.plist */; };
+		563155410A27B5DF0087B2DF /* StepTalkConversation.nib in Resources */ = {isa = PBXBuildFile; fileRef = 563155400A27B5DF0087B2DF /* StepTalkConversation.nib */; };
+		5631557D0A2B6D910087B2DF /* StepTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* StepTalk.framework */; };
+		5631598F0A2BBCC40087B2DF /* clean.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5631598E0A2BBCC40087B2DF /* clean.tiff */; };
+		563159920A2BBD360087B2DF /* arrowDown.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 563159900A2BBD360087B2DF /* arrowDown.tiff */; };
+		563159930A2BBD360087B2DF /* arrowUp.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 563159910A2BBD360087B2DF /* arrowUp.tiff */; };
 		565E2AA10A17CC4400B230EE /* ReadMe-OSX.txt in Resources */ = {isa = PBXBuildFile; fileRef = 565E2AA00A17CC4400B230EE /* ReadMe-OSX.txt */; };
-		568A294B0A04BCBB00D60852 /* STApplicationConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29230A04BCBA00D60852 /* STApplicationConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A294C0A04BCBB00D60852 /* STUndefinedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29240A04BCBA00D60852 /* STUndefinedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A294D0A04BCBB00D60852 /* STStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29250A04BCBA00D60852 /* STStructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A294E0A04BCBB00D60852 /* STStepTalkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29260A04BCBA00D60852 /* STStepTalkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A294F0A04BCBB00D60852 /* NSObject+CocoaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29270A04BCBA00D60852 /* NSObject+CocoaAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29500A04BCBB00D60852 /* STActor.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29280A04BCBA00D60852 /* STActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29510A04BCBB00D60852 /* NSObject+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29290A04BCBA00D60852 /* NSObject+additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29520A04BCBB00D60852 /* ObjcRuntimeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A292A0A04BCBA00D60852 /* ObjcRuntimeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29530A04BCBB00D60852 /* STLanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A292B0A04BCBA00D60852 /* STLanguageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29540A04BCBB00D60852 /* STRemoteConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A292C0A04BCBB00D60852 /* STRemoteConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29550A04BCBB00D60852 /* STCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A292D0A04BCBB00D60852 /* STCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29560A04BCBB00D60852 /* STMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A292E0A04BCBB00D60852 /* STMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29570A04BCBB00D60852 /* NSInvocation+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A292F0A04BCBB00D60852 /* NSInvocation+additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29580A04BCBB00D60852 /* STEnvironmentDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29300A04BCBB00D60852 /* STEnvironmentDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29590A04BCBB00D60852 /* STCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29310A04BCBB00D60852 /* STCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A295A0A04BCBB00D60852 /* OSXObjcRuntime+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29320A04BCBB00D60852 /* OSXObjcRuntime+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A295B0A04BCBB00D60852 /* STContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29330A04BCBB00D60852 /* STContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A295C0A04BCBB00D60852 /* STEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29340A04BCBB00D60852 /* STEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A295D0A04BCBB00D60852 /* STFileScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29350A04BCBB00D60852 /* STFileScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A295F0A04BCBB00D60852 /* StepTalk.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29370A04BCBB00D60852 /* StepTalk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29600A04BCBB00D60852 /* NSNumber+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29380A04BCBB00D60852 /* NSNumber+additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29610A04BCBB00D60852 /* STSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29390A04BCBB00D60852 /* STSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29620A04BCBB00D60852 /* STScriptsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A293A0A04BCBB00D60852 /* STScriptsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29630A04BCBB00D60852 /* STScriptObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A293B0A04BCBB00D60852 /* STScriptObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29640A04BCBB00D60852 /* STScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A293C0A04BCBB00D60852 /* STScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29650A04BCBB00D60852 /* STEnvironmentServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A293D0A04BCBB00D60852 /* STEnvironmentServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29660A04BCBB00D60852 /* STBehaviourInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A293E0A04BCBB00D60852 /* STBehaviourInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29670A04BCBB00D60852 /* STObjectReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A293F0A04BCBB00D60852 /* STObjectReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29680A04BCBB00D60852 /* NSUserDefaults+CocoaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29400A04BCBB00D60852 /* NSUserDefaults+CocoaAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29690A04BCBB00D60852 /* STObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29410A04BCBB00D60852 /* STObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A296A0A04BCBB00D60852 /* STExterns.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29420A04BCBB00D60852 /* STExterns.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A296B0A04BCBB00D60852 /* STConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29430A04BCBB00D60852 /* STConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A296C0A04BCBB00D60852 /* StepTalkScriptingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29440A04BCBB00D60852 /* StepTalkScriptingInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A296E0A04BCBB00D60852 /* STScripting.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29460A04BCBB00D60852 /* STScripting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A296F0A04BCBB00D60852 /* STClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29470A04BCBB00D60852 /* STClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29700A04BCBB00D60852 /* STEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29480A04BCBB00D60852 /* STEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29710A04BCBB00D60852 /* STBundleInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 568A29490A04BCBB00D60852 /* STBundleInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		568A29960A04BCCA00D60852 /* STUndefinedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29720A04BCCA00D60852 /* STUndefinedObject.m */; };
-		568A29970A04BCCA00D60852 /* STStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29730A04BCCA00D60852 /* STStructure.m */; };
-		568A29980A04BCCA00D60852 /* NSObject+CocoaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29740A04BCCA00D60852 /* NSObject+CocoaAdditions.m */; };
-		568A29990A04BCCA00D60852 /* STBehaviourInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29750A04BCCA00D60852 /* STBehaviourInfo.m */; };
-		568A299A0A04BCCA00D60852 /* OSXObjcRuntimeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29760A04BCCA00D60852 /* OSXObjcRuntimeSupport.m */; };
-		568A299B0A04BCCA00D60852 /* STContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29770A04BCCA00D60852 /* STContext.m */; };
-		568A299C0A04BCCA00D60852 /* STBundleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29780A04BCCA00D60852 /* STBundleInfo.m */; };
-		568A299D0A04BCCA00D60852 /* STScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29790A04BCCA00D60852 /* STScript.m */; };
-		568A299E0A04BCCA00D60852 /* STEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A297A0A04BCCA00D60852 /* STEngine.m */; };
-		568A299F0A04BCCA00D60852 /* NSObject+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A297B0A04BCCA00D60852 /* NSObject+additions.m */; };
-		568A29A00A04BCCA00D60852 /* STEnvironmentServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A297C0A04BCCA00D60852 /* STEnvironmentServer.m */; };
-		568A29A10A04BCCA00D60852 /* STCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A297D0A04BCCA00D60852 /* STCocoa.m */; };
-		568A29A20A04BCCA00D60852 /* NSNumber+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A297E0A04BCCA00D60852 /* NSNumber+additions.m */; };
-		568A29A30A04BCCA00D60852 /* NSUserDefaults+CocoaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A297F0A04BCCA00D60852 /* NSUserDefaults+CocoaAdditions.m */; };
-		568A29A50A04BCCA00D60852 /* STExterns.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29810A04BCCA00D60852 /* STExterns.m */; };
-		568A29A60A04BCCA00D60852 /* STActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29820A04BCCA00D60852 /* STActor.m */; };
-		568A29A70A04BCCA00D60852 /* STSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29830A04BCCA00D60852 /* STSelector.m */; };
-		568A29A80A04BCCA00D60852 /* STScriptsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29840A04BCCA00D60852 /* STScriptsManager.m */; };
-		568A29A90A04BCCA00D60852 /* STEnvironmentDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29850A04BCCA00D60852 /* STEnvironmentDescription.m */; };
-		568A29AA0A04BCCA00D60852 /* STScriptObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29860A04BCCA00D60852 /* STScriptObject.m */; };
-		568A29AC0A04BCCA00D60852 /* StepTalkScriptingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29880A04BCCA00D60852 /* StepTalkScriptingInfo.m */; };
-		568A29AE0A04BCCA00D60852 /* STConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A298A0A04BCCA00D60852 /* STConversation.m */; };
-		568A29AF0A04BCCA00D60852 /* STMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A298B0A04BCCA00D60852 /* STMethod.m */; };
-		568A29B00A04BCCA00D60852 /* STLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A298C0A04BCCA00D60852 /* STLanguageManager.m */; };
-		568A29B20A04BCCA00D60852 /* STFileScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A298E0A04BCCA00D60852 /* STFileScript.m */; };
-		568A29B30A04BCCA00D60852 /* STObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A298F0A04BCCA00D60852 /* STObjCRuntime.m */; };
-		568A29B40A04BCCA00D60852 /* STEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29900A04BCCA00D60852 /* STEnvironment.m */; };
-		568A29B50A04BCCA00D60852 /* STScripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29910A04BCCA00D60852 /* STScripting.m */; };
-		568A29B60A04BCCA00D60852 /* STObjectReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29920A04BCCA00D60852 /* STObjectReference.m */; };
-		568A29B70A04BCCA00D60852 /* NSInvocation+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29930A04BCCA00D60852 /* NSInvocation+additions.m */; };
-		568A29B80A04BCCA00D60852 /* STRemoteConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29940A04BCCA00D60852 /* STRemoteConversation.m */; };
-		568A29B90A04BCCA00D60852 /* STClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A29950A04BCCA00D60852 /* STClassInfo.m */; };
-		568A29E30A04BE7400D60852 /* SymbolicSelectors.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29DA0A04BE7400D60852 /* SymbolicSelectors.stenv */; };
-		568A29E40A04BE7400D60852 /* StepTalk.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29DB0A04BE7400D60852 /* StepTalk.stenv */; };
-		568A29E50A04BE7400D60852 /* Standard.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29DC0A04BE7400D60852 /* Standard.stenv */; };
-		568A29E60A04BE7400D60852 /* Safe.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29DD0A04BE7400D60852 /* Safe.stenv */; };
-		568A29E70A04BE7400D60852 /* Foundation.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29DE0A04BE7400D60852 /* Foundation.stenv */; };
-		568A29E80A04BE7400D60852 /* Foundation-operators.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29DF0A04BE7400D60852 /* Foundation-operators.stenv */; };
-		568A29E90A04BE7400D60852 /* Distributed.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29E00A04BE7400D60852 /* Distributed.stenv */; };
-		568A29EA0A04BE7400D60852 /* Common.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29E10A04BE7400D60852 /* Common.stenv */; };
-		568A29EB0A04BE7400D60852 /* AppKit.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 568A29E20A04BE7400D60852 /* AppKit.stenv */; };
 		568A2A4E0A04C8FC00D60852 /* StepTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568A2A4D0A04C8FC00D60852 /* StepTalk.framework */; };
+		56A29CA50A2CE5890063DD53 /* StepTalkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A29CA30A2CE5890063DD53 /* StepTalkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56A29DD00A2CF9A40063DD53 /* Run.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 56A29DCF0A2CF9A40063DD53 /* Run.tiff */; };
 		56C504F10A13F73F00432EBE /* NEWS in Resources */ = {isa = PBXBuildFile; fileRef = 56C504F00A13F73F00432EBE /* NEWS */; };
 		56C504F70A13F75500432EBE /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 56C504F20A13F75500432EBE /* ChangeLog */; };
 		56C504F80A13F75500432EBE /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 56C504F30A13F75500432EBE /* COPYING */; };
 		56C504F90A13F75500432EBE /* README in Resources */ = {isa = PBXBuildFile; fileRef = 56C504F40A13F75500432EBE /* README */; };
 		56C504FA0A13F75500432EBE /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 56C504F50A13F75500432EBE /* TODO */; };
 		56C504FB0A13F75500432EBE /* WISH in Resources */ = {isa = PBXBuildFile; fileRef = 56C504F60A13F75500432EBE /* WISH */; };
-		56C505380A13F9BE00432EBE /* STResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C505360A13F9BE00432EBE /* STResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56C505390A13F9BE00432EBE /* STResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C505370A13F9BE00432EBE /* STResourceManager.m */; };
+		56D540300A23C2BE000A8598 /* NSInvocation+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FE80A23C2BE000A8598 /* NSInvocation+additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540310A23C2BE000A8598 /* NSNumber+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FE90A23C2BE000A8598 /* NSNumber+additions.m */; };
+		56D540320A23C2BE000A8598 /* NSInvocation+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FEA0A23C2BE000A8598 /* NSInvocation+additions.m */; };
+		56D540330A23C2BE000A8598 /* NSObject+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FEB0A23C2BE000A8598 /* NSObject+additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540340A23C2BE000A8598 /* NSObject+CocoaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FEC0A23C2BE000A8598 /* NSObject+CocoaAdditions.m */; };
+		56D540350A23C2BE000A8598 /* NSObject+CocoaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FED0A23C2BE000A8598 /* NSObject+CocoaAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540360A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FEE0A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540370A23C2BE000A8598 /* NSObject+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FEF0A23C2BE000A8598 /* NSObject+additions.m */; };
+		56D540380A23C2BE000A8598 /* NSNumber+additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FF00A23C2BE000A8598 /* NSNumber+additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540390A23C2BE000A8598 /* OSXObjcRuntime+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FF10A23C2BE000A8598 /* OSXObjcRuntime+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5403A0A23C2BE000A8598 /* ObjcRuntimeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FF20A23C2BE000A8598 /* ObjcRuntimeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5403B0A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FF30A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.m */; };
+		56D5403C0A23C2BE000A8598 /* OSXObjcRuntimeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FF40A23C2BE000A8598 /* OSXObjcRuntimeSupport.m */; };
+		56D5403D0A23C2BE000A8598 /* STActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FF50A23C2BE000A8598 /* STActor.m */; };
+		56D5403E0A23C2BE000A8598 /* STActor.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FF60A23C2BE000A8598 /* STActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5403F0A23C2BE000A8598 /* STBehaviourInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FF70A23C2BE000A8598 /* STBehaviourInfo.m */; };
+		56D540400A23C2BE000A8598 /* STBehaviourInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FF80A23C2BE000A8598 /* STBehaviourInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540420A23C2BE000A8598 /* STClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FFA0A23C2BE000A8598 /* STClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540430A23C2BE000A8598 /* STBundleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FFB0A23C2BE000A8598 /* STBundleInfo.m */; };
+		56D540440A23C2BE000A8598 /* STBundleInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FFC0A23C2BE000A8598 /* STBundleInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540450A23C2BE000A8598 /* STStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D53FFD0A23C2BE000A8598 /* STStructure.m */; };
+		56D540460A23C2BE000A8598 /* STStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D53FFE0A23C2BE000A8598 /* STStructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540480A23C2BE000A8598 /* STObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540000A23C2BE000A8598 /* STObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540490A23C2BE000A8598 /* STMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540010A23C2BE000A8598 /* STMethod.m */; };
+		56D5404A0A23C2BE000A8598 /* STMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540020A23C2BE000A8598 /* STMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5404B0A23C2BE000A8598 /* STConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540030A23C2BE000A8598 /* STConversation.m */; };
+		56D5404C0A23C2BE000A8598 /* STConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540040A23C2BE000A8598 /* STConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5404D0A23C2BE000A8598 /* STContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540050A23C2BE000A8598 /* STContext.m */; };
+		56D5404E0A23C2BE000A8598 /* STObjectReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540060A23C2BE000A8598 /* STObjectReference.m */; };
+		56D5404F0A23C2BE000A8598 /* STObjectReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540070A23C2BE000A8598 /* STObjectReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540500A23C2BE000A8598 /* STObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540080A23C2BE000A8598 /* STObjCRuntime.m */; };
+		56D540510A23C2BE000A8598 /* STEnvironmentDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540090A23C2BE000A8598 /* STEnvironmentDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540520A23C2BE000A8598 /* STEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5400A0A23C2BE000A8598 /* STEnvironment.m */; };
+		56D540530A23C2BE000A8598 /* STEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5400B0A23C2BE000A8598 /* STEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540540A23C2BE000A8598 /* STFileScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5400C0A23C2BE000A8598 /* STFileScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540550A23C2BE000A8598 /* STExterns.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5400D0A23C2BE000A8598 /* STExterns.m */; };
+		56D540560A23C2BE000A8598 /* STScriptObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5400E0A23C2BE000A8598 /* STScriptObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540570A23C2BE000A8598 /* STScripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5400F0A23C2BE000A8598 /* STScripting.m */; };
+		56D540580A23C2BE000A8598 /* STScripting.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540100A23C2BE000A8598 /* STScripting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540590A23C2BE000A8598 /* STScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540110A23C2BE000A8598 /* STScript.m */; };
+		56D5405A0A23C2BE000A8598 /* STLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540120A23C2BE000A8598 /* STLanguageManager.m */; };
+		56D5405B0A23C2BE000A8598 /* STLanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540130A23C2BE000A8598 /* STLanguageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5405C0A23C2BE000A8598 /* STFileScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540140A23C2BE000A8598 /* STFileScript.m */; };
+		56D5405D0A23C2BE000A8598 /* StepTalk.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540150A23C2BE000A8598 /* StepTalk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5405E0A23C2BE000A8598 /* STEnvironmentServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540160A23C2BE000A8598 /* STEnvironmentServer.m */; };
+		56D5405F0A23C2BE000A8598 /* STExterns.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540170A23C2BE000A8598 /* STExterns.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540600A23C2BE000A8598 /* StepTalkScriptingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540180A23C2BE000A8598 /* StepTalkScriptingInfo.m */; };
+		56D540610A23C2BE000A8598 /* STScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540190A23C2BE000A8598 /* STScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540620A23C2BE000A8598 /* STResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5401A0A23C2BE000A8598 /* STResourceManager.m */; };
+		56D540630A23C2BE000A8598 /* STContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5401B0A23C2BE000A8598 /* STContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540640A23C2BE000A8598 /* STCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5401C0A23C2BE000A8598 /* STCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540650A23C2BE000A8598 /* STCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5401D0A23C2BE000A8598 /* STCocoa.m */; };
+		56D540660A23C2BE000A8598 /* STCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5401E0A23C2BE000A8598 /* STCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540670A23C2BE000A8598 /* STClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5401F0A23C2BE000A8598 /* STClassInfo.m */; };
+		56D540680A23C2BE000A8598 /* STResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540200A23C2BE000A8598 /* STResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540690A23C2BE000A8598 /* STRemoteConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540210A23C2BE000A8598 /* STRemoteConversation.m */; };
+		56D5406A0A23C2BE000A8598 /* STRemoteConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540220A23C2BE000A8598 /* STRemoteConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5406B0A23C2BE000A8598 /* STEnvironmentServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540230A23C2BE000A8598 /* STEnvironmentServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5406C0A23C2BE000A8598 /* STEnvironmentDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540240A23C2BE000A8598 /* STEnvironmentDescription.m */; };
+		56D5406D0A23C2BE000A8598 /* STUndefinedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540250A23C2BE000A8598 /* STUndefinedObject.m */; };
+		56D5406E0A23C2BE000A8598 /* STUndefinedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540260A23C2BE000A8598 /* STUndefinedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5406F0A23C2BE000A8598 /* STSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540270A23C2BE000A8598 /* STSelector.m */; };
+		56D540700A23C2BE000A8598 /* STSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D540280A23C2BE000A8598 /* STSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540710A23C2BE000A8598 /* STScriptsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D540290A23C2BE000A8598 /* STScriptsManager.m */; };
+		56D540720A23C2BE000A8598 /* STScriptsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5402A0A23C2BE000A8598 /* STScriptsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D540730A23C2BE000A8598 /* STScriptObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5402B0A23C2BE000A8598 /* STScriptObject.m */; };
+		56D540740A23C2BE000A8598 /* STEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5402C0A23C2BE000A8598 /* STEngine.m */; };
+		56D540750A23C2BE000A8598 /* STEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5402D0A23C2BE000A8598 /* STEngine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		56D540760A23C2BE000A8598 /* StepTalkScriptingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5402E0A23C2BE000A8598 /* StepTalkScriptingInfo.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		56D540810A23C2FC000A8598 /* AppKit.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D540780A23C2FC000A8598 /* AppKit.stenv */; };
+		56D540820A23C2FC000A8598 /* Common.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D540790A23C2FC000A8598 /* Common.stenv */; };
+		56D540830A23C2FC000A8598 /* Distributed.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D5407A0A23C2FC000A8598 /* Distributed.stenv */; };
+		56D540840A23C2FC000A8598 /* Foundation-operators.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D5407B0A23C2FC000A8598 /* Foundation-operators.stenv */; };
+		56D540850A23C2FC000A8598 /* Foundation.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D5407C0A23C2FC000A8598 /* Foundation.stenv */; };
+		56D540860A23C2FC000A8598 /* Safe.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D5407D0A23C2FC000A8598 /* Safe.stenv */; };
+		56D540870A23C2FC000A8598 /* Standard.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D5407E0A23C2FC000A8598 /* Standard.stenv */; };
+		56D540880A23C2FC000A8598 /* StepTalk.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D5407F0A23C2FC000A8598 /* StepTalk.stenv */; };
+		56D540890A23C2FC000A8598 /* SymbolicSelectors.stenv in Resources */ = {isa = PBXBuildFile; fileRef = 56D540800A23C2FC000A8598 /* SymbolicSelectors.stenv */; };
+		56D5408B0A23C30A000A8598 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D5408A0A23C30A000A8598 /* ScriptingInfo.plist */; };
+		56D541AC0A23CA0B000A8598 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D541AB0A23CA0B000A8598 /* Info.plist */; };
+		56D5420B0A23CB4F000A8598 /* Foundation-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D5420A0A23CB4F000A8598 /* Foundation-Info.plist */; };
+		56D5420D0A23CB59000A8598 /* ObjectiveC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D5420C0A23CB59000A8598 /* ObjectiveC-Info.plist */; };
+		56D542C80A23D689000A8598 /* FoundationConstants.list in Resources */ = {isa = PBXBuildFile; fileRef = 56D542AB0A23D62A000A8598 /* FoundationConstants.list */; };
+		56D543770A24C482000A8598 /* NSApplication+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D543730A24C482000A8598 /* NSApplication+additions.m */; };
+		56D543780A24C482000A8598 /* ScriptingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D543740A24C482000A8598 /* ScriptingInfo.plist */; };
+		56D543790A24C482000A8598 /* STAppKitModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D543760A24C482000A8598 /* STAppKitModule.m */; };
+		56D543BB0A24C8A7000A8598 /* AppKitConstants.list in Sources */ = {isa = PBXBuildFile; fileRef = 56D543330A24C3A3000A8598 /* AppKitConstants.list */; };
+		56D543BC0A24C8A8000A8598 /* AppKitEvents.list in Sources */ = {isa = PBXBuildFile; fileRef = 56D543340A24C3A3000A8598 /* AppKitEvents.list */; };
+		56D543BD0A24C8A8000A8598 /* AppKitExceptions.list in Sources */ = {isa = PBXBuildFile; fileRef = 56D543350A24C3A3000A8598 /* AppKitExceptions.list */; };
+		56D543BE0A24C8A8000A8598 /* AppKitNotifications.list in Sources */ = {isa = PBXBuildFile; fileRef = 56D543360A24C3A3000A8598 /* AppKitNotifications.list */; };
+		56D5445F0A24D206000A8598 /* AppKit.bundle in Copy Modules */ = {isa = PBXBuildFile; fileRef = 56D5433F0A24C3C4000A8598 /* AppKit.bundle */; };
+		56D544900A24D2F7000A8598 /* STScriptInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5448E0A24D2F7000A8598 /* STScriptInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D544910A24D2F7000A8598 /* STScriptInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5448F0A24D2F7000A8598 /* STScriptInputView.m */; };
+		56D5449A0A24D374000A8598 /* STTranscriptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D544980A24D374000A8598 /* STTranscriptView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5449B0A24D374000A8598 /* STTranscriptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D544990A24D374000A8598 /* STTranscriptView.m */; };
+		56D5454E0A24EC3E000A8598 /* STConversationWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5454C0A24EC3E000A8598 /* STConversationWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D5454F0A24EC3E000A8598 /* STConversationWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5454D0A24EC3E000A8598 /* STConversationWindow.m */; };
+		56D545560A24ECB1000A8598 /* STConversationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D545540A24ECB1000A8598 /* STConversationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D545570A24ECB1000A8598 /* STConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D545550A24ECB1000A8598 /* STConversationController.m */; };
 		56D5EFDB0A06B9A700DC4990 /* NSNumber+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5EFD80A06B9A700DC4990 /* NSNumber+additions.m */; };
 		56D5EFDC0A06B9A700DC4990 /* NSObject+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5EFDA0A06B9A700DC4990 /* NSObject+additions.m */; };
 		56EAC7770A16B1CF00669056 /* Foundation.bundle in Copy Modules */ = {isa = PBXBuildFile; fileRef = 562A19030A06217F0014F177 /* Foundation.bundle */; };
@@ -197,22 +213,29 @@
 			);
 			script = "bison -p STC -o ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m ${INPUT_FILE_DIR}/${INPUT_FILE_NAME}";
 		};
+		56D542960A23D34E000A8598 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.list";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${INPUT_FILE_BASE}.m",
+			);
+			script = "cat ${INPUT_FILE_DIR}/header.m  | \\\n  sed \"s/@@NAME@@/${INPUT_FILE_BASE}/g\" > \\\n        ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m\ncat ${INPUT_FILE_PATH} | \\\n   awk -f ${INPUT_FILE_DIR}/create_constants.awk >> \\\n        ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m\n";
+		};
+		56D5437E0A24C49A000A8598 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.list";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${INPUT_FILE_BASE}.m",
+			);
+			script = "cat ${INPUT_FILE_DIR}/header.m  | \\\n  sed \"s/@@NAME@@/${INPUT_FILE_BASE}/g\" > \\\n        ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m\ncat ${INPUT_FILE_PATH} | \\\n   awk -f ${INPUT_FILE_DIR}/create_constants.awk >> \\\n        ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m\ncat ${INPUT_FILE_DIR}/footer.m >> \\\n        ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m\n";
+		};
 /* End PBXBuildRule section */
-
-/* Begin PBXBuildStyle section */
-		014CEA440018CDF011CA2923 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		014CEA450018CDF011CA2923 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-			};
-			name = Release;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
 		562A19160A06228D0014F177 /* PBXContainerItemProxy */ = {
@@ -221,6 +244,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = StepTalk;
+		};
+		563155F60A2B90240087B2DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D544740A24D278000A8598;
+			remoteInfo = StepTalkKit;
+		};
+		56D5441D0A24CF53000A8598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D5433E0A24C3C4000A8598;
+			remoteInfo = AppKit;
 		};
 		56EAC6B60A1507C800669056 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -266,6 +303,7 @@
 			dstPath = StepTalk.framework/Modules;
 			dstSubfolderSpec = 1;
 			files = (
+				56D5445F0A24D206000A8598 /* AppKit.bundle in Copy Modules */,
 				56EAC7B80A16B3A700669056 /* ObjectiveC.bundle in Copy Modules */,
 				56EAC7770A16B1CF00669056 /* Foundation.bundle in Copy Modules */,
 			);
@@ -292,161 +330,190 @@
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* StepTalk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepTalk_Prefix.pch; sourceTree = "<group>"; };
 		562A19030A06217F0014F177 /* Foundation.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Foundation.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		562A19040A06217F0014F177 /* Foundation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Foundation-Info.plist"; sourceTree = "<group>"; };
 		562A19450A0623310014F177 /* ObjectiveC.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveC.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		562A19460A0623310014F177 /* ObjectiveC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ObjectiveC-Info.plist"; sourceTree = "<group>"; };
-		562A195B0A0624860014F177 /* NSObject+objcadditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSObject+objcadditions.h"; path = "Modules/ObjectiveC/NSObject+objcadditions.h"; sourceTree = "<group>"; };
-		562A195C0A0624860014F177 /* NSObject+objcadditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSObject+objcadditions.m"; path = "Modules/ObjectiveC/NSObject+objcadditions.m"; sourceTree = "<group>"; };
-		562A195D0A0624860014F177 /* ObjectiveCModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ObjectiveCModule.h; path = Modules/ObjectiveC/ObjectiveCModule.h; sourceTree = "<group>"; };
-		562A195E0A0624860014F177 /* ObjectiveCModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ObjectiveCModule.m; path = Modules/ObjectiveC/ObjectiveCModule.m; sourceTree = "<group>"; };
-		562A195F0A0624860014F177 /* ObjectiveCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ObjectiveCRuntime.h; path = Modules/ObjectiveC/ObjectiveCRuntime.h; sourceTree = "<group>"; };
-		562A19600A0624860014F177 /* ObjectiveCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ObjectiveCRuntime.m; path = Modules/ObjectiveC/ObjectiveCRuntime.m; sourceTree = "<group>"; };
-		562A19610A0624860014F177 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; name = ScriptingInfo.plist; path = Modules/ObjectiveC/ScriptingInfo.plist; sourceTree = "<group>"; };
-		562A19660A0624920014F177 /* FoundationConstants.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FoundationConstants.m; path = Modules/Foundation/FoundationConstants.m; sourceTree = "<group>"; };
-		562A19670A0624920014F177 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Functions.h; path = Modules/Foundation/Functions.h; sourceTree = "<group>"; };
-		562A19680A0624920014F177 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Functions.m; path = Modules/Foundation/Functions.m; sourceTree = "<group>"; };
-		562A19690A0624920014F177 /* NSFileManager+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+additions.m"; path = "Modules/Foundation/NSFileManager+additions.m"; sourceTree = "<group>"; };
-		562A196A0A0624920014F177 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = ScriptingInfo.plist; path = Modules/Foundation/ScriptingInfo.plist; sourceTree = "<group>"; };
-		562A19B00A0625D40014F177 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = ScriptingInfo.plist; sourceTree = "<group>"; };
-		562A19BE0A0627050014F177 /* Externs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Externs.h; path = Languages/StepTalkSmalltalk/Externs.h; sourceTree = "<group>"; };
-		562A19BF0A0627050014F177 /* NSArray+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSArray+additions.h"; path = "Languages/StepTalkSmalltalk/NSArray+additions.h"; sourceTree = "<group>"; };
-		562A19C00A0627050014F177 /* NSArray+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSArray+additions.m"; path = "Languages/StepTalkSmalltalk/NSArray+additions.m"; sourceTree = "<group>"; };
-		562A19C10A0627050014F177 /* NSString+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSString+additions.h"; path = "Languages/StepTalkSmalltalk/NSString+additions.h"; sourceTree = "<group>"; };
-		562A19C20A0627050014F177 /* NSString+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSString+additions.m"; path = "Languages/StepTalkSmalltalk/NSString+additions.m"; sourceTree = "<group>"; };
-		562A19C30A0627050014F177 /* SmalltalkEngine.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SmalltalkEngine.h; path = Languages/StepTalkSmalltalk/SmalltalkEngine.h; sourceTree = "<group>"; };
-		562A19C40A0627050014F177 /* SmalltalkEngine.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SmalltalkEngine.m; path = Languages/StepTalkSmalltalk/SmalltalkEngine.m; sourceTree = "<group>"; };
-		562A19C50A0627050014F177 /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBlock.h; path = Languages/StepTalkSmalltalk/STBlock.h; sourceTree = "<group>"; };
-		562A19C60A0627050014F177 /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBlock.m; path = Languages/StepTalkSmalltalk/STBlock.m; sourceTree = "<group>"; };
-		562A19C70A0627050014F177 /* STBlockContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBlockContext.h; path = Languages/StepTalkSmalltalk/STBlockContext.h; sourceTree = "<group>"; };
-		562A19C80A0627050014F177 /* STBlockContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBlockContext.m; path = Languages/StepTalkSmalltalk/STBlockContext.m; sourceTree = "<group>"; };
-		562A19C90A0627050014F177 /* STBytecodeInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBytecodeInterpreter.h; path = Languages/StepTalkSmalltalk/STBytecodeInterpreter.h; sourceTree = "<group>"; };
-		562A19CA0A0627050014F177 /* STBytecodeInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBytecodeInterpreter.m; path = Languages/StepTalkSmalltalk/STBytecodeInterpreter.m; sourceTree = "<group>"; };
-		562A19CB0A0627050014F177 /* STBytecodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STBytecodes.h; path = Languages/StepTalkSmalltalk/STBytecodes.h; sourceTree = "<group>"; };
-		562A19CC0A0627050014F177 /* STBytecodes.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STBytecodes.m; path = Languages/StepTalkSmalltalk/STBytecodes.m; sourceTree = "<group>"; };
-		562A19CD0A0627050014F177 /* STCompiledCode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompiledCode.h; path = Languages/StepTalkSmalltalk/STCompiledCode.h; sourceTree = "<group>"; };
-		562A19CE0A0627050014F177 /* STCompiledCode.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompiledCode.m; path = Languages/StepTalkSmalltalk/STCompiledCode.m; sourceTree = "<group>"; };
-		562A19CF0A0627050014F177 /* STCompiledMethod.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompiledMethod.h; path = Languages/StepTalkSmalltalk/STCompiledMethod.h; sourceTree = "<group>"; };
-		562A19D00A0627050014F177 /* STCompiledMethod.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompiledMethod.m; path = Languages/StepTalkSmalltalk/STCompiledMethod.m; sourceTree = "<group>"; };
-		562A19D10A0627050014F177 /* STCompiledScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompiledScript.h; path = Languages/StepTalkSmalltalk/STCompiledScript.h; sourceTree = "<group>"; };
-		562A19D20A0627050014F177 /* STCompiledScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompiledScript.m; path = Languages/StepTalkSmalltalk/STCompiledScript.m; sourceTree = "<group>"; };
-		562A19D30A0627050014F177 /* STCompiler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompiler.h; path = Languages/StepTalkSmalltalk/STCompiler.h; sourceTree = "<group>"; };
-		562A19D40A0627050014F177 /* STCompiler.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompiler.m; path = Languages/StepTalkSmalltalk/STCompiler.m; sourceTree = "<group>"; };
-		562A19D50A0627050014F177 /* STCompilerUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STCompilerUtils.h; path = Languages/StepTalkSmalltalk/STCompilerUtils.h; sourceTree = "<group>"; };
-		562A19D60A0627050014F177 /* STCompilerUtils.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STCompilerUtils.m; path = Languages/StepTalkSmalltalk/STCompilerUtils.m; sourceTree = "<group>"; };
-		562A19D70A0627050014F177 /* STExecutionContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STExecutionContext.h; path = Languages/StepTalkSmalltalk/STExecutionContext.h; sourceTree = "<group>"; };
-		562A19D80A0627050014F177 /* STExecutionContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STExecutionContext.m; path = Languages/StepTalkSmalltalk/STExecutionContext.m; sourceTree = "<group>"; };
-		562A19DA0A0627050014F177 /* STGrammar.m.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STGrammar.m.h; path = Languages/StepTalkSmalltalk/STGrammar.m.h; sourceTree = "<group>"; };
-		562A19DB0A0627050014F177 /* STGrammar.y */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.yacc; name = STGrammar.y; path = Languages/StepTalkSmalltalk/STGrammar.y; sourceTree = "<group>"; };
-		562A19DC0A0627050014F177 /* STLiterals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STLiterals.h; path = Languages/StepTalkSmalltalk/STLiterals.h; sourceTree = "<group>"; };
-		562A19DD0A0627050014F177 /* STLiterals.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STLiterals.m; path = Languages/StepTalkSmalltalk/STLiterals.m; sourceTree = "<group>"; };
-		562A19DE0A0627050014F177 /* STMessage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STMessage.h; path = Languages/StepTalkSmalltalk/STMessage.h; sourceTree = "<group>"; };
-		562A19DF0A0627050014F177 /* STMessage.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STMessage.m; path = Languages/StepTalkSmalltalk/STMessage.m; sourceTree = "<group>"; };
-		562A19E00A0627050014F177 /* STMethodContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STMethodContext.h; path = Languages/StepTalkSmalltalk/STMethodContext.h; sourceTree = "<group>"; };
-		562A19E10A0627050014F177 /* STMethodContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STMethodContext.m; path = Languages/StepTalkSmalltalk/STMethodContext.m; sourceTree = "<group>"; };
-		562A19E20A0627050014F177 /* STSelector+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "STSelector+additions.h"; path = "Languages/StepTalkSmalltalk/STSelector+additions.h"; sourceTree = "<group>"; };
-		562A19E30A0627050014F177 /* STSelector+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "STSelector+additions.m"; path = "Languages/StepTalkSmalltalk/STSelector+additions.m"; sourceTree = "<group>"; };
-		562A19E40A0627050014F177 /* STSmalltalkScriptObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STSmalltalkScriptObject.h; path = Languages/StepTalkSmalltalk/STSmalltalkScriptObject.h; sourceTree = "<group>"; };
-		562A19E50A0627050014F177 /* STSmalltalkScriptObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STSmalltalkScriptObject.m; path = Languages/StepTalkSmalltalk/STSmalltalkScriptObject.m; sourceTree = "<group>"; };
-		562A19E60A0627050014F177 /* STSourceReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STSourceReader.h; path = Languages/StepTalkSmalltalk/STSourceReader.h; sourceTree = "<group>"; };
-		562A19E70A0627050014F177 /* STSourceReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STSourceReader.m; path = Languages/StepTalkSmalltalk/STSourceReader.m; sourceTree = "<group>"; };
-		562A19E80A0627050014F177 /* STStack.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STStack.h; path = Languages/StepTalkSmalltalk/STStack.h; sourceTree = "<group>"; };
-		562A19E90A0627050014F177 /* STStack.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = STStack.m; path = Languages/StepTalkSmalltalk/STStack.m; sourceTree = "<group>"; };
-		562A19EA0A0627050014F177 /* STTokenTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = STTokenTypes.h; path = Languages/StepTalkSmalltalk/STTokenTypes.h; sourceTree = "<group>"; };
+		562A195B0A0624860014F177 /* NSObject+objcadditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSObject+objcadditions.h"; sourceTree = "<group>"; };
+		562A195C0A0624860014F177 /* NSObject+objcadditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSObject+objcadditions.m"; sourceTree = "<group>"; };
+		562A195D0A0624860014F177 /* ObjectiveCModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ObjectiveCModule.h; sourceTree = "<group>"; };
+		562A195E0A0624860014F177 /* ObjectiveCModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCModule.m; sourceTree = "<group>"; };
+		562A195F0A0624860014F177 /* ObjectiveCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ObjectiveCRuntime.h; sourceTree = "<group>"; };
+		562A19600A0624860014F177 /* ObjectiveCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCRuntime.m; sourceTree = "<group>"; };
+		562A19610A0624860014F177 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = ScriptingInfo.plist; sourceTree = "<group>"; };
+		562A19690A0624920014F177 /* NSFileManager+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+additions.m"; sourceTree = "<group>"; };
+		562A196A0A0624920014F177 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = ScriptingInfo.plist; sourceTree = "<group>"; };
+		562A19BE0A0627050014F177 /* Externs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Externs.h; sourceTree = "<group>"; };
+		562A19BF0A0627050014F177 /* NSArray+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSArray+additions.h"; sourceTree = "<group>"; };
+		562A19C00A0627050014F177 /* NSArray+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSArray+additions.m"; sourceTree = "<group>"; };
+		562A19C10A0627050014F177 /* NSString+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString+additions.h"; sourceTree = "<group>"; };
+		562A19C20A0627050014F177 /* NSString+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+additions.m"; sourceTree = "<group>"; };
+		562A19C30A0627050014F177 /* SmalltalkEngine.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SmalltalkEngine.h; sourceTree = "<group>"; };
+		562A19C40A0627050014F177 /* SmalltalkEngine.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SmalltalkEngine.m; sourceTree = "<group>"; };
+		562A19C50A0627050014F177 /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
+		562A19C60A0627050014F177 /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
+		562A19C70A0627050014F177 /* STBlockContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STBlockContext.h; sourceTree = "<group>"; };
+		562A19C80A0627050014F177 /* STBlockContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STBlockContext.m; sourceTree = "<group>"; };
+		562A19C90A0627050014F177 /* STBytecodeInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STBytecodeInterpreter.h; sourceTree = "<group>"; };
+		562A19CA0A0627050014F177 /* STBytecodeInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STBytecodeInterpreter.m; sourceTree = "<group>"; };
+		562A19CB0A0627050014F177 /* STBytecodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STBytecodes.h; sourceTree = "<group>"; };
+		562A19CC0A0627050014F177 /* STBytecodes.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STBytecodes.m; sourceTree = "<group>"; };
+		562A19CD0A0627050014F177 /* STCompiledCode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCompiledCode.h; sourceTree = "<group>"; };
+		562A19CE0A0627050014F177 /* STCompiledCode.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STCompiledCode.m; sourceTree = "<group>"; };
+		562A19CF0A0627050014F177 /* STCompiledMethod.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCompiledMethod.h; sourceTree = "<group>"; };
+		562A19D00A0627050014F177 /* STCompiledMethod.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STCompiledMethod.m; sourceTree = "<group>"; };
+		562A19D10A0627050014F177 /* STCompiledScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCompiledScript.h; sourceTree = "<group>"; };
+		562A19D20A0627050014F177 /* STCompiledScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STCompiledScript.m; sourceTree = "<group>"; };
+		562A19D30A0627050014F177 /* STCompiler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCompiler.h; sourceTree = "<group>"; };
+		562A19D40A0627050014F177 /* STCompiler.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STCompiler.m; sourceTree = "<group>"; };
+		562A19D50A0627050014F177 /* STCompilerUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCompilerUtils.h; sourceTree = "<group>"; };
+		562A19D60A0627050014F177 /* STCompilerUtils.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STCompilerUtils.m; sourceTree = "<group>"; };
+		562A19D70A0627050014F177 /* STExecutionContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STExecutionContext.h; sourceTree = "<group>"; };
+		562A19D80A0627050014F177 /* STExecutionContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STExecutionContext.m; sourceTree = "<group>"; };
+		562A19DA0A0627050014F177 /* STGrammar.m.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STGrammar.m.h; sourceTree = "<group>"; };
+		562A19DB0A0627050014F177 /* STGrammar.y */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.yacc; path = STGrammar.y; sourceTree = "<group>"; };
+		562A19DC0A0627050014F177 /* STLiterals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STLiterals.h; sourceTree = "<group>"; };
+		562A19DD0A0627050014F177 /* STLiterals.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STLiterals.m; sourceTree = "<group>"; };
+		562A19DE0A0627050014F177 /* STMessage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STMessage.h; sourceTree = "<group>"; };
+		562A19DF0A0627050014F177 /* STMessage.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STMessage.m; sourceTree = "<group>"; };
+		562A19E00A0627050014F177 /* STMethodContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STMethodContext.h; sourceTree = "<group>"; };
+		562A19E10A0627050014F177 /* STMethodContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STMethodContext.m; sourceTree = "<group>"; };
+		562A19E20A0627050014F177 /* STSelector+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "STSelector+additions.h"; sourceTree = "<group>"; };
+		562A19E30A0627050014F177 /* STSelector+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "STSelector+additions.m"; sourceTree = "<group>"; };
+		562A19E40A0627050014F177 /* STSmalltalkScriptObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STSmalltalkScriptObject.h; sourceTree = "<group>"; };
+		562A19E50A0627050014F177 /* STSmalltalkScriptObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STSmalltalkScriptObject.m; sourceTree = "<group>"; };
+		562A19E60A0627050014F177 /* STSourceReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STSourceReader.h; sourceTree = "<group>"; };
+		562A19E70A0627050014F177 /* STSourceReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STSourceReader.m; sourceTree = "<group>"; };
+		562A19E80A0627050014F177 /* STStack.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STStack.h; sourceTree = "<group>"; };
+		562A19E90A0627050014F177 /* STStack.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STStack.m; sourceTree = "<group>"; };
+		562A19EA0A0627050014F177 /* STTokenTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STTokenTypes.h; sourceTree = "<group>"; };
+		5631598E0A2BBCC40087B2DF /* clean.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = clean.tiff; path = /Users/stevko/Developer/Projects/StepTalk/Frameworks/StepTalkKit/clean.tiff; sourceTree = "<absolute>"; };
+		563159900A2BBD360087B2DF /* arrowDown.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = arrowDown.tiff; path = /Users/stevko/Developer/Projects/StepTalk/Frameworks/StepTalkKit/arrowDown.tiff; sourceTree = "<absolute>"; };
+		563159910A2BBD360087B2DF /* arrowUp.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = arrowUp.tiff; path = /Users/stevko/Developer/Projects/StepTalk/Frameworks/StepTalkKit/arrowUp.tiff; sourceTree = "<absolute>"; };
 		565E2AA00A17CC4400B230EE /* ReadMe-OSX.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ReadMe-OSX.txt"; sourceTree = "<group>"; };
-		568A29230A04BCBA00D60852 /* STApplicationConversation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STApplicationConversation.h; sourceTree = "<group>"; };
-		568A29240A04BCBA00D60852 /* STUndefinedObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STUndefinedObject.h; sourceTree = "<group>"; };
-		568A29250A04BCBA00D60852 /* STStructure.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STStructure.h; sourceTree = "<group>"; };
-		568A29260A04BCBA00D60852 /* STStepTalkManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STStepTalkManager.h; sourceTree = "<group>"; };
-		568A29270A04BCBA00D60852 /* NSObject+CocoaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSObject+CocoaAdditions.h"; sourceTree = "<group>"; };
-		568A29280A04BCBA00D60852 /* STActor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STActor.h; sourceTree = "<group>"; };
-		568A29290A04BCBA00D60852 /* NSObject+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSObject+additions.h"; sourceTree = "<group>"; };
-		568A292A0A04BCBA00D60852 /* ObjcRuntimeSupport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ObjcRuntimeSupport.h; sourceTree = "<group>"; };
-		568A292B0A04BCBA00D60852 /* STLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STLanguageManager.h; sourceTree = "<group>"; };
-		568A292C0A04BCBB00D60852 /* STRemoteConversation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STRemoteConversation.h; sourceTree = "<group>"; };
-		568A292D0A04BCBB00D60852 /* STCocoa.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCocoa.h; sourceTree = "<group>"; };
-		568A292E0A04BCBB00D60852 /* STMethod.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STMethod.h; sourceTree = "<group>"; };
-		568A292F0A04BCBB00D60852 /* NSInvocation+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+additions.h"; sourceTree = "<group>"; };
-		568A29300A04BCBB00D60852 /* STEnvironmentDescription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STEnvironmentDescription.h; sourceTree = "<group>"; };
-		568A29310A04BCBB00D60852 /* STCompat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCompat.h; sourceTree = "<group>"; };
-		568A29320A04BCBB00D60852 /* OSXObjcRuntime+Additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "OSXObjcRuntime+Additions.h"; sourceTree = "<group>"; };
-		568A29330A04BCBB00D60852 /* STContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STContext.h; sourceTree = "<group>"; };
-		568A29340A04BCBB00D60852 /* STEngine.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STEngine.h; sourceTree = "<group>"; };
-		568A29350A04BCBB00D60852 /* STFileScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STFileScript.h; sourceTree = "<group>"; };
-		568A29370A04BCBB00D60852 /* StepTalk.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StepTalk.h; sourceTree = "<group>"; };
-		568A29380A04BCBB00D60852 /* NSNumber+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSNumber+additions.h"; sourceTree = "<group>"; };
-		568A29390A04BCBB00D60852 /* STSelector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STSelector.h; sourceTree = "<group>"; };
-		568A293A0A04BCBB00D60852 /* STScriptsManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScriptsManager.h; sourceTree = "<group>"; };
-		568A293B0A04BCBB00D60852 /* STScriptObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScriptObject.h; sourceTree = "<group>"; };
-		568A293C0A04BCBB00D60852 /* STScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScript.h; sourceTree = "<group>"; };
-		568A293D0A04BCBB00D60852 /* STEnvironmentServer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STEnvironmentServer.h; sourceTree = "<group>"; };
-		568A293E0A04BCBB00D60852 /* STBehaviourInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STBehaviourInfo.h; sourceTree = "<group>"; };
-		568A293F0A04BCBB00D60852 /* STObjectReference.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STObjectReference.h; sourceTree = "<group>"; };
-		568A29400A04BCBB00D60852 /* NSUserDefaults+CocoaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+CocoaAdditions.h"; sourceTree = "<group>"; };
-		568A29410A04BCBB00D60852 /* STObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STObjCRuntime.h; sourceTree = "<group>"; };
-		568A29420A04BCBB00D60852 /* STExterns.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STExterns.h; sourceTree = "<group>"; };
-		568A29430A04BCBB00D60852 /* STConversation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STConversation.h; sourceTree = "<group>"; };
-		568A29440A04BCBB00D60852 /* StepTalkScriptingInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StepTalkScriptingInfo.h; sourceTree = "<group>"; };
-		568A29460A04BCBB00D60852 /* STScripting.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScripting.h; sourceTree = "<group>"; };
-		568A29470A04BCBB00D60852 /* STClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STClassInfo.h; sourceTree = "<group>"; };
-		568A29480A04BCBB00D60852 /* STEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STEnvironment.h; sourceTree = "<group>"; };
-		568A29490A04BCBB00D60852 /* STBundleInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STBundleInfo.h; sourceTree = "<group>"; };
-		568A29720A04BCCA00D60852 /* STUndefinedObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STUndefinedObject.m; sourceTree = "<group>"; };
-		568A29730A04BCCA00D60852 /* STStructure.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STStructure.m; sourceTree = "<group>"; };
-		568A29740A04BCCA00D60852 /* NSObject+CocoaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CocoaAdditions.m"; sourceTree = "<group>"; };
-		568A29750A04BCCA00D60852 /* STBehaviourInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STBehaviourInfo.m; sourceTree = "<group>"; };
-		568A29760A04BCCA00D60852 /* OSXObjcRuntimeSupport.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = OSXObjcRuntimeSupport.m; sourceTree = "<group>"; };
-		568A29770A04BCCA00D60852 /* STContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STContext.m; sourceTree = "<group>"; };
-		568A29780A04BCCA00D60852 /* STBundleInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STBundleInfo.m; sourceTree = "<group>"; };
-		568A29790A04BCCA00D60852 /* STScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScript.m; sourceTree = "<group>"; };
-		568A297A0A04BCCA00D60852 /* STEngine.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STEngine.m; sourceTree = "<group>"; };
-		568A297B0A04BCCA00D60852 /* NSObject+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSObject+additions.m"; sourceTree = "<group>"; };
-		568A297C0A04BCCA00D60852 /* STEnvironmentServer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STEnvironmentServer.m; sourceTree = "<group>"; };
-		568A297D0A04BCCA00D60852 /* STCocoa.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STCocoa.m; sourceTree = "<group>"; };
-		568A297E0A04BCCA00D60852 /* NSNumber+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+additions.m"; sourceTree = "<group>"; };
-		568A297F0A04BCCA00D60852 /* NSUserDefaults+CocoaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+CocoaAdditions.m"; sourceTree = "<group>"; };
-		568A29810A04BCCA00D60852 /* STExterns.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STExterns.m; sourceTree = "<group>"; };
-		568A29820A04BCCA00D60852 /* STActor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STActor.m; sourceTree = "<group>"; };
-		568A29830A04BCCA00D60852 /* STSelector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STSelector.m; sourceTree = "<group>"; };
-		568A29840A04BCCA00D60852 /* STScriptsManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScriptsManager.m; sourceTree = "<group>"; };
-		568A29850A04BCCA00D60852 /* STEnvironmentDescription.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STEnvironmentDescription.m; sourceTree = "<group>"; };
-		568A29860A04BCCA00D60852 /* STScriptObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScriptObject.m; sourceTree = "<group>"; };
-		568A29880A04BCCA00D60852 /* StepTalkScriptingInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = StepTalkScriptingInfo.m; sourceTree = "<group>"; };
-		568A298A0A04BCCA00D60852 /* STConversation.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STConversation.m; sourceTree = "<group>"; };
-		568A298B0A04BCCA00D60852 /* STMethod.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STMethod.m; sourceTree = "<group>"; };
-		568A298C0A04BCCA00D60852 /* STLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STLanguageManager.m; sourceTree = "<group>"; };
-		568A298E0A04BCCA00D60852 /* STFileScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STFileScript.m; sourceTree = "<group>"; };
-		568A298F0A04BCCA00D60852 /* STObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STObjCRuntime.m; sourceTree = "<group>"; };
-		568A29900A04BCCA00D60852 /* STEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STEnvironment.m; sourceTree = "<group>"; };
-		568A29910A04BCCA00D60852 /* STScripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScripting.m; sourceTree = "<group>"; };
-		568A29920A04BCCA00D60852 /* STObjectReference.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STObjectReference.m; sourceTree = "<group>"; };
-		568A29930A04BCCA00D60852 /* NSInvocation+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+additions.m"; sourceTree = "<group>"; };
-		568A29940A04BCCA00D60852 /* STRemoteConversation.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STRemoteConversation.m; sourceTree = "<group>"; };
-		568A29950A04BCCA00D60852 /* STClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STClassInfo.m; sourceTree = "<group>"; };
-		568A29DA0A04BE7400D60852 /* SymbolicSelectors.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = SymbolicSelectors.stenv; sourceTree = "<group>"; };
-		568A29DB0A04BE7400D60852 /* StepTalk.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = StepTalk.stenv; sourceTree = "<group>"; };
-		568A29DC0A04BE7400D60852 /* Standard.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Standard.stenv; sourceTree = "<group>"; };
-		568A29DD0A04BE7400D60852 /* Safe.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Safe.stenv; sourceTree = "<group>"; };
-		568A29DE0A04BE7400D60852 /* Foundation.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Foundation.stenv; sourceTree = "<group>"; };
-		568A29DF0A04BE7400D60852 /* Foundation-operators.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Foundation-operators.stenv"; sourceTree = "<group>"; };
-		568A29E00A04BE7400D60852 /* Distributed.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Distributed.stenv; sourceTree = "<group>"; };
-		568A29E10A04BE7400D60852 /* Common.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Common.stenv; sourceTree = "<group>"; };
-		568A29E20A04BE7400D60852 /* AppKit.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = AppKit.stenv; sourceTree = "<group>"; };
 		568A2A190A04BF1500D60852 /* Smalltalk.stlanguage */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Smalltalk.stlanguage; sourceTree = BUILT_PRODUCTS_DIR; };
 		568A2A1A0A04BF1500D60852 /* Smalltalk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Smalltalk-Info.plist"; sourceTree = "<group>"; };
 		568A2A4D0A04C8FC00D60852 /* StepTalk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StepTalk.framework; path = ../../../Library/Frameworks/StepTalk.framework; sourceTree = SOURCE_ROOT; };
+		56A29CA30A2CE5890063DD53 /* StepTalkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepTalkKit.h; sourceTree = "<group>"; };
+		56A29DCF0A2CF9A40063DD53 /* Run.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Run.tiff; sourceTree = "<group>"; };
 		56C504F00A13F73F00432EBE /* NEWS */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
 		56C504F20A13F75500432EBE /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
 		56C504F30A13F75500432EBE /* COPYING */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		56C504F40A13F75500432EBE /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		56C504F50A13F75500432EBE /* TODO */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		56C504F60A13F75500432EBE /* WISH */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = WISH; sourceTree = "<group>"; };
-		56C505360A13F9BE00432EBE /* STResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STResourceManager.h; sourceTree = "<group>"; };
-		56C505370A13F9BE00432EBE /* STResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STResourceManager.m; sourceTree = "<group>"; };
-		56D5EFD70A06B9A700DC4990 /* NSNumber+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSNumber+additions.h"; path = "Languages/StepTalkSmalltalk/NSNumber+additions.h"; sourceTree = "<group>"; };
-		56D5EFD80A06B9A700DC4990 /* NSNumber+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+additions.m"; path = "Languages/StepTalkSmalltalk/NSNumber+additions.m"; sourceTree = "<group>"; };
-		56D5EFD90A06B9A700DC4990 /* NSObject+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSObject+additions.h"; path = "Languages/StepTalkSmalltalk/NSObject+additions.h"; sourceTree = "<group>"; };
-		56D5EFDA0A06B9A700DC4990 /* NSObject+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSObject+additions.m"; path = "Languages/StepTalkSmalltalk/NSObject+additions.m"; sourceTree = "<group>"; };
-		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		56D53FE80A23C2BE000A8598 /* NSInvocation+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+additions.h"; sourceTree = "<group>"; };
+		56D53FE90A23C2BE000A8598 /* NSNumber+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+additions.m"; sourceTree = "<group>"; };
+		56D53FEA0A23C2BE000A8598 /* NSInvocation+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+additions.m"; sourceTree = "<group>"; };
+		56D53FEB0A23C2BE000A8598 /* NSObject+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSObject+additions.h"; sourceTree = "<group>"; };
+		56D53FEC0A23C2BE000A8598 /* NSObject+CocoaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CocoaAdditions.m"; sourceTree = "<group>"; };
+		56D53FED0A23C2BE000A8598 /* NSObject+CocoaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSObject+CocoaAdditions.h"; sourceTree = "<group>"; };
+		56D53FEE0A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+CocoaAdditions.h"; sourceTree = "<group>"; };
+		56D53FEF0A23C2BE000A8598 /* NSObject+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSObject+additions.m"; sourceTree = "<group>"; };
+		56D53FF00A23C2BE000A8598 /* NSNumber+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSNumber+additions.h"; sourceTree = "<group>"; };
+		56D53FF10A23C2BE000A8598 /* OSXObjcRuntime+Additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "OSXObjcRuntime+Additions.h"; sourceTree = "<group>"; };
+		56D53FF20A23C2BE000A8598 /* ObjcRuntimeSupport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ObjcRuntimeSupport.h; sourceTree = "<group>"; };
+		56D53FF30A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+CocoaAdditions.m"; sourceTree = "<group>"; };
+		56D53FF40A23C2BE000A8598 /* OSXObjcRuntimeSupport.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = OSXObjcRuntimeSupport.m; sourceTree = "<group>"; };
+		56D53FF50A23C2BE000A8598 /* STActor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STActor.m; sourceTree = "<group>"; };
+		56D53FF60A23C2BE000A8598 /* STActor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STActor.h; sourceTree = "<group>"; };
+		56D53FF70A23C2BE000A8598 /* STBehaviourInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STBehaviourInfo.m; sourceTree = "<group>"; };
+		56D53FF80A23C2BE000A8598 /* STBehaviourInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STBehaviourInfo.h; sourceTree = "<group>"; };
+		56D53FFA0A23C2BE000A8598 /* STClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STClassInfo.h; sourceTree = "<group>"; };
+		56D53FFB0A23C2BE000A8598 /* STBundleInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STBundleInfo.m; sourceTree = "<group>"; };
+		56D53FFC0A23C2BE000A8598 /* STBundleInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STBundleInfo.h; sourceTree = "<group>"; };
+		56D53FFD0A23C2BE000A8598 /* STStructure.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STStructure.m; sourceTree = "<group>"; };
+		56D53FFE0A23C2BE000A8598 /* STStructure.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STStructure.h; sourceTree = "<group>"; };
+		56D540000A23C2BE000A8598 /* STObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STObjCRuntime.h; sourceTree = "<group>"; };
+		56D540010A23C2BE000A8598 /* STMethod.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STMethod.m; sourceTree = "<group>"; };
+		56D540020A23C2BE000A8598 /* STMethod.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STMethod.h; sourceTree = "<group>"; };
+		56D540030A23C2BE000A8598 /* STConversation.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STConversation.m; sourceTree = "<group>"; };
+		56D540040A23C2BE000A8598 /* STConversation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STConversation.h; sourceTree = "<group>"; };
+		56D540050A23C2BE000A8598 /* STContext.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STContext.m; sourceTree = "<group>"; };
+		56D540060A23C2BE000A8598 /* STObjectReference.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STObjectReference.m; sourceTree = "<group>"; };
+		56D540070A23C2BE000A8598 /* STObjectReference.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STObjectReference.h; sourceTree = "<group>"; };
+		56D540080A23C2BE000A8598 /* STObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STObjCRuntime.m; sourceTree = "<group>"; };
+		56D540090A23C2BE000A8598 /* STEnvironmentDescription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STEnvironmentDescription.h; sourceTree = "<group>"; };
+		56D5400A0A23C2BE000A8598 /* STEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STEnvironment.m; sourceTree = "<group>"; };
+		56D5400B0A23C2BE000A8598 /* STEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STEnvironment.h; sourceTree = "<group>"; };
+		56D5400C0A23C2BE000A8598 /* STFileScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STFileScript.h; sourceTree = "<group>"; };
+		56D5400D0A23C2BE000A8598 /* STExterns.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STExterns.m; sourceTree = "<group>"; };
+		56D5400E0A23C2BE000A8598 /* STScriptObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScriptObject.h; sourceTree = "<group>"; };
+		56D5400F0A23C2BE000A8598 /* STScripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScripting.m; sourceTree = "<group>"; };
+		56D540100A23C2BE000A8598 /* STScripting.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScripting.h; sourceTree = "<group>"; };
+		56D540110A23C2BE000A8598 /* STScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScript.m; sourceTree = "<group>"; };
+		56D540120A23C2BE000A8598 /* STLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STLanguageManager.m; sourceTree = "<group>"; };
+		56D540130A23C2BE000A8598 /* STLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STLanguageManager.h; sourceTree = "<group>"; };
+		56D540140A23C2BE000A8598 /* STFileScript.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STFileScript.m; sourceTree = "<group>"; };
+		56D540150A23C2BE000A8598 /* StepTalk.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StepTalk.h; sourceTree = "<group>"; };
+		56D540160A23C2BE000A8598 /* STEnvironmentServer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STEnvironmentServer.m; sourceTree = "<group>"; };
+		56D540170A23C2BE000A8598 /* STExterns.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STExterns.h; sourceTree = "<group>"; };
+		56D540180A23C2BE000A8598 /* StepTalkScriptingInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = StepTalkScriptingInfo.m; sourceTree = "<group>"; };
+		56D540190A23C2BE000A8598 /* STScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScript.h; sourceTree = "<group>"; };
+		56D5401A0A23C2BE000A8598 /* STResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STResourceManager.m; sourceTree = "<group>"; };
+		56D5401B0A23C2BE000A8598 /* STContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STContext.h; sourceTree = "<group>"; };
+		56D5401C0A23C2BE000A8598 /* STCompat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCompat.h; sourceTree = "<group>"; };
+		56D5401D0A23C2BE000A8598 /* STCocoa.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STCocoa.m; sourceTree = "<group>"; };
+		56D5401E0A23C2BE000A8598 /* STCocoa.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STCocoa.h; sourceTree = "<group>"; };
+		56D5401F0A23C2BE000A8598 /* STClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STClassInfo.m; sourceTree = "<group>"; };
+		56D540200A23C2BE000A8598 /* STResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STResourceManager.h; sourceTree = "<group>"; };
+		56D540210A23C2BE000A8598 /* STRemoteConversation.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STRemoteConversation.m; sourceTree = "<group>"; };
+		56D540220A23C2BE000A8598 /* STRemoteConversation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STRemoteConversation.h; sourceTree = "<group>"; };
+		56D540230A23C2BE000A8598 /* STEnvironmentServer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STEnvironmentServer.h; sourceTree = "<group>"; };
+		56D540240A23C2BE000A8598 /* STEnvironmentDescription.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STEnvironmentDescription.m; sourceTree = "<group>"; };
+		56D540250A23C2BE000A8598 /* STUndefinedObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STUndefinedObject.m; sourceTree = "<group>"; };
+		56D540260A23C2BE000A8598 /* STUndefinedObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STUndefinedObject.h; sourceTree = "<group>"; };
+		56D540270A23C2BE000A8598 /* STSelector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STSelector.m; sourceTree = "<group>"; };
+		56D540280A23C2BE000A8598 /* STSelector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STSelector.h; sourceTree = "<group>"; };
+		56D540290A23C2BE000A8598 /* STScriptsManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScriptsManager.m; sourceTree = "<group>"; };
+		56D5402A0A23C2BE000A8598 /* STScriptsManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScriptsManager.h; sourceTree = "<group>"; };
+		56D5402B0A23C2BE000A8598 /* STScriptObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScriptObject.m; sourceTree = "<group>"; };
+		56D5402C0A23C2BE000A8598 /* STEngine.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STEngine.m; sourceTree = "<group>"; };
+		56D5402D0A23C2BE000A8598 /* STEngine.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STEngine.h; sourceTree = "<group>"; };
+		56D5402E0A23C2BE000A8598 /* StepTalkScriptingInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StepTalkScriptingInfo.h; sourceTree = "<group>"; };
+		56D540780A23C2FC000A8598 /* AppKit.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = AppKit.stenv; sourceTree = "<group>"; };
+		56D540790A23C2FC000A8598 /* Common.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Common.stenv; sourceTree = "<group>"; };
+		56D5407A0A23C2FC000A8598 /* Distributed.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Distributed.stenv; sourceTree = "<group>"; };
+		56D5407B0A23C2FC000A8598 /* Foundation-operators.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Foundation-operators.stenv"; sourceTree = "<group>"; };
+		56D5407C0A23C2FC000A8598 /* Foundation.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Foundation.stenv; sourceTree = "<group>"; };
+		56D5407D0A23C2FC000A8598 /* Safe.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Safe.stenv; sourceTree = "<group>"; };
+		56D5407E0A23C2FC000A8598 /* Standard.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Standard.stenv; sourceTree = "<group>"; };
+		56D5407F0A23C2FC000A8598 /* StepTalk.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = StepTalk.stenv; sourceTree = "<group>"; };
+		56D540800A23C2FC000A8598 /* SymbolicSelectors.stenv */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = SymbolicSelectors.stenv; sourceTree = "<group>"; };
+		56D5408A0A23C30A000A8598 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = ScriptingInfo.plist; sourceTree = "<group>"; };
+		56D541AB0A23CA0B000A8598 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D5420A0A23CB4F000A8598 /* Foundation-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = "Foundation-Info.plist"; sourceTree = "<group>"; };
+		56D5420C0A23CB59000A8598 /* ObjectiveC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = "ObjectiveC-Info.plist"; sourceTree = "<group>"; };
+		56D5429E0A23D600000A8598 /* create_constants.awk */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = create_constants.awk; sourceTree = "<group>"; };
+		56D5429F0A23D600000A8598 /* footer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = footer.m; sourceTree = "<group>"; };
+		56D542A00A23D600000A8598 /* header.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = header.m; sourceTree = "<group>"; };
+		56D542AB0A23D62A000A8598 /* FoundationConstants.list */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 30; path = FoundationConstants.list; sourceTree = "<group>"; };
+		56D543330A24C3A3000A8598 /* AppKitConstants.list */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 30; path = AppKitConstants.list; sourceTree = "<group>"; };
+		56D543340A24C3A3000A8598 /* AppKitEvents.list */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 30; path = AppKitEvents.list; sourceTree = "<group>"; };
+		56D543350A24C3A3000A8598 /* AppKitExceptions.list */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 30; path = AppKitExceptions.list; sourceTree = "<group>"; };
+		56D543360A24C3A3000A8598 /* AppKitNotifications.list */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 30; path = AppKitNotifications.list; sourceTree = "<group>"; };
+		56D5433F0A24C3C4000A8598 /* AppKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D543400A24C3C4000A8598 /* AppKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "AppKit-Info.plist"; path = "../../AppKit-Info.plist"; sourceTree = "<group>"; };
+		56D5435C0A24C46C000A8598 /* footer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = footer.m; sourceTree = "<group>"; };
+		56D5435F0A24C46C000A8598 /* header.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = header.m; sourceTree = "<group>"; };
+		56D543720A24C482000A8598 /* NSApplication+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSApplication+additions.h"; sourceTree = "<group>"; };
+		56D543730A24C482000A8598 /* NSApplication+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+additions.m"; sourceTree = "<group>"; };
+		56D543740A24C482000A8598 /* ScriptingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = ScriptingInfo.plist; sourceTree = "<group>"; };
+		56D543750A24C482000A8598 /* STAppKitModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STAppKitModule.h; sourceTree = "<group>"; };
+		56D543760A24C482000A8598 /* STAppKitModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STAppKitModule.m; sourceTree = "<group>"; };
+		56D5437A0A24C48B000A8598 /* create_constants.awk */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = create_constants.awk; sourceTree = "<group>"; };
+		56D544750A24D278000A8598 /* StepTalkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepTalkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D544760A24D279000A8598 /* StepTalkKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "StepTalkKit-Info.plist"; sourceTree = "<group>"; };
+		56D5448E0A24D2F7000A8598 /* STScriptInputView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = STScriptInputView.h; sourceTree = "<group>"; };
+		56D5448F0A24D2F7000A8598 /* STScriptInputView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = STScriptInputView.m; sourceTree = "<group>"; };
+		56D544980A24D374000A8598 /* STTranscriptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTranscriptView.h; sourceTree = "<group>"; };
+		56D544990A24D374000A8598 /* STTranscriptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTranscriptView.m; sourceTree = "<group>"; };
+		56D5452B0A24E7DC000A8598 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/StepTalkConversation.nib; sourceTree = "<group>"; };
+		56D5454C0A24EC3E000A8598 /* STConversationWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConversationWindow.h; sourceTree = "<group>"; };
+		56D5454D0A24EC3E000A8598 /* STConversationWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConversationWindow.m; sourceTree = "<group>"; };
+		56D545540A24ECB1000A8598 /* STConversationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConversationController.h; sourceTree = "<group>"; };
+		56D545550A24ECB1000A8598 /* STConversationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConversationController.m; sourceTree = "<group>"; };
+		56D5EFD70A06B9A700DC4990 /* NSNumber+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSNumber+additions.h"; sourceTree = "<group>"; };
+		56D5EFD80A06B9A700DC4990 /* NSNumber+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+additions.m"; sourceTree = "<group>"; };
+		56D5EFD90A06B9A700DC4990 /* NSObject+additions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSObject+additions.h"; sourceTree = "<group>"; };
+		56D5EFDA0A06B9A700DC4990 /* NSObject+additions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSObject+additions.m"; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* StepTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -475,6 +542,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56D5433D0A24C3C4000A8598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D544730A24D278000A8598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5631557D0A2B6D910087B2DF /* StepTalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF560486A6940098B216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -493,6 +575,8 @@
 				568A2A190A04BF1500D60852 /* Smalltalk.stlanguage */,
 				562A19030A06217F0014F177 /* Foundation.bundle */,
 				562A19450A0623310014F177 /* ObjectiveC.bundle */,
+				56D5433F0A24C3C4000A8598 /* AppKit.bundle */,
+				56D544750A24D278000A8598 /* StepTalkKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -501,15 +585,13 @@
 			isa = PBXGroup;
 			children = (
 				56C504DD0A13F71800432EBE /* Documentation */,
-				568A2B3E0A04DBE900D60852 /* Modules */,
+				56D540C70A23C864000A8598 /* Frameworks */,
+				568A2B3E0A04DBE900D60852 /* Bundles */,
 				568A2B3A0A04DB8900D60852 /* Languages */,
-				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
-				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				562A19040A06217F0014F177 /* Foundation-Info.plist */,
-				562A19460A0623310014F177 /* ObjectiveC-Info.plist */,
+				56D544760A24D279000A8598 /* StepTalkKit-Info.plist */,
 			);
 			name = StepTalk;
 			sourceTree = "<group>";
@@ -526,90 +608,37 @@
 		089C1665FE841158C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				568A29EC0A04BE7E00D60852 /* Environments */,
-				8DC2EF5A0486A6940098B216 /* Info.plist */,
-				562A19B00A0625D40014F177 /* ScriptingInfo.plist */,
+				56D541AB0A23CA0B000A8598 /* Info.plist */,
+				56D5408A0A23C30A000A8598 /* ScriptingInfo.plist */,
 				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+		08FB77AEFE84172EC02AAC07 /* StepTalk */ = {
 			isa = PBXGroup;
 			children = (
-				568A292F0A04BCBB00D60852 /* NSInvocation+additions.h */,
-				568A29930A04BCCA00D60852 /* NSInvocation+additions.m */,
-				568A29380A04BCBB00D60852 /* NSNumber+additions.h */,
-				568A297E0A04BCCA00D60852 /* NSNumber+additions.m */,
-				568A29290A04BCBA00D60852 /* NSObject+additions.h */,
-				568A297B0A04BCCA00D60852 /* NSObject+additions.m */,
-				568A29270A04BCBA00D60852 /* NSObject+CocoaAdditions.h */,
-				568A29740A04BCCA00D60852 /* NSObject+CocoaAdditions.m */,
-				568A297F0A04BCCA00D60852 /* NSUserDefaults+CocoaAdditions.m */,
-				568A29400A04BCBB00D60852 /* NSUserDefaults+CocoaAdditions.h */,
-				568A29320A04BCBB00D60852 /* OSXObjcRuntime+Additions.h */,
-				568A29760A04BCCA00D60852 /* OSXObjcRuntimeSupport.m */,
-				568A292A0A04BCBA00D60852 /* ObjcRuntimeSupport.h */,
-				568A29280A04BCBA00D60852 /* STActor.h */,
-				568A29820A04BCCA00D60852 /* STActor.m */,
-				568A29230A04BCBA00D60852 /* STApplicationConversation.h */,
-				568A29490A04BCBB00D60852 /* STBundleInfo.h */,
-				568A29780A04BCCA00D60852 /* STBundleInfo.m */,
-				568A293E0A04BCBB00D60852 /* STBehaviourInfo.h */,
-				568A29750A04BCCA00D60852 /* STBehaviourInfo.m */,
-				568A292D0A04BCBB00D60852 /* STCocoa.h */,
-				568A297D0A04BCCA00D60852 /* STCocoa.m */,
-				568A29330A04BCBB00D60852 /* STContext.h */,
-				568A29770A04BCCA00D60852 /* STContext.m */,
-				568A29430A04BCBB00D60852 /* STConversation.h */,
-				568A298A0A04BCCA00D60852 /* STConversation.m */,
-				568A29310A04BCBB00D60852 /* STCompat.h */,
-				568A29470A04BCBB00D60852 /* STClassInfo.h */,
-				568A29950A04BCCA00D60852 /* STClassInfo.m */,
-				568A29340A04BCBB00D60852 /* STEngine.h */,
-				568A297A0A04BCCA00D60852 /* STEngine.m */,
-				568A29480A04BCBB00D60852 /* STEnvironment.h */,
-				568A29900A04BCCA00D60852 /* STEnvironment.m */,
-				568A29300A04BCBB00D60852 /* STEnvironmentDescription.h */,
-				568A29850A04BCCA00D60852 /* STEnvironmentDescription.m */,
-				568A293D0A04BCBB00D60852 /* STEnvironmentServer.h */,
-				568A297C0A04BCCA00D60852 /* STEnvironmentServer.m */,
-				568A29420A04BCBB00D60852 /* STExterns.h */,
-				568A29810A04BCCA00D60852 /* STExterns.m */,
-				568A29350A04BCBB00D60852 /* STFileScript.h */,
-				568A298E0A04BCCA00D60852 /* STFileScript.m */,
-				568A292B0A04BCBA00D60852 /* STLanguageManager.h */,
-				568A298C0A04BCCA00D60852 /* STLanguageManager.m */,
-				568A292E0A04BCBB00D60852 /* STMethod.h */,
-				568A298B0A04BCCA00D60852 /* STMethod.m */,
-				568A29410A04BCBB00D60852 /* STObjCRuntime.h */,
-				568A298F0A04BCCA00D60852 /* STObjCRuntime.m */,
-				568A293F0A04BCBB00D60852 /* STObjectReference.h */,
-				568A29920A04BCCA00D60852 /* STObjectReference.m */,
-				568A292C0A04BCBB00D60852 /* STRemoteConversation.h */,
-				568A29940A04BCCA00D60852 /* STRemoteConversation.m */,
-				568A293A0A04BCBB00D60852 /* STScriptsManager.h */,
-				568A293C0A04BCBB00D60852 /* STScript.h */,
-				568A29790A04BCCA00D60852 /* STScript.m */,
-				568A29460A04BCBB00D60852 /* STScripting.h */,
-				568A29910A04BCCA00D60852 /* STScripting.m */,
-				568A29840A04BCCA00D60852 /* STScriptsManager.m */,
-				568A293B0A04BCBB00D60852 /* STScriptObject.h */,
-				568A29860A04BCCA00D60852 /* STScriptObject.m */,
-				568A29390A04BCBB00D60852 /* STSelector.h */,
-				568A29830A04BCCA00D60852 /* STSelector.m */,
-				568A29250A04BCBA00D60852 /* STStructure.h */,
-				568A29730A04BCCA00D60852 /* STStructure.m */,
-				568A29260A04BCBA00D60852 /* STStepTalkManager.h */,
-				568A29240A04BCBA00D60852 /* STUndefinedObject.h */,
-				568A29720A04BCCA00D60852 /* STUndefinedObject.m */,
-				568A29370A04BCBB00D60852 /* StepTalk.h */,
-				568A29440A04BCBB00D60852 /* StepTalkScriptingInfo.h */,
-				568A29880A04BCCA00D60852 /* StepTalkScriptingInfo.m */,
-				56C505360A13F9BE00432EBE /* STResourceManager.h */,
-				56C505370A13F9BE00432EBE /* STResourceManager.m */,
+				56D5408D0A23C352000A8598 /* Language Engine */,
+				56D5408F0A23C3C0000A8598 /* Context */,
+				56D540A00A23C3C7000A8598 /* Conversation */,
+				56D540A10A23C440000A8598 /* Scripting and Actors */,
+				56D5408E0A23C378000A8598 /* ObjectiveC Runtime */,
+				56D5408C0A23C346000A8598 /* Cocoa Additions */,
+				568A29EC0A04BE7E00D60852 /* Environments */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				56D540150A23C2BE000A8598 /* StepTalk.h */,
+				56D5402E0A23C2BE000A8598 /* StepTalkScriptingInfo.h */,
+				56D540180A23C2BE000A8598 /* StepTalkScriptingInfo.m */,
+				56D53FFB0A23C2BE000A8598 /* STBundleInfo.m */,
+				56D53FFC0A23C2BE000A8598 /* STBundleInfo.h */,
+				56D540170A23C2BE000A8598 /* STExterns.h */,
+				56D5400D0A23C2BE000A8598 /* STExterns.m */,
+				56D540230A23C2BE000A8598 /* STEnvironmentServer.h */,
+				56D540160A23C2BE000A8598 /* STEnvironmentServer.m */,
+				56D540200A23C2BE000A8598 /* STResourceManager.h */,
+				56D5401A0A23C2BE000A8598 /* STResourceManager.m */,
 			);
-			name = Classes;
+			name = StepTalk;
 			sourceTree = "<group>";
 		};
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
@@ -648,110 +677,70 @@
 				562A195F0A0624860014F177 /* ObjectiveCRuntime.h */,
 				562A19600A0624860014F177 /* ObjectiveCRuntime.m */,
 				562A19610A0624860014F177 /* ScriptingInfo.plist */,
+				56D5420C0A23CB59000A8598 /* ObjectiveC-Info.plist */,
 			);
-			name = ObjectiveC;
+			path = ObjectiveC;
 			sourceTree = "<group>";
 		};
-		568A29D90A04BE3E00D60852 /* Smalltalk */ = {
+		568A29D90A04BE3E00D60852 /* StepTalkSmalltalk */ = {
 			isa = PBXGroup;
 			children = (
+				56D540C40A23C6EE000A8598 /* Engine */,
+				56D540C00A23C67F000A8598 /* Compiler */,
+				56D540C10A23C689000A8598 /* Interpreter */,
+				56D540C20A23C699000A8598 /* Additions */,
 				568A2A1A0A04BF1500D60852 /* Smalltalk-Info.plist */,
 				562A19BE0A0627050014F177 /* Externs.h */,
-				562A19BF0A0627050014F177 /* NSArray+additions.h */,
-				562A19C00A0627050014F177 /* NSArray+additions.m */,
-				562A19C10A0627050014F177 /* NSString+additions.h */,
-				562A19C20A0627050014F177 /* NSString+additions.m */,
-				56D5EFD70A06B9A700DC4990 /* NSNumber+additions.h */,
-				56D5EFD80A06B9A700DC4990 /* NSNumber+additions.m */,
-				56D5EFD90A06B9A700DC4990 /* NSObject+additions.h */,
-				56D5EFDA0A06B9A700DC4990 /* NSObject+additions.m */,
-				562A19C30A0627050014F177 /* SmalltalkEngine.h */,
-				562A19C40A0627050014F177 /* SmalltalkEngine.m */,
-				562A19C50A0627050014F177 /* STBlock.h */,
-				562A19C60A0627050014F177 /* STBlock.m */,
-				562A19C70A0627050014F177 /* STBlockContext.h */,
-				562A19C80A0627050014F177 /* STBlockContext.m */,
-				562A19C90A0627050014F177 /* STBytecodeInterpreter.h */,
-				562A19CA0A0627050014F177 /* STBytecodeInterpreter.m */,
-				562A19CB0A0627050014F177 /* STBytecodes.h */,
-				562A19CC0A0627050014F177 /* STBytecodes.m */,
-				562A19CD0A0627050014F177 /* STCompiledCode.h */,
-				562A19CE0A0627050014F177 /* STCompiledCode.m */,
-				562A19CF0A0627050014F177 /* STCompiledMethod.h */,
-				562A19D00A0627050014F177 /* STCompiledMethod.m */,
-				562A19D10A0627050014F177 /* STCompiledScript.h */,
-				562A19D20A0627050014F177 /* STCompiledScript.m */,
-				562A19D30A0627050014F177 /* STCompiler.h */,
-				562A19D40A0627050014F177 /* STCompiler.m */,
-				562A19D50A0627050014F177 /* STCompilerUtils.h */,
-				562A19D60A0627050014F177 /* STCompilerUtils.m */,
-				562A19D70A0627050014F177 /* STExecutionContext.h */,
-				562A19D80A0627050014F177 /* STExecutionContext.m */,
-				562A19DA0A0627050014F177 /* STGrammar.m.h */,
-				562A19DB0A0627050014F177 /* STGrammar.y */,
-				562A19DC0A0627050014F177 /* STLiterals.h */,
-				562A19DD0A0627050014F177 /* STLiterals.m */,
-				562A19DE0A0627050014F177 /* STMessage.h */,
-				562A19DF0A0627050014F177 /* STMessage.m */,
-				562A19E00A0627050014F177 /* STMethodContext.h */,
-				562A19E10A0627050014F177 /* STMethodContext.m */,
-				562A19E20A0627050014F177 /* STSelector+additions.h */,
-				562A19E30A0627050014F177 /* STSelector+additions.m */,
-				562A19E40A0627050014F177 /* STSmalltalkScriptObject.h */,
-				562A19E50A0627050014F177 /* STSmalltalkScriptObject.m */,
-				562A19E60A0627050014F177 /* STSourceReader.h */,
-				562A19E70A0627050014F177 /* STSourceReader.m */,
-				562A19E80A0627050014F177 /* STStack.h */,
-				562A19E90A0627050014F177 /* STStack.m */,
-				562A19EA0A0627050014F177 /* STTokenTypes.h */,
 				568A2A4D0A04C8FC00D60852 /* StepTalk.framework */,
 			);
-			name = Smalltalk;
+			path = StepTalkSmalltalk;
 			sourceTree = "<group>";
 		};
 		568A29EC0A04BE7E00D60852 /* Environments */ = {
 			isa = PBXGroup;
 			children = (
-				568A29DA0A04BE7400D60852 /* SymbolicSelectors.stenv */,
-				568A29DB0A04BE7400D60852 /* StepTalk.stenv */,
-				568A29DC0A04BE7400D60852 /* Standard.stenv */,
-				568A29DD0A04BE7400D60852 /* Safe.stenv */,
-				568A29DE0A04BE7400D60852 /* Foundation.stenv */,
-				568A29DF0A04BE7400D60852 /* Foundation-operators.stenv */,
-				568A29E00A04BE7400D60852 /* Distributed.stenv */,
-				568A29E10A04BE7400D60852 /* Common.stenv */,
-				568A29E20A04BE7400D60852 /* AppKit.stenv */,
+				56D540780A23C2FC000A8598 /* AppKit.stenv */,
+				56D540790A23C2FC000A8598 /* Common.stenv */,
+				56D5407A0A23C2FC000A8598 /* Distributed.stenv */,
+				56D5407B0A23C2FC000A8598 /* Foundation-operators.stenv */,
+				56D5407C0A23C2FC000A8598 /* Foundation.stenv */,
+				56D5407D0A23C2FC000A8598 /* Safe.stenv */,
+				56D5407E0A23C2FC000A8598 /* Standard.stenv */,
+				56D5407F0A23C2FC000A8598 /* StepTalk.stenv */,
+				56D540800A23C2FC000A8598 /* SymbolicSelectors.stenv */,
 			);
-			name = Environments;
+			path = Environments;
 			sourceTree = "<group>";
 		};
 		568A2B3A0A04DB8900D60852 /* Languages */ = {
 			isa = PBXGroup;
 			children = (
-				568A29D90A04BE3E00D60852 /* Smalltalk */,
+				568A29D90A04BE3E00D60852 /* StepTalkSmalltalk */,
 			);
-			name = Languages;
+			path = Languages;
 			sourceTree = "<group>";
 		};
-		568A2B3E0A04DBE900D60852 /* Modules */ = {
+		568A2B3E0A04DBE900D60852 /* Bundles */ = {
 			isa = PBXGroup;
 			children = (
-				562A194E0A06235A0014F177 /* ObjectiveC */,
 				568A2B3F0A04DBF100D60852 /* Foundation */,
+				56D5432E0A24C34D000A8598 /* AppKit */,
+				562A194E0A06235A0014F177 /* ObjectiveC */,
 			);
-			name = Modules;
+			name = Bundles;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		568A2B3F0A04DBF100D60852 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				562A19660A0624920014F177 /* FoundationConstants.m */,
-				562A19670A0624920014F177 /* Functions.h */,
-				562A19680A0624920014F177 /* Functions.m */,
+				56D5429C0A23D5DC000A8598 /* Support */,
+				56D542AB0A23D62A000A8598 /* FoundationConstants.list */,
 				562A19690A0624920014F177 /* NSFileManager+additions.m */,
 				562A196A0A0624920014F177 /* ScriptingInfo.plist */,
+				56D5420A0A23CB4F000A8598 /* Foundation-Info.plist */,
 			);
-			name = Foundation;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		56C504DD0A13F71800432EBE /* Documentation */ = {
@@ -768,51 +757,314 @@
 			name = Documentation;
 			sourceTree = "<group>";
 		};
+		56D5408C0A23C346000A8598 /* Cocoa Additions */ = {
+			isa = PBXGroup;
+			children = (
+				56D5401C0A23C2BE000A8598 /* STCompat.h */,
+				56D5401E0A23C2BE000A8598 /* STCocoa.h */,
+				56D5401D0A23C2BE000A8598 /* STCocoa.m */,
+				56D53FEB0A23C2BE000A8598 /* NSObject+additions.h */,
+				56D53FEF0A23C2BE000A8598 /* NSObject+additions.m */,
+				56D53FED0A23C2BE000A8598 /* NSObject+CocoaAdditions.h */,
+				56D53FEC0A23C2BE000A8598 /* NSObject+CocoaAdditions.m */,
+				56D53FF00A23C2BE000A8598 /* NSNumber+additions.h */,
+				56D53FE90A23C2BE000A8598 /* NSNumber+additions.m */,
+				56D53FEE0A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.h */,
+				56D53FF30A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.m */,
+			);
+			name = "Cocoa Additions";
+			sourceTree = "<group>";
+		};
+		56D5408D0A23C352000A8598 /* Language Engine */ = {
+			isa = PBXGroup;
+			children = (
+				56D5402D0A23C2BE000A8598 /* STEngine.h */,
+				56D5402C0A23C2BE000A8598 /* STEngine.m */,
+				56D540130A23C2BE000A8598 /* STLanguageManager.h */,
+				56D540120A23C2BE000A8598 /* STLanguageManager.m */,
+				56D540070A23C2BE000A8598 /* STObjectReference.h */,
+				56D540060A23C2BE000A8598 /* STObjectReference.m */,
+				56D540020A23C2BE000A8598 /* STMethod.h */,
+				56D540010A23C2BE000A8598 /* STMethod.m */,
+				56D540260A23C2BE000A8598 /* STUndefinedObject.h */,
+				56D540250A23C2BE000A8598 /* STUndefinedObject.m */,
+			);
+			name = "Language Engine";
+			sourceTree = "<group>";
+		};
+		56D5408E0A23C378000A8598 /* ObjectiveC Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				56D540000A23C2BE000A8598 /* STObjCRuntime.h */,
+				56D540080A23C2BE000A8598 /* STObjCRuntime.m */,
+				56D53FE80A23C2BE000A8598 /* NSInvocation+additions.h */,
+				56D53FEA0A23C2BE000A8598 /* NSInvocation+additions.m */,
+				56D53FF10A23C2BE000A8598 /* OSXObjcRuntime+Additions.h */,
+				56D53FF40A23C2BE000A8598 /* OSXObjcRuntimeSupport.m */,
+				56D53FF20A23C2BE000A8598 /* ObjcRuntimeSupport.h */,
+				56D53FFE0A23C2BE000A8598 /* STStructure.h */,
+				56D53FFD0A23C2BE000A8598 /* STStructure.m */,
+				56D540280A23C2BE000A8598 /* STSelector.h */,
+				56D540270A23C2BE000A8598 /* STSelector.m */,
+			);
+			name = "ObjectiveC Runtime";
+			sourceTree = "<group>";
+		};
+		56D5408F0A23C3C0000A8598 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				56D5401B0A23C2BE000A8598 /* STContext.h */,
+				56D540050A23C2BE000A8598 /* STContext.m */,
+				56D5400B0A23C2BE000A8598 /* STEnvironment.h */,
+				56D5400A0A23C2BE000A8598 /* STEnvironment.m */,
+				56D540090A23C2BE000A8598 /* STEnvironmentDescription.h */,
+				56D540240A23C2BE000A8598 /* STEnvironmentDescription.m */,
+				56D53FF80A23C2BE000A8598 /* STBehaviourInfo.h */,
+				56D53FF70A23C2BE000A8598 /* STBehaviourInfo.m */,
+				56D53FFA0A23C2BE000A8598 /* STClassInfo.h */,
+				56D5401F0A23C2BE000A8598 /* STClassInfo.m */,
+			);
+			name = Context;
+			sourceTree = "<group>";
+		};
+		56D540A00A23C3C7000A8598 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				56D540040A23C2BE000A8598 /* STConversation.h */,
+				56D540030A23C2BE000A8598 /* STConversation.m */,
+				56D540220A23C2BE000A8598 /* STRemoteConversation.h */,
+				56D540210A23C2BE000A8598 /* STRemoteConversation.m */,
+			);
+			name = Conversation;
+			sourceTree = "<group>";
+		};
+		56D540A10A23C440000A8598 /* Scripting and Actors */ = {
+			isa = PBXGroup;
+			children = (
+				56D53FF60A23C2BE000A8598 /* STActor.h */,
+				56D53FF50A23C2BE000A8598 /* STActor.m */,
+				56D5400E0A23C2BE000A8598 /* STScriptObject.h */,
+				56D5402B0A23C2BE000A8598 /* STScriptObject.m */,
+				56D540100A23C2BE000A8598 /* STScripting.h */,
+				56D5400F0A23C2BE000A8598 /* STScripting.m */,
+				56D540190A23C2BE000A8598 /* STScript.h */,
+				56D540110A23C2BE000A8598 /* STScript.m */,
+				56D5400C0A23C2BE000A8598 /* STFileScript.h */,
+				56D540140A23C2BE000A8598 /* STFileScript.m */,
+				56D5402A0A23C2BE000A8598 /* STScriptsManager.h */,
+				56D540290A23C2BE000A8598 /* STScriptsManager.m */,
+			);
+			name = "Scripting and Actors";
+			sourceTree = "<group>";
+		};
+		56D540C00A23C67F000A8598 /* Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				562A19D30A0627050014F177 /* STCompiler.h */,
+				562A19D40A0627050014F177 /* STCompiler.m */,
+				562A19DB0A0627050014F177 /* STGrammar.y */,
+				562A19DA0A0627050014F177 /* STGrammar.m.h */,
+				562A19E60A0627050014F177 /* STSourceReader.h */,
+				562A19E70A0627050014F177 /* STSourceReader.m */,
+				562A19CD0A0627050014F177 /* STCompiledCode.h */,
+				562A19CE0A0627050014F177 /* STCompiledCode.m */,
+				562A19CF0A0627050014F177 /* STCompiledMethod.h */,
+				562A19D00A0627050014F177 /* STCompiledMethod.m */,
+				562A19D10A0627050014F177 /* STCompiledScript.h */,
+				562A19D20A0627050014F177 /* STCompiledScript.m */,
+				562A19EA0A0627050014F177 /* STTokenTypes.h */,
+				562A19DE0A0627050014F177 /* STMessage.h */,
+				562A19DF0A0627050014F177 /* STMessage.m */,
+				562A19E20A0627050014F177 /* STSelector+additions.h */,
+				562A19E30A0627050014F177 /* STSelector+additions.m */,
+				562A19DC0A0627050014F177 /* STLiterals.h */,
+				562A19DD0A0627050014F177 /* STLiterals.m */,
+				562A19D50A0627050014F177 /* STCompilerUtils.h */,
+				562A19D60A0627050014F177 /* STCompilerUtils.m */,
+			);
+			name = Compiler;
+			sourceTree = "<group>";
+		};
+		56D540C10A23C689000A8598 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				562A19C90A0627050014F177 /* STBytecodeInterpreter.h */,
+				562A19CA0A0627050014F177 /* STBytecodeInterpreter.m */,
+				562A19CB0A0627050014F177 /* STBytecodes.h */,
+				562A19CC0A0627050014F177 /* STBytecodes.m */,
+				562A19E80A0627050014F177 /* STStack.h */,
+				562A19E90A0627050014F177 /* STStack.m */,
+				562A19C50A0627050014F177 /* STBlock.h */,
+				562A19C60A0627050014F177 /* STBlock.m */,
+				562A19D70A0627050014F177 /* STExecutionContext.h */,
+				562A19D80A0627050014F177 /* STExecutionContext.m */,
+				562A19C70A0627050014F177 /* STBlockContext.h */,
+				562A19C80A0627050014F177 /* STBlockContext.m */,
+				562A19E00A0627050014F177 /* STMethodContext.h */,
+				562A19E10A0627050014F177 /* STMethodContext.m */,
+			);
+			name = Interpreter;
+			sourceTree = "<group>";
+		};
+		56D540C20A23C699000A8598 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				562A19BF0A0627050014F177 /* NSArray+additions.h */,
+				562A19C00A0627050014F177 /* NSArray+additions.m */,
+				562A19C10A0627050014F177 /* NSString+additions.h */,
+				562A19C20A0627050014F177 /* NSString+additions.m */,
+				56D5EFD70A06B9A700DC4990 /* NSNumber+additions.h */,
+				56D5EFD80A06B9A700DC4990 /* NSNumber+additions.m */,
+				56D5EFD90A06B9A700DC4990 /* NSObject+additions.h */,
+				56D5EFDA0A06B9A700DC4990 /* NSObject+additions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		56D540C40A23C6EE000A8598 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				562A19C30A0627050014F177 /* SmalltalkEngine.h */,
+				562A19C40A0627050014F177 /* SmalltalkEngine.m */,
+				562A19E40A0627050014F177 /* STSmalltalkScriptObject.h */,
+				562A19E50A0627050014F177 /* STSmalltalkScriptObject.m */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		56D540C70A23C864000A8598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56D544820A24D280000A8598 /* StepTalkKit */,
+				08FB77AEFE84172EC02AAC07 /* StepTalk */,
+			);
+			name = Frameworks;
+			path = Frameworks/StepTalk;
+			sourceTree = "<group>";
+		};
+		56D5429C0A23D5DC000A8598 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				56D5429E0A23D600000A8598 /* create_constants.awk */,
+				56D5429F0A23D600000A8598 /* footer.m */,
+				56D542A00A23D600000A8598 /* header.m */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		56D5432E0A24C34D000A8598 /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				56D543530A24C40E000A8598 /* Support */,
+				56D543330A24C3A3000A8598 /* AppKitConstants.list */,
+				56D543340A24C3A3000A8598 /* AppKitEvents.list */,
+				56D543350A24C3A3000A8598 /* AppKitExceptions.list */,
+				56D543360A24C3A3000A8598 /* AppKitNotifications.list */,
+				56D543720A24C482000A8598 /* NSApplication+additions.h */,
+				56D543730A24C482000A8598 /* NSApplication+additions.m */,
+				56D543750A24C482000A8598 /* STAppKitModule.h */,
+				56D543760A24C482000A8598 /* STAppKitModule.m */,
+				56D543400A24C3C4000A8598 /* AppKit-Info.plist */,
+				56D543740A24C482000A8598 /* ScriptingInfo.plist */,
+			);
+			path = AppKit;
+			sourceTree = "<group>";
+		};
+		56D543530A24C40E000A8598 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				56D5435F0A24C46C000A8598 /* header.m */,
+				56D5435C0A24C46C000A8598 /* footer.m */,
+				56D5437A0A24C48B000A8598 /* create_constants.awk */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		56D544820A24D280000A8598 /* StepTalkKit */ = {
+			isa = PBXGroup;
+			children = (
+				56D544E00A24E6A1000A8598 /* Interfaces */,
+				56D5448E0A24D2F7000A8598 /* STScriptInputView.h */,
+				56D5448F0A24D2F7000A8598 /* STScriptInputView.m */,
+				56D544980A24D374000A8598 /* STTranscriptView.h */,
+				56D544990A24D374000A8598 /* STTranscriptView.m */,
+				56D5454C0A24EC3E000A8598 /* STConversationWindow.h */,
+				56D5454D0A24EC3E000A8598 /* STConversationWindow.m */,
+				56A29CA30A2CE5890063DD53 /* StepTalkKit.h */,
+				56D545540A24ECB1000A8598 /* STConversationController.h */,
+				56D545550A24ECB1000A8598 /* STConversationController.m */,
+			);
+			name = StepTalkKit;
+			path = Frameworks/StepTalkKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		56D544E00A24E6A1000A8598 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				563159900A2BBD360087B2DF /* arrowDown.tiff */,
+				563159910A2BBD360087B2DF /* arrowUp.tiff */,
+				5631598E0A2BBCC40087B2DF /* clean.tiff */,
+				56A29DCF0A2CF9A40063DD53 /* Run.tiff */,
+				563155400A27B5DF0087B2DF /* StepTalkConversation.nib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		56D544700A24D278000A8598 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D544900A24D2F7000A8598 /* STScriptInputView.h in Headers */,
+				56D5449A0A24D374000A8598 /* STTranscriptView.h in Headers */,
+				56D5454E0A24EC3E000A8598 /* STConversationWindow.h in Headers */,
+				56D545560A24ECB1000A8598 /* STConversationController.h in Headers */,
+				56A29CA50A2CE5890063DD53 /* StepTalkKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF500486A6940098B216 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				568A294F0A04BCBB00D60852 /* NSObject+CocoaAdditions.h in Headers */,
-				568A29510A04BCBB00D60852 /* NSObject+additions.h in Headers */,
-				568A29570A04BCBB00D60852 /* NSInvocation+additions.h in Headers */,
-				568A29520A04BCBB00D60852 /* ObjcRuntimeSupport.h in Headers */,
-				568A294B0A04BCBB00D60852 /* STApplicationConversation.h in Headers */,
-				568A29500A04BCBB00D60852 /* STActor.h in Headers */,
-				568A29530A04BCBB00D60852 /* STLanguageManager.h in Headers */,
-				568A29550A04BCBB00D60852 /* STCocoa.h in Headers */,
-				568A295B0A04BCBB00D60852 /* STContext.h in Headers */,
-				568A295C0A04BCBB00D60852 /* STEngine.h in Headers */,
-				568A295D0A04BCBB00D60852 /* STFileScript.h in Headers */,
-				568A29560A04BCBB00D60852 /* STMethod.h in Headers */,
-				568A29540A04BCBB00D60852 /* STRemoteConversation.h in Headers */,
-				568A294D0A04BCBB00D60852 /* STStructure.h in Headers */,
-				568A294E0A04BCBB00D60852 /* STStepTalkManager.h in Headers */,
-				568A294C0A04BCBB00D60852 /* STUndefinedObject.h in Headers */,
-				568A29580A04BCBB00D60852 /* STEnvironmentDescription.h in Headers */,
-				568A29590A04BCBB00D60852 /* STCompat.h in Headers */,
-				568A295A0A04BCBB00D60852 /* OSXObjcRuntime+Additions.h in Headers */,
-				568A295F0A04BCBB00D60852 /* StepTalk.h in Headers */,
-				568A29600A04BCBB00D60852 /* NSNumber+additions.h in Headers */,
-				568A29610A04BCBB00D60852 /* STSelector.h in Headers */,
-				568A29620A04BCBB00D60852 /* STScriptsManager.h in Headers */,
-				568A29630A04BCBB00D60852 /* STScriptObject.h in Headers */,
-				568A29640A04BCBB00D60852 /* STScript.h in Headers */,
-				568A29650A04BCBB00D60852 /* STEnvironmentServer.h in Headers */,
-				568A29660A04BCBB00D60852 /* STBehaviourInfo.h in Headers */,
-				568A29670A04BCBB00D60852 /* STObjectReference.h in Headers */,
-				568A29680A04BCBB00D60852 /* NSUserDefaults+CocoaAdditions.h in Headers */,
-				568A29690A04BCBB00D60852 /* STObjCRuntime.h in Headers */,
-				568A296A0A04BCBB00D60852 /* STExterns.h in Headers */,
-				568A296B0A04BCBB00D60852 /* STConversation.h in Headers */,
-				568A296C0A04BCBB00D60852 /* StepTalkScriptingInfo.h in Headers */,
-				568A296E0A04BCBB00D60852 /* STScripting.h in Headers */,
-				568A296F0A04BCBB00D60852 /* STClassInfo.h in Headers */,
-				568A29700A04BCBB00D60852 /* STEnvironment.h in Headers */,
-				568A29710A04BCBB00D60852 /* STBundleInfo.h in Headers */,
-				56C505380A13F9BE00432EBE /* STResourceManager.h in Headers */,
+				56D540300A23C2BE000A8598 /* NSInvocation+additions.h in Headers */,
+				56D540330A23C2BE000A8598 /* NSObject+additions.h in Headers */,
+				56D540350A23C2BE000A8598 /* NSObject+CocoaAdditions.h in Headers */,
+				56D540360A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.h in Headers */,
+				56D540380A23C2BE000A8598 /* NSNumber+additions.h in Headers */,
+				56D540390A23C2BE000A8598 /* OSXObjcRuntime+Additions.h in Headers */,
+				56D5403A0A23C2BE000A8598 /* ObjcRuntimeSupport.h in Headers */,
+				56D5403E0A23C2BE000A8598 /* STActor.h in Headers */,
+				56D540400A23C2BE000A8598 /* STBehaviourInfo.h in Headers */,
+				56D540420A23C2BE000A8598 /* STClassInfo.h in Headers */,
+				56D540440A23C2BE000A8598 /* STBundleInfo.h in Headers */,
+				56D540460A23C2BE000A8598 /* STStructure.h in Headers */,
+				56D540480A23C2BE000A8598 /* STObjCRuntime.h in Headers */,
+				56D5404A0A23C2BE000A8598 /* STMethod.h in Headers */,
+				56D5404C0A23C2BE000A8598 /* STConversation.h in Headers */,
+				56D5404F0A23C2BE000A8598 /* STObjectReference.h in Headers */,
+				56D540510A23C2BE000A8598 /* STEnvironmentDescription.h in Headers */,
+				56D540530A23C2BE000A8598 /* STEnvironment.h in Headers */,
+				56D540540A23C2BE000A8598 /* STFileScript.h in Headers */,
+				56D540560A23C2BE000A8598 /* STScriptObject.h in Headers */,
+				56D540580A23C2BE000A8598 /* STScripting.h in Headers */,
+				56D5405B0A23C2BE000A8598 /* STLanguageManager.h in Headers */,
+				56D5405D0A23C2BE000A8598 /* StepTalk.h in Headers */,
+				56D5405F0A23C2BE000A8598 /* STExterns.h in Headers */,
+				56D540610A23C2BE000A8598 /* STScript.h in Headers */,
+				56D540630A23C2BE000A8598 /* STContext.h in Headers */,
+				56D540640A23C2BE000A8598 /* STCompat.h in Headers */,
+				56D540660A23C2BE000A8598 /* STCocoa.h in Headers */,
+				56D540680A23C2BE000A8598 /* STResourceManager.h in Headers */,
+				56D5406A0A23C2BE000A8598 /* STRemoteConversation.h in Headers */,
+				56D5406B0A23C2BE000A8598 /* STEnvironmentServer.h in Headers */,
+				56D5406E0A23C2BE000A8598 /* STUndefinedObject.h in Headers */,
+				56D540700A23C2BE000A8598 /* STSelector.h in Headers */,
+				56D540720A23C2BE000A8598 /* STScriptsManager.h in Headers */,
+				56D540750A23C2BE000A8598 /* STEngine.h in Headers */,
+				56D540760A23C2BE000A8598 /* StepTalkScriptingInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,51 +1080,13 @@
 				562A19010A06217F0014F177 /* Frameworks */,
 			);
 			buildRules = (
+				56D542960A23D34E000A8598 /* PBXBuildRule */,
 			);
-			buildSettings = {
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Foundation-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Foundation;
-				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = YES;
-			};
 			dependencies = (
 			);
 			name = Foundation;
 			productName = Foundation;
 			productReference = 562A19030A06217F0014F177 /* Foundation.bundle */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Foundation</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>BNDL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.bundle";
 		};
 		562A19440A0623310014F177 /* ObjectiveC */ = {
@@ -885,50 +1099,11 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "ObjectiveC-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = ObjectiveC;
-				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = YES;
-			};
 			dependencies = (
 			);
 			name = ObjectiveC;
 			productName = ObjectiveC;
 			productReference = 562A19450A0623310014F177 /* ObjectiveC.bundle */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.ObjectiveC</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>BNDL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.bundle";
 		};
 		568A2A180A04BF1500D60852 /* Smalltalk */ = {
@@ -942,51 +1117,48 @@
 			buildRules = (
 				562A1A5C0A062A490014F177 /* PBXBuildRule */,
 			);
-			buildSettings = {
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Smalltalk-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Smalltalk;
-				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = YES;
-			};
 			dependencies = (
 			);
 			name = Smalltalk;
 			productName = Smalltalk;
 			productReference = 568A2A190A04BF1500D60852 /* Smalltalk.stlanguage */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Smalltalk</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>BNDL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.bundle";
+		};
+		56D5433E0A24C3C4000A8598 /* AppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D543410A24C3C5000A8598 /* Build configuration list for PBXNativeTarget "AppKit" */;
+			buildPhases = (
+				56D5433B0A24C3C4000A8598 /* Resources */,
+				56D5433C0A24C3C4000A8598 /* Sources */,
+				56D5433D0A24C3C4000A8598 /* Frameworks */,
+			);
+			buildRules = (
+				56D5437E0A24C49A000A8598 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = AppKit;
+			productName = AppKit;
+			productReference = 56D5433F0A24C3C4000A8598 /* AppKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		56D544740A24D278000A8598 /* StepTalkKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D5447F0A24D27A000A8598 /* Build configuration list for PBXNativeTarget "StepTalkKit" */;
+			buildPhases = (
+				56D544700A24D278000A8598 /* Headers */,
+				56D544710A24D278000A8598 /* Resources */,
+				56D544720A24D278000A8598 /* Sources */,
+				56D544730A24D278000A8598 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepTalkKit;
+			productName = StepTalkKit;
+			productReference = 56D544750A24D278000A8598 /* StepTalkKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		8DC2EF4F0486A6940098B216 /* StepTalk */ = {
 			isa = PBXNativeTarget;
@@ -999,8 +1171,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-			};
 			dependencies = (
 			);
 			name = StepTalk;
@@ -1015,20 +1185,16 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "StepTalk" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				014CEA440018CDF011CA2923 /* Debug */,
-				014CEA450018CDF011CA2923 /* Release */,
-			);
 			hasScannedForEncodings = 1;
 			mainGroup = 0867D691FE84028FC02AAC07 /* StepTalk */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* StepTalk */,
+				56D544740A24D278000A8598 /* StepTalkKit */,
 				568A2A180A04BF1500D60852 /* Smalltalk */,
 				562A19020A06217F0014F177 /* Foundation */,
+				56D5433E0A24C3C4000A8598 /* AppKit */,
 				562A19440A0623310014F177 /* ObjectiveC */,
 				562A19120A06226C0014F177 /* All */,
 				56EAC7760A16B1C700669056 /* Package */,
@@ -1043,6 +1209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				562A196E0A0624920014F177 /* ScriptingInfo.plist in Resources */,
+				56D542C80A23D689000A8598 /* FoundationConstants.list in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1062,21 +1229,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56D5433B0A24C3C4000A8598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D543780A24C482000A8598 /* ScriptingInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D544710A24D278000A8598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563155410A27B5DF0087B2DF /* StepTalkConversation.nib in Resources */,
+				5631598F0A2BBCC40087B2DF /* clean.tiff in Resources */,
+				563159920A2BBD360087B2DF /* arrowDown.tiff in Resources */,
+				563159930A2BBD360087B2DF /* arrowUp.tiff in Resources */,
+				56A29DD00A2CF9A40063DD53 /* Run.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF520486A6940098B216 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
-				568A29E30A04BE7400D60852 /* SymbolicSelectors.stenv in Resources */,
-				568A29E40A04BE7400D60852 /* StepTalk.stenv in Resources */,
-				568A29E50A04BE7400D60852 /* Standard.stenv in Resources */,
-				568A29E60A04BE7400D60852 /* Safe.stenv in Resources */,
-				568A29E70A04BE7400D60852 /* Foundation.stenv in Resources */,
-				568A29E80A04BE7400D60852 /* Foundation-operators.stenv in Resources */,
-				568A29E90A04BE7400D60852 /* Distributed.stenv in Resources */,
-				568A29EA0A04BE7400D60852 /* Common.stenv in Resources */,
-				568A29EB0A04BE7400D60852 /* AppKit.stenv in Resources */,
-				562A19B10A0625D40014F177 /* ScriptingInfo.plist in Resources */,
 				56C504F10A13F73F00432EBE /* NEWS in Resources */,
 				56C504F70A13F75500432EBE /* ChangeLog in Resources */,
 				56C504F80A13F75500432EBE /* COPYING in Resources */,
@@ -1084,6 +1261,19 @@
 				56C504FA0A13F75500432EBE /* TODO in Resources */,
 				56C504FB0A13F75500432EBE /* WISH in Resources */,
 				565E2AA10A17CC4400B230EE /* ReadMe-OSX.txt in Resources */,
+				56D540810A23C2FC000A8598 /* AppKit.stenv in Resources */,
+				56D540820A23C2FC000A8598 /* Common.stenv in Resources */,
+				56D540830A23C2FC000A8598 /* Distributed.stenv in Resources */,
+				56D540840A23C2FC000A8598 /* Foundation-operators.stenv in Resources */,
+				56D540850A23C2FC000A8598 /* Foundation.stenv in Resources */,
+				56D540860A23C2FC000A8598 /* Safe.stenv in Resources */,
+				56D540870A23C2FC000A8598 /* Standard.stenv in Resources */,
+				56D540880A23C2FC000A8598 /* StepTalk.stenv in Resources */,
+				56D540890A23C2FC000A8598 /* SymbolicSelectors.stenv in Resources */,
+				56D5408B0A23C30A000A8598 /* ScriptingInfo.plist in Resources */,
+				56D541AC0A23CA0B000A8598 /* Info.plist in Resources */,
+				56D5420B0A23CB4F000A8598 /* Foundation-Info.plist in Resources */,
+				56D5420D0A23CB59000A8598 /* ObjectiveC-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1094,8 +1284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				562A196B0A0624920014F177 /* FoundationConstants.m in Sources */,
-				562A196C0A0624920014F177 /* Functions.m in Sources */,
 				562A196D0A0624920014F177 /* NSFileManager+additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1140,43 +1328,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56D5433C0A24C3C4000A8598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D543770A24C482000A8598 /* NSApplication+additions.m in Sources */,
+				56D543790A24C482000A8598 /* STAppKitModule.m in Sources */,
+				56D543BB0A24C8A7000A8598 /* AppKitConstants.list in Sources */,
+				56D543BC0A24C8A8000A8598 /* AppKitEvents.list in Sources */,
+				56D543BD0A24C8A8000A8598 /* AppKitExceptions.list in Sources */,
+				56D543BE0A24C8A8000A8598 /* AppKitNotifications.list in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D544720A24D278000A8598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D544910A24D2F7000A8598 /* STScriptInputView.m in Sources */,
+				56D5449B0A24D374000A8598 /* STTranscriptView.m in Sources */,
+				56D5454F0A24EC3E000A8598 /* STConversationWindow.m in Sources */,
+				56D545570A24ECB1000A8598 /* STConversationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF540486A6940098B216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				568A29960A04BCCA00D60852 /* STUndefinedObject.m in Sources */,
-				568A29970A04BCCA00D60852 /* STStructure.m in Sources */,
-				568A29980A04BCCA00D60852 /* NSObject+CocoaAdditions.m in Sources */,
-				568A29990A04BCCA00D60852 /* STBehaviourInfo.m in Sources */,
-				568A299A0A04BCCA00D60852 /* OSXObjcRuntimeSupport.m in Sources */,
-				568A299B0A04BCCA00D60852 /* STContext.m in Sources */,
-				568A299C0A04BCCA00D60852 /* STBundleInfo.m in Sources */,
-				568A299D0A04BCCA00D60852 /* STScript.m in Sources */,
-				568A299E0A04BCCA00D60852 /* STEngine.m in Sources */,
-				568A299F0A04BCCA00D60852 /* NSObject+additions.m in Sources */,
-				568A29A00A04BCCA00D60852 /* STEnvironmentServer.m in Sources */,
-				568A29A10A04BCCA00D60852 /* STCocoa.m in Sources */,
-				568A29A20A04BCCA00D60852 /* NSNumber+additions.m in Sources */,
-				568A29A30A04BCCA00D60852 /* NSUserDefaults+CocoaAdditions.m in Sources */,
-				568A29A50A04BCCA00D60852 /* STExterns.m in Sources */,
-				568A29A60A04BCCA00D60852 /* STActor.m in Sources */,
-				568A29A70A04BCCA00D60852 /* STSelector.m in Sources */,
-				568A29A80A04BCCA00D60852 /* STScriptsManager.m in Sources */,
-				568A29A90A04BCCA00D60852 /* STEnvironmentDescription.m in Sources */,
-				568A29AA0A04BCCA00D60852 /* STScriptObject.m in Sources */,
-				568A29AC0A04BCCA00D60852 /* StepTalkScriptingInfo.m in Sources */,
-				568A29AE0A04BCCA00D60852 /* STConversation.m in Sources */,
-				568A29AF0A04BCCA00D60852 /* STMethod.m in Sources */,
-				568A29B00A04BCCA00D60852 /* STLanguageManager.m in Sources */,
-				568A29B20A04BCCA00D60852 /* STFileScript.m in Sources */,
-				568A29B30A04BCCA00D60852 /* STObjCRuntime.m in Sources */,
-				568A29B40A04BCCA00D60852 /* STEnvironment.m in Sources */,
-				568A29B50A04BCCA00D60852 /* STScripting.m in Sources */,
-				568A29B60A04BCCA00D60852 /* STObjectReference.m in Sources */,
-				568A29B70A04BCCA00D60852 /* NSInvocation+additions.m in Sources */,
-				568A29B80A04BCCA00D60852 /* STRemoteConversation.m in Sources */,
-				568A29B90A04BCCA00D60852 /* STClassInfo.m in Sources */,
-				56C505390A13F9BE00432EBE /* STResourceManager.m in Sources */,
+				56D540310A23C2BE000A8598 /* NSNumber+additions.m in Sources */,
+				56D540320A23C2BE000A8598 /* NSInvocation+additions.m in Sources */,
+				56D540340A23C2BE000A8598 /* NSObject+CocoaAdditions.m in Sources */,
+				56D540370A23C2BE000A8598 /* NSObject+additions.m in Sources */,
+				56D5403B0A23C2BE000A8598 /* NSUserDefaults+CocoaAdditions.m in Sources */,
+				56D5403C0A23C2BE000A8598 /* OSXObjcRuntimeSupport.m in Sources */,
+				56D5403D0A23C2BE000A8598 /* STActor.m in Sources */,
+				56D5403F0A23C2BE000A8598 /* STBehaviourInfo.m in Sources */,
+				56D540430A23C2BE000A8598 /* STBundleInfo.m in Sources */,
+				56D540450A23C2BE000A8598 /* STStructure.m in Sources */,
+				56D540490A23C2BE000A8598 /* STMethod.m in Sources */,
+				56D5404B0A23C2BE000A8598 /* STConversation.m in Sources */,
+				56D5404D0A23C2BE000A8598 /* STContext.m in Sources */,
+				56D5404E0A23C2BE000A8598 /* STObjectReference.m in Sources */,
+				56D540500A23C2BE000A8598 /* STObjCRuntime.m in Sources */,
+				56D540520A23C2BE000A8598 /* STEnvironment.m in Sources */,
+				56D540550A23C2BE000A8598 /* STExterns.m in Sources */,
+				56D540570A23C2BE000A8598 /* STScripting.m in Sources */,
+				56D540590A23C2BE000A8598 /* STScript.m in Sources */,
+				56D5405A0A23C2BE000A8598 /* STLanguageManager.m in Sources */,
+				56D5405C0A23C2BE000A8598 /* STFileScript.m in Sources */,
+				56D5405E0A23C2BE000A8598 /* STEnvironmentServer.m in Sources */,
+				56D540600A23C2BE000A8598 /* StepTalkScriptingInfo.m in Sources */,
+				56D540620A23C2BE000A8598 /* STResourceManager.m in Sources */,
+				56D540650A23C2BE000A8598 /* STCocoa.m in Sources */,
+				56D540670A23C2BE000A8598 /* STClassInfo.m in Sources */,
+				56D540690A23C2BE000A8598 /* STRemoteConversation.m in Sources */,
+				56D5406C0A23C2BE000A8598 /* STEnvironmentDescription.m in Sources */,
+				56D5406D0A23C2BE000A8598 /* STUndefinedObject.m in Sources */,
+				56D5406F0A23C2BE000A8598 /* STSelector.m in Sources */,
+				56D540710A23C2BE000A8598 /* STScriptsManager.m in Sources */,
+				56D540730A23C2BE000A8598 /* STScriptObject.m in Sources */,
+				56D540740A23C2BE000A8598 /* STEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1187,6 +1399,16 @@
 			isa = PBXTargetDependency;
 			target = 8DC2EF4F0486A6940098B216 /* StepTalk */;
 			targetProxy = 562A19160A06228D0014F177 /* PBXContainerItemProxy */;
+		};
+		563155F70A2B90240087B2DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D544740A24D278000A8598 /* StepTalkKit */;
+			targetProxy = 563155F60A2B90240087B2DF /* PBXContainerItemProxy */;
+		};
+		56D5441E0A24CF53000A8598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D5433E0A24C3C4000A8598 /* AppKit */;
+			targetProxy = 56D5441D0A24CF53000A8598 /* PBXContainerItemProxy */;
 		};
 		56EAC6B70A1507C800669056 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1224,6 +1446,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		563155400A27B5DF0087B2DF /* StepTalkConversation.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D5452B0A24E7DC000A8598 /* English */,
+			);
+			name = StepTalkConversation.nib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1250,6 +1480,7 @@
 				PRODUCT_NAME = StepTalk;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = build;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = YES;
 			};
@@ -1316,7 +1547,11 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Foundation-Info.plist";
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Modules/Foundation/Foundation-Info.plist";
 				INSTALL_MODE_FLAG = "og-w,a+rX";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = (
@@ -1327,7 +1562,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Foundation;
-				SKIP_INSTALL = NO;
+				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
@@ -1403,7 +1638,11 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "ObjectiveC-Info.plist";
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Modules/ObjectiveC/ObjectiveC-Info.plist";
 				INSTALL_MODE_FLAG = "og-w,a+rX";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = (
@@ -1469,8 +1708,11 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				HEADER_SEARCH_PATHS = "$(HOME)/Library/Frameworks";
-				INFOPLIST_FILE = "Smalltalk-Info.plist";
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Languages/StepTalkSmalltalk/Smalltalk-Info.plist";
 				INSTALL_MODE_FLAG = "go-w,a+rX";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = (
@@ -1517,6 +1759,122 @@
 				PRODUCT_NAME = Smalltalk;
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = stlanguage;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		56D543420A24C3C5000A8598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "AppKit-Info.plist";
+				INSTALL_MODE_FLAG = "og-w,a+rX";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AppKit;
+				STRIP_INSTALLED_PRODUCT = NO;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		56D543430A24C3C5000A8598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "AppKit-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AppKit;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		56D544800A24D27A000A8598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "StepTalkKit-Info.plist";
+				INSTALL_MODE_FLAG = "go-w,a+rX";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = StepTalkKit;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		56D544810A24D27A000A8598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "StepTalkKit-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = StepTalkKit;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1618,6 +1976,24 @@
 			buildConfigurations = (
 				568A2A1C0A04BF1900D60852 /* Debug */,
 				568A2A1D0A04BF1900D60852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D543410A24C3C5000A8598 /* Build configuration list for PBXNativeTarget "AppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D543420A24C3C5000A8598 /* Debug */,
+				56D543430A24C3C5000A8598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D5447F0A24D27A000A8598 /* Build configuration list for PBXNativeTarget "StepTalkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D544800A24D27A000A8598 /* Debug */,
+				56D544810A24D27A000A8598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

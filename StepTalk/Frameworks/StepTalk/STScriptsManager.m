@@ -31,18 +31,6 @@
 #import "STFileScript.h"
 #import "STCompat.h"
 
-#import <Foundation/NSArray.h>
-#import <Foundation/NSBundle.h>
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSEnumerator.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSFileManager.h>
-#import <Foundation/NSPathUtilities.h>
-#import <Foundation/NSProcessInfo.h>
-#import <Foundation/NSSet.h>
-#import <Foundation/NSString.h>
-
 static STScriptsManager *sharedScriptsManager = nil;
 
 @interface STScriptsManager (STPriavteMethods)
@@ -121,7 +109,8 @@ process name.*/
     NSArray        *paths;
     NSBundle       *bundle;
       
-    paths = NSStandardLibraryPaths();
+    paths = NSSearchPathForDirectoriesInDomains(NSAllLibrariesDirectory,
+                                                NSAllDomainsMask, YES);
 
     enumerator = [paths objectEnumerator];
 

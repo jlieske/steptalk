@@ -13,6 +13,7 @@
     BOOL     searchesInLoadedBundles;
     BOOL     searchesBundlesFirst;
 }
++ (STResourceManager *)defaultManager;
 - (void)setSearchPaths:(NSArray *)array;
 - (NSArray *)searchPaths;
 - (void)setSearchesInLoadedBundles:(BOOL)flag;
@@ -23,6 +24,6 @@
 - (NSArray *)findAllResourcesInDirectory:(NSString *)resourceDir
                                     type:(NSString *)type;
 - (NSString *)pathForResource:(NSString *)name
-                         type:(NSString *)type
-                    directory:(NSString *)directory;
+                       ofType:(NSString *)type
+                  inDirectory:(NSString *)directory;
 @end

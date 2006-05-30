@@ -25,7 +25,7 @@
  
  */
 
-#import <Foundation/NSBundle.h>
+#import <Foundation/Foundation.h>
 
 @class NSArray;
 

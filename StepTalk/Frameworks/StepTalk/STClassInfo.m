@@ -29,12 +29,6 @@
 
 #import "STCompat.h"
 
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSSet.h>
-#import <Foundation/NSString.h>
-#import <Foundation/NSValue.h>
-
 @implementation STClassInfo
 - initWithName:(NSString *)aString
 

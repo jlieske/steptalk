@@ -4,16 +4,6 @@
 #import "STCompat.h"
 #import "STResourceManager.h"
 
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSArray.h>
-#import <Foundation/NSBundle.h>
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSEnumerator.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSFileManager.h>
-#import <Foundation/NSPathUtilities.h>
-#import <Foundation/NSUserDefaults.h>
-
 static STLanguageManager *defaultManager = nil;
 @interface STLanguageManager(StepTalkPrivate)
 - (void) _registerKnownLanguages;
@@ -56,13 +46,10 @@ static STLanguageManager *defaultManager = nil;
 }
 - (void) _registerKnownLanguages
 {
-    NSFileManager *manager = [NSFileManager defaultManager];
     NSEnumerator  *enumerator;
-    NSArray       *bundles;
     NSBundle      *bundle;
     NSString      *path;
     NSArray       *paths;
-    BOOL           isDir;
     NSLog(@"Register known languages...");
     /* Search all languages */
     paths = [[STResourceManager defaultManager] findAllResourcesInDirectory:@"Languages"

@@ -21,14 +21,6 @@
 #import "STCompat.h"
 #import "STContext.h"
 
-#import <Foundation/NSArray.h>
-#import <Foundation/NSCoder.h>
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSInvocation.h>
-#import <Foundation/NSKeyValueCoding.h>
-#import <Foundation/NSString.h>
-
 @implementation STActor
 
 + actorInContext:(STContext *)aContext
@@ -90,7 +82,7 @@
             }
             @catch(NSException *exception)
             {
-                if(![[exception name] isEqualToStrin:NSUndefinedKeyException])
+                if(![[exception name] isEqualToString:NSUndefinedKeyException])
                 {
                     @throw;
                 }
@@ -159,7 +151,7 @@
 - (void)addMethodWithSource:(NSString *)source
                    language:(NSString *)language
 {
-    STMethod *method;
+    id <STMethod>method;
     STEngine *engine;
     engine = [STEngine engineForLanguage:language];  
     method = [engine methodFromSource:source
@@ -249,38 +241,43 @@ some other, more clever mechanism. */
     
     if(!method)
     {
-        [NSException raise:@"STActorException"
-                     format:@"No script object method with name '%@'",
-                            methodName];
-        return;
+        /* Try to forward to traits */
+            /* Note: we do not try to find whether traits responds to selector,
+                    as it can forward the message or handle it other way...*/
+        [traits forwardInvocation:invocation];
+
+        /*FIXME: do we need exception handler here? */
     }
-
-    engine = [STEngine engineForLanguage:[method languageName]];   
-
-    /* Get arguments as array */
-    count = [[invocation methodSignature] numberOfArguments];
-    args = [NSMutableArray array];
-    
-    for(index = 2; index < count; index++)
+    else
     {
-        arg = [invocation getArgumentAsObjectAtIndex:index];
 
-        if (arg == nil)
-        { 
-            [args addObject:STNil];
+        engine = [STEngine engineForLanguage:[method languageName]];   
+
+        /* Get arguments as array */
+        count = [[invocation methodSignature] numberOfArguments];
+        args = [NSMutableArray array];
+        
+        for(index = 2; index < count; index++)
+        {
+            arg = [invocation getArgumentAsObjectAtIndex:index];
+
+            if (arg == nil)
+            { 
+                [args addObject:STNil];
+            }
+            else 
+            { 
+                [args addObject:arg];
+            } 
         }
-        else 
-        { 
-            [args addObject:arg];
-        } 
+
+        retval = [engine executeMethod:method
+                           forReceiver:self
+                         withArguments:args
+                             inContext:context];
+
+        [invocation setReturnValue:&retval];
     }
-
-    retval = [engine executeMethod:method
-                       forReceiver:self
-                     withArguments:args
-                         inContext:context];
-
-    [invocation setReturnValue:&retval];
 }
 - (void)encodeWithCoder:(NSCoder *)coder
 {

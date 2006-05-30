@@ -29,10 +29,7 @@
 #import "STExterns.h"
 #import "STCompat.h"
 
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSString.h>
+#import <Foundation/Foundation.h>
 
 @implementation STObjectReference
 - initWithIdentifier:(NSString *)ident

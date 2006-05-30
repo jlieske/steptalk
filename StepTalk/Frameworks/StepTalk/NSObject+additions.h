@@ -22,7 +22,7 @@
  
  */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface NSObject (STAdditions)
 - (BOOL)isSame:(id)anObject;

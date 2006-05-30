@@ -28,11 +28,6 @@
 
 #import "STExterns.h"
 #import "STCompat.h"
-#import <Foundation/NSArray.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSString.h>
-#import <Foundation/NSValue.h>
-#import <Foundation/NSDebug.h>
 #import "NSInvocation+additions.h"
 
 #import "ObjcRuntimeSupport.h"

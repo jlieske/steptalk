@@ -24,10 +24,10 @@ int NSCursorUpdate
 int NSScrollWheel
 
 
-int NSBackspaceKey
-int NSCarriageReturnKey
-int NSDeleteKey
-int NSBacktabKey
+#int NSBackspaceKey
+#int NSCarriageReturnKey
+#int NSDeleteKey
+#int NSBacktabKey
 
 int NSUpArrowFunctionKey
 int NSDownArrowFunctionKey

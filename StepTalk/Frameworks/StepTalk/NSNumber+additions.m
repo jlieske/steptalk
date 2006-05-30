@@ -30,8 +30,6 @@
 #import "STExterns.h"
 #import "STStructure.h"
 
-#import <Foundation/NSException.h>
-
 #include <math.h>
 
 @implementation NSNumber (STAdditions)

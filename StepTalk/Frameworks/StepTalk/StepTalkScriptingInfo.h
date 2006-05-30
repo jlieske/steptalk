@@ -25,7 +25,7 @@
  
  */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface StepTalkScriptingInfo:NSObject
 @end

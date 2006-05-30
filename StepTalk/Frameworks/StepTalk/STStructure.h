@@ -24,15 +24,11 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#import <Foundation/NSObject.h>
-#import <Foundation/NSGeometry.h>
-#import <Foundation/NSRange.h>
+#import <Foundation/Foundation.h>
 
 // @class STRange;
 // @class STPoint;
 // @class STRect;
-@class NSString;
-@class NSMutableArray;
 
 @interface STStructure:NSObject
 {

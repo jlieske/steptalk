@@ -24,9 +24,8 @@
 
    */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
-@class NSArray;
 @class STFileScript;
 
 @interface STScriptsManager:NSObject

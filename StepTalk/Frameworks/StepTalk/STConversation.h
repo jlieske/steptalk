@@ -24,7 +24,7 @@
  
  */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @class STEngine;
 @class STContext;

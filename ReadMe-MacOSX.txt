@@ -3,6 +3,7 @@ StepTalk
 
 Ahthor: Stefan Urbanek
 License: LGPL
+Version: 0.12 (1.0 prerelease 1)
 
 What is StepTalk ?
 ------------------
@@ -19,7 +20,7 @@ StepTalking is an application for "talking to objects" in StepTalk languages.
 Installation
 ------------
 
-1. Copy StepTalk.framework into ~/Library/Frameworks or /Library/Frameworks
+1. Copy StepTalk.framework and StepTalkKit.framework into ~/Library/Frameworks or /Library/Frameworks
 2. Copy StepTalking application wherever you like, preferably to the 
    Applications folder
 
@@ -27,4 +28,4 @@ Feedback
 --------
 Send comments, questions and suggestions to: stefan@agentfarms.net
 
-Last update: 2006-05-14
+Last update: 2006-05-31

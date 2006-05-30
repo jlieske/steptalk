@@ -27,13 +27,7 @@
  
    */
 
-#import <Foundation/NSObject.h>
-
-@class NSBundle;
-@class NSDictionary;
-@class NSMutableDictionary;
-@class NSMutableArray;
-@class NSMutableSet;
+#import <Foundation/Foundation.h>
 
 @class STObjectReference;
 @class STEnvironmentDescription;

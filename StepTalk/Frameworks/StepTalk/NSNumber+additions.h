@@ -25,7 +25,7 @@
  
  */
 
-#import <Foundation/NSValue.h>
+#import <Foundation/Foundation.h>
 
 @interface NSNumber (STAdditions)
 - add:(NSNumber *)number;

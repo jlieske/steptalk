@@ -30,15 +30,6 @@
 #import "STCompat.h"
 #import "ObjcRuntimeSupport.h"
 
-#import <Foundation/NSArray.h>
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSMethodSignature.h>
-#import <Foundation/NSSet.h>
-#import <Foundation/NSString.h>
-#import <Foundation/NSValue.h>
-
 #define SELECTOR_TYPES_COUNT 10
 
 /* Predefined default selector types up to 10 arguments for fast creation.

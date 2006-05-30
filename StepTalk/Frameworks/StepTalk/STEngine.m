@@ -34,11 +34,6 @@
 #import "STUndefinedObject.h"
 #import "STCompat.h"
 
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSString.h>
-#import <Foundation/NSZone.h>
-
 NSZone *STMallocZone = (NSZone *)nil;
 
 void _STInitMallocZone(void)
@@ -108,7 +103,7 @@ void _STInitMallocZone(void)
     return NO;
 }
 
-- (STMethod *)methodFromSource:(NSString *)sourceString
+- (id <STMethod>)methodFromSource:(NSString *)sourceString
                    forReceiver:(id)receiver
         inContext:(STContext *)env;
 {

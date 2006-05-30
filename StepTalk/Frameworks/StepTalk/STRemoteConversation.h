@@ -26,8 +26,6 @@
 
 #import "STConversation.h"
 
-#import <Foundation/NSDistantObject.h>
-
 @class NSConnection;
 
 @protocol STEnvironmentProcess

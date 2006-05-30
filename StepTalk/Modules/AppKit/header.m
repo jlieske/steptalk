@@ -23,18 +23,7 @@
  
  */
 
-#import <Foundation/NSArray.h>
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSString.h>
-
-#import <AppKit/AppKit.h>
-#ifdef GNUSTEP
-#import <AppKit/AppKitExceptions.h>
-#endif
-
-#import <AppKit/NSDocument.h>
-#import <AppKit/NSHelpManager.h>
-
+#import <Cocoa/Cocoa.h>
 
 NSDictionary *STGet@@NAME@@(void)
 {

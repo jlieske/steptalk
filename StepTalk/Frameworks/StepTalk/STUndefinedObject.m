@@ -29,8 +29,6 @@
 #import "STExterns.h"
 #import "STObjCRuntime.h"
 
-#import <Foundation/NSString.h>
-
 STUndefinedObject *STNil = nil;
 
 @implementation STUndefinedObject

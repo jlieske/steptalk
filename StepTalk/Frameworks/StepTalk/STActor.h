@@ -11,13 +11,10 @@
     This file is part of the StepTalk project.
 */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 #import "STMethod.h"
 
-@class NSMutableDictionary;
-@class NSDictionary;
-@class NSArray;
 @class STEnvironment;
 @class STContext;
 

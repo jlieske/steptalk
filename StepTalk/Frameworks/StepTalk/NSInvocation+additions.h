@@ -25,7 +25,7 @@
  
  */
 
-#import <Foundation/NSInvocation.h>
+#import <Foundation/Foundation.h>
 
 void STGetValueOfTypeFromObject(void *value, const char *type, id anObject);
 id   STObjectFromValueOfType(void *value, const char *type);

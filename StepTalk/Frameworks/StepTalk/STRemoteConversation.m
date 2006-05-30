@@ -2,11 +2,6 @@
 */
 #import "STRemoteConversation.h"
 
-#import <Foundation/NSException.h>
-#import <Foundation/NSNotification.h>
-#import <Foundation/NSConnection.h>
-#import <Foundation/NSDistantObject.h>
-
 #import "STEnvironment.h"
 #import "STCompat.h"
 

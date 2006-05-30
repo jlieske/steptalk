@@ -28,9 +28,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>StepTalking</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.StepTalking</string>
+	<string>com.agentfarms.StepTalking</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

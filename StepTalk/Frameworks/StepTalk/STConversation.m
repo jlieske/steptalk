@@ -26,9 +26,6 @@
 
 #import "STConversation.h"
 
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSException.h>
-
 #import "STEnvironment.h"
 #import "STEngine.h"
 #import "STLanguageManager.h"

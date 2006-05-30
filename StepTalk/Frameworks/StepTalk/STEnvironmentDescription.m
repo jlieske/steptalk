@@ -33,15 +33,6 @@
 #import "STCompat.h"
 #import "STResourceManager.h"
 
-#import <Foundation/NSArray.h>
-#import <Foundation/NSDebug.h>
-#import <Foundation/NSDictionary.h>
-#import <Foundation/NSException.h>
-#import <Foundation/NSString.h>
-#import <Foundation/NSSet.h>
-#import <Foundation/NSUserDefaults.h>
-#import <Foundation/NSAutoreleasePool.h>
-
 static NSDictionary *dictForDescriptionWithName(NSString *defName)
 {
     NSString     *file;
