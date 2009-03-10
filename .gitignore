@@ -1,0 +1,16 @@
+# Xcode excludes
+build/*
+*.pbxuser
+*.mode1
+*.mode1v3
+*~
+
+# Mac excludes
+.DS_Store
+
+# VC excludes
+.svn
+CVS
+
+# More excludes
+.#*
